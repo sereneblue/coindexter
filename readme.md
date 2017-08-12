@@ -2,7 +2,7 @@
 
 An opensource reskinned version of coinmarketcap.com with a few essential features.-
 
-![coindexter screenshot](https://raw.githubusercontent.com/sereneblue/coindexter/master/coindexter.png?raw=true)
+![coindexter screenshot](https://raw.githubusercontent.com/sereneblue/coindexter/master/coindexter.png)
 
 If you'd like to see coindexter in action, click [here](https://sereneblue.github.io/coindexter). You can also save coindexter for local usage. Use the index.html file located in the `src` folder.
 
