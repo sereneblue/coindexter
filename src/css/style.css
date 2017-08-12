@@ -1,0 +1,28 @@
+h5 {
+	margin-top: 0 !important;
+}
+
+.pusher {
+	margin-left: 19em;
+}
+
+.sidebar {
+    min-width: 19em;
+}
+
+.ui.checkbox > label {
+	color: white !important;
+	padding-bottom: 1em;
+}
+
+.ui.three.column > .column {
+	padding-left: 0;
+}
+
+.ui.teal.segment > h4 {
+	text-align: center;
+}
+
+.pusher > .ui.teal.inverted.segment {
+	border-radius: 0;
+}

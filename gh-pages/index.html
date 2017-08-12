@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>coindexter</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/sereneblue/coindexter/master/src/css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div id="sidebar" class="ui sidebar inverted vertical menu visible">
+			<div class="item">
+				<br/>
+				<img class="ui centered image" src="resources/icon.png">
+				<div class="ui inverted centered header">coindexter</div>
+			</div>
+			<div class="item">
+				An opensource reskinned version of coinmarketcap.com with a few essential features. More details at the GitHub repository.
+				<br/>
+				<br/>
+				<div><i class="ui tiny empty circular inverted green icon"></i>Fair launch/mineable</div>
+			    <div><i class="ui tiny empty circular inverted olive icon"></i>Premined</div>
+			    <div><i class="ui tiny empty circular inverted yellow icon"></i>Instamine</div>
+			    <div><i class="ui tiny empty circular inverted orange icon"></i>Significantly Premined</div>
+			    <div><i class="ui tiny empty circular inverted red icon"></i>Not mineable</div>
+			    <div><i class="ui tiny empty circular inverted grey icon"></i>Unknown</div>
+			</div>
+			<div class="item">
+				<div class="four ui buttons" >
+	  				<button class="ui basic small teal icon button" data-tooltip="Price Calculator" data-position="top left" onclick="app.changeState('calculator')">
+					  <i class="calculator icon"></i>
+					</button>
+					<button class="ui basic small teal icon button" data-tooltip="Investment Calculator" onclick="app.changeState('investment')">
+					  <i class="line chart icon"></i>
+					</button>
+					<button class="ui basic small teal icon button" data-tooltip="Settings" onclick="app.changeState('settings')">
+					  <i class="setting icon"></i>
+					</button>
+					<a href="https://github.com/sereneblue/coindexter" class="ui basic small teal icon button" data-tooltip="View Source" data-position="top right">
+					  <i class="github icon"></i>
+					</a>
+				</div>
+			</div>
+			<div class="item" v-show="state == 'calculator'">
+				<h5 class="ui inverted centered header">Price Calculator</h5>
+				<div class="ui right labeled fluid input">
+				  <input type="number" min="0" id="crypto-amount" v-model=crypto_amount oninput="app.calculate('fiat');">
+				  <div class="ui dropdown label" id="crypto-dropdown">
+				    <div class="text">BTC</div>
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				      <div class="item" v-for="currency in currencyList">{{ currency }}</div>
+				    </div>
+				  </div>
+				</div>
+				<br/>
+				<br/>
+				<div class="ui right labeled fluid input">
+				  <input type="number" min="0"  id="fiat-amount" v-model="fiat_amount" oninput="app.calculate('crypto');">
+				  <div class="ui dropdown label" id="fiat-dropdown">
+				    <div class="text">USD</div>
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				      	<div class="item" v-for="currency in rates">{{ currency }}</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="item" v-show="state == 'investment'">
+				<h5 class="ui inverted centered header">Investment Calculator</h5>
+				<div class="ui right labeled fluid input">
+				  <input type="number" min="0" v-model=investment.amount>
+				  <div class="ui dropdown label" id="investment-crypto">
+				    <div class="text">BTC</div>
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				      <div class="item" v-for="currency in currencyList">{{ currency }}</div>
+				    </div>
+				  </div>
+				</div>
+				<br/>
+				<h5 class="ui inverted header">Total: {{ current_investment_price() }}</h5>
+				<h5 class="ui inverted header">Current Price: {{ investment.current_price }}</h5>
+				<h5 class="ui inverted header" v-model=investment.target>Target Price: {{ investment.target }}</h5>
+				<div class="ui right labeled fluid input">
+				  <input type="text" id="fiat-amount"  v-model=investment.target>
+				  <div class="ui dropdown label" id="target-fiat">
+				    <div class="text">USD</div>
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				    	<div class="item" v-for="currency in rates">{{ currency }}</div>
+				    </div>
+				  </div>
+				</div>
+				<h3 class="ui inverted centered header">
+					<div class="ui green message" v-if="profit > 0">Profit: {{ profit }}</div>
+					<div class="ui red message" v-else="profit < 0">Loss: {{ profit }}</div>
+				</h3>
+				<h5 class="ui inverted header">
+					Please keep in mind that not all currencies are created equally. If a currency looks 'cheap' look at the supply. Also consider using target prices below the current price. :)
+				</h5>
+			</div>
+			<div class="item" v-show="state == 'settings'">
+				Please bookmark your custom URL.
+				<br/>
+				<br/>
+				<h5 class="ui inverted header">Base Currency</h5>
+				<select class="ui fluid dropdown" id="base-currency">
+				  <option value="">Base Currency</option>
+				  <option value="BTC">BTC</option>
+				  <option :value="currency" v-for="currency in Object.keys(fiat)">{{ currency }}</option>
+				</select>
+				<br/>
+				<h5 class="ui inverted header">Number of Currencies to Display</h5>
+				<div class="ui input">
+				  <input type="number" min="100" id="num-display" placeholder="Num. of currencies" value="100">
+				</div>
+				<br/>
+				<br/>
+				<div class="ui checkbox">
+				  <input type="checkbox" id="unmineable">
+				  <label>Remove Unmineable</label>
+				</div>
+				<br/>
+				<button class="ui teal fluid button" onclick="generateURL();">
+				  Generate URL
+				</button>
+			</div>
+		</div>
+		<div class="pusher">
+			<div class="ui teal inverted segment">
+				<h4>{{ stats.active_currencies }} Currencies / {{ stats.active_assets }} Assets / MarketCap: {{ current }}{{ app.format(stats.total_market_cap_usd) }} / 24h Volume: {{ current }}{{ app.format(stats.total_24h_volume_usd) }}
+			</div>
+			<div class="ui two column stackable grid container">
+			  	<div class="column">
+			  		<h3>Biggest Gainers</h3>
+			  		<div class="column">
+	  				<div class="ui three column stackable grid container">
+		  				<div class="column" v-for="coin in topGains">
+		  					<div class="ui green segment">
+		  						<div class="ui items">
+					  				<div class="item">
+									    <div class="ui middle aligned micro image">
+									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									    </div>
+									    <div class="content">
+									      <div class="header">{{ coin.symbol }}</div>
+									      <div class="ui icon description">
+								        {{ coin.percent_change_24h }}%
+								      </div>
+									    </div>
+						    		</div>
+						    	</div>
+		  					</div>
+		  				</div>
+		  			</div>
+			    </div>
+			  	</div>
+			  	<div class="column">
+			  		<h3>Biggest Losers</h3>
+			  		<div class="column">
+	  				<div class="ui three column stackable grid container">
+		  				<div class="column" v-for="coin in topLosses">
+		  					<div class="ui red segment">
+		  						<div class="ui items">
+					  				<div class="item">
+									    <div class="ui middle aligned micro image">
+									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									    </div>
+									    <div class="content">
+									      <div class="header">{{ coin.symbol }}</div>
+									      <div class="ui icon description">
+								        {{ coin.percent_change_24h }}%
+								      </div>
+									    </div>
+						    		</div>
+						    	</div>
+		  					</div>
+		  				</div>
+		  			</div>
+			    </div>
+			  	</div>
+				<table class="ui basic table">
+				  <thead>
+				    <tr>
+				      <th>Rank</th>
+				      <th>Currency</th>
+				      <th>Market Cap</th>
+				      <th>Price</th>
+				      <th>Circulating Supply</th>
+				      <th>24h Change</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr v-for="currency in app.checkMineable()">
+						<td>{{ currency.rank }}</td>
+						<td>
+							<div class="ui empty tiny green horizontal circular label" v-if="mineable(currency.symbol) == 'm'"></div>
+							<div class="ui empty tiny olive horizontal circular label" v-else-if="mineable(currency.symbol) == 'p'"></div>
+							<div class="ui empty tiny yellow horizontal circular label" v-else-if="mineable(currency.symbol) == 'i'"></div>
+							<div class="ui empty tiny orange horizontal circular label" v-else-if="mineable(currency.symbol) == 's'"></div>
+							<div class="ui empty tiny red horizontal circular label" v-else-if="mineable(currency.symbol) == 'n'"></div>
+							<div class="ui empty tiny grey horizontal circular label" v-else></div>
+							{{ currency.name }}
+							<a class="ui label" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
+							  <i class="lock icon"></i> {{ wallet(currency.symbol).length }}
+							</a>
+							<a class="ui blue horizontal label" href="https://shapeshift.io" target="_blank" v-if="currency.last_updated">Shift</a>
+						</td>
+						<td v-if="app.settings.currency == 'BTC'">${{ app.format(currency.market_cap_usd) }}</td>
+						<td v-else>{{ current }}{{ app.getMarketcap(currency) }}</td>
+						<td v-if="app.settings.currency == 'BTC'">{{ currency.price_btc }} BTC</td>
+						<td v-else>{{ current }}{{ app.getPrice(currency) }}</td>
+						<td>{{ app.format(currency.available_supply) }} {{ currency.symbol }}</td>
+						<td v-if="currency.percent_change_24h > 0">
+							<i class="green caret up icon"></i>
+							<span class="positive">{{ currency.percent_change_24h }}%</span>
+						</td>
+						<td v-else="currency.percent_change_24h < 0">
+							<i class="red caret down icon"></i>
+							<span class="negative">{{ Math.abs(currency.percent_change_24h) }}%</span>
+						</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<div class="ui modal">
+			  <i class="close icon"></i>
+			  <div class="header">
+			    {{ currentCrypto }} Wallets
+			  </div>
+			  <div class="content">
+				<table class="ui very basic table">
+				  <thead>
+				  	<tr>
+				  	<div>
+				    <i class="ui tiny empty circular inverted red icon"></i>Web Wallet
+				    <i class="ui tiny empty circular inverted green icon"></i>Desktop Wallet
+				    <i class="ui tiny empty circular inverted blue icon"></i>Mobile Wallet
+				    <i class="ui tiny empty circular inverted yellow icon"></i>Hardware Wallet
+				  </div>
+				  </tr>
+				  </thead>
+				  <tbody>
+				    <tr v-for="wallet in wallet(currentCrypto)">
+				      <td>
+				      	<a :href=wallet[1] target="_blank"> {{ wallet[0] }}</a>
+				      </td>
+				      <td>
+				      	  <i v-if="wallet[2]" class="ui tiny empty circular inverted red icon"></i>
+					      <i v-if="wallet[3]" class="ui tiny empty circular inverted green icon"></i>
+					      <i v-if="wallet[4]" class="ui tiny empty circular inverted blue icon"></i>
+					      <i v-if="wallet[5]" class="ui tiny empty circular inverted yellow icon"></i>
+				      </td>
+				    </tr>
+				  </tbody>
+				</table>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/sereneblue/coindexter/master/src/js/wallets.js?raw=true"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/sereneblue/coindexter/master/src/js/mineable.js?raw=true"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/sereneblue/coindexter/master/src/js/script.js?raw=true"></script>
+</body>
+</html>
