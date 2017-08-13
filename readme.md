@@ -1,6 +1,6 @@
 # coindexter
 
-An opensource reskinned version of coinmarketcap.com with a few essential features.-
+An open source reskinned version of coinmarketcap.com with a few essential features.-
 
 ![coindexter screenshot](https://raw.githubusercontent.com/sereneblue/coindexter/master/coindexter.png)
 
