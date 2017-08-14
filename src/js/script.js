@@ -186,6 +186,7 @@ $(document).ready(function() {
 		app.settings.removeUnmineable = (bits[2] == "t" ? true : false);
 	}
 	app.updateData();
+	setInterval(app.updateData, 300 * 1000);
 });
 
 function showModal(symbol) {

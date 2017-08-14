@@ -70,6 +70,7 @@ var wallets = {
 		["OpenLedger", "https://bitshares.openledger.info/", true, false, false, false],
 		["SmartWallet", "https://play.google.com/store/apps/details?id=de.bitsharesmunich.smartcoinswallet", false, false, true, false]
 	],
+	CFI: erc,
 	CVC: erc,
 	DASH: [
 		["Coinomi", "https://coinomi.com/", false, false, true, false],
@@ -328,6 +329,7 @@ var wallets = {
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
 		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false]
 	],
+	XRL: erc,
 	XRP: [
 		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
 		["Rippex", "https://rippex.net/carteira-ripple.php", false, true, false, false]

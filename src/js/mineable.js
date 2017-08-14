@@ -24,6 +24,7 @@ var mineable = {
 	BTCD: "p",   // 1.5% premined for bounties
 	BTM: "n",
 	BTS: "n",
+	CFI: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
 	DCR: "p",    // 8% premined
@@ -110,6 +111,7 @@ var mineable = {
 	XEM: "n",
 	XLM: "n",
 	XMR: "m",
+	XRL: "n",
 	XRP: "n",
 	XVG: "m",
 	XZC: "m",
