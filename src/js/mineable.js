@@ -7,6 +7,7 @@
 
 var mineable = {
 	ADT: "n",
+	ADX: "n",
 	AMP: "n",
 	ANT: "n",
 	ARDR: "n",
@@ -34,6 +35,7 @@ var mineable = {
 	DICE: "n",
 	DNT: "n",
 	DOGE: "m",
+	EB3: "s",    // Looks like a scam http://archive.is/7rjAz
 	EDG: "n",
 	EMC: "m",
 	EOS: "n",
@@ -115,7 +117,8 @@ var mineable = {
 	XRP: "n",
 	XVG: "m",
 	XZC: "m",
-	ZEC: "m"
+	ZEC: "m",
+	ZRX: "n"
 }
 
 mineable["1ST"] = "n";

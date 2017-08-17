@@ -2,8 +2,22 @@ h5 {
 	margin-top: 0 !important;
 }
 
+.negative {
+	color: #db2828 !important;
+	font-weight: bold;
+}
+
+.positive {
+	color: #21ba45 !important;
+	font-weight: bold;
+}
+
 .pusher {
 	margin-left: 19em;
+}
+
+.pusher > .ui.teal.inverted.segment {
+	border-radius: 0;
 }
 
 .sidebar {
@@ -15,14 +29,10 @@ h5 {
 	padding-bottom: 1em;
 }
 
-.ui.three.column > .column {
-	padding-left: 0;
-}
-
 .ui.teal.segment > h4 {
 	text-align: center;
 }
 
-.pusher > .ui.teal.inverted.segment {
-	border-radius: 0;
+.ui.three.column > .column {
+	padding-left: 0;
 }

@@ -1,15 +1,28 @@
 // wallet format
 // name, site, is_online, is_desktop, is_mobile, is_hardware
 
+var common = {
+	coinbase: ["Coinbase", "https://coinbase.com", true, false, false, false],
+	coinomi: ["Coinomi", "https://coinomi.com/", false, false, true, false],
+	exodus: ["Exodus", "https://www.exodus.io/", false, true, false, false],
+	jaxx: ["Jaxx", "https://jaxx.io/", false, true, true, false],
+	keepkey: ["KeepKey", "https://www.keepkey.com/", false, false, false, true],
+	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+	omnicore: ["OmniCore", "http://www.omnilayer.org/download.html", false, true, false, false],
+	omniwallet: ["OmniWallet", "https://www.omniwallet.org/", true, false, false, false],
+	trezor: ["Trezor", "https://trezor.io/", false, false, false, true]
+}
+
 var erc = [
-	["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+	common.ledger
 	["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 	["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
-	["Trezor", "https://trezor.io/", false, false, false, true]
+	common.trezor
 ]
 
 var wallets = {
 	ADT: erc,
+	ADX: erc,
 	ANT: erc,
 	ARDR: [
 		["MyNXT", "https://wallet.mynxt.info/", true, false, false, false],
@@ -24,10 +37,10 @@ var wallets = {
 		["Bitconnect Web Wallet", "http://www.bitconnect.co/", true, false, false, false]
 	],
 	BCH: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Electron Cash", "http://www.electroncash.org/", false, true, false, false],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
-		["Trezor", "https://trezor.io/", false, false, false, true]
+		common.ledger,
+		common.trezor
 	],
 	BCN: [
 		["Bytecoin Wallet", "https://bytecoin.org/downloads/", false, true, false, false]
@@ -50,18 +63,18 @@ var wallets = {
 		["BitGo", "https://www.bitgo.com/", true, false, false, false],
 		["Blockchain.info", "https://blockchain.info", true, false, false, false],
 		["breadwallet", "https://breadwallet.com/", false, false, true, false],
-		["Coinbase", "https://coinbase.com", true, false, false, false],
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinbase,
+		common.coinomi,
 		["Copay", "https://copay.io/", true, true, true, false],
 		["Electrum", "https://electrum.org", false, true, false, false],
-		["Exodus", "https://www.exodus.io/", false, true, false, false],
+		common.exodus,
 		["Freewallet", "https://freewallet.io/updates/", false, false, true, false],
 		["Green Address", "https://greenaddress.it/en/", true, true, true, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
-		["KeepKey", "https://www.keepkey.com/", false, false, false, true],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+		common.jaxx,
+		common.keepkey,
+		common.ledger,
 		["MyCelium", "https://wallet.mycelium.com/", false, false, true, false],
-		["Trezor", "https://trezor.io/", false, false, false, true],
+		common.trezor,
 		["Xapo", "https://www.xapo.com/", true, false, false, false]
 	],
 	BTM: erc,
@@ -73,14 +86,14 @@ var wallets = {
 	CFI: erc,
 	CVC: erc,
 	DASH: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinbase,
 		["DASH Core", "https://www.dash.org/wallets/", false, true, false, false],
 		["DASH Wallet", "https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet", false, false, true, false],
-		["Exodus", "https://www.exodus.io/", false, true, false, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
-		["KeepKey", "https://www.keepkey.com/", false, false, false, true],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
-		["Trezor", "https://trezor.io/", false, false, false, true]
+		common.exodus,
+		common.jaxx,
+		common.keepkey,
+		common.ledger,
+		common.trezor
 	],
 	DICE: erc,
 	DCR: [
@@ -96,12 +109,15 @@ var wallets = {
 	DGD: erc,
 	DNT: erc,
 	DOGE: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Dogecoini Core", "http://dogecoin.com/", false, true, false, false],
 		["DoughWallet", "https://www.doughwallet.net/", false, false, true, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
+		common.jaxx,
 		["MultiDoge", "http://multidoge.org/", false, true, false, false],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true]
+		common.ledger
+	],
+	EB3: [
+		["EB3 Wallet", "http://www.eb3coin.com/", false, false, true, false]
 	],
 	EDG: erc,
 	EMC: [
@@ -109,26 +125,26 @@ var wallets = {
 	],
 	EOS: erc,
 	ETH: [
-		["Coinbase", "https://coinbase.com", true, false, false, false],
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
-		["Exodus", "https://www.exodus.io/", false, true, false, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
-		["KeepKey", "https://www.keepkey.com/", false, false, false, true],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+		common.coinbase,
+		common.coinomi,
+		common.exodus,
+		common.jaxx,
+		common.keepkey,
+		common.ledger,
 		["MetaMask", "https://metamask.io/", false, true, false, false],
 		["Mist", "https://github.com/ethereum/mist/releases", false, true, false, false],
 		["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 		["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
-		["Trezor", "https://trezor.io/", false, false, false, true],
+		common.trezor,
 		["XETH", "http://www.xeth.org/", false, true, false, false]
 	],
 	ETC: [
 		["ClassicEtherWallet CX", "https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf", false, true, false, false],
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Ethereum Classic Wallet", "https://github.com/ethereumproject/mist/releases", false, true, false, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
-		["Trezor", "https://trezor.io/", false, false, false, true]
+		common.jaxx,
+		common.ledger,
+		common.trezor
 	],
 	ETP: [
 		["Metaverse ETP Wallet", "https://mvs.org/#download", false, true, false, false]
@@ -163,7 +179,7 @@ var wallets = {
 		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true]
 	],
 	LBC: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["lbrycrd", "https://github.com/lbryio/lbrycrd/releases", false, true, false, false]
 	],
 	LEO: [
@@ -177,21 +193,21 @@ var wallets = {
 		["Lisk Web Wallets", "https://lisktools.io/pNodes.php", true, false, false, false]
 	],
 	LTC: [
-		["Coinbase", "https://coinbase.com", true, false, false, false],
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinbase,
+		common.coinomi,
 		["Electrum-LTC", "https://electrum-ltc.org/", false, true, false, false],
-		["Exodus", "https://www.exodus.io/", false, true, false, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
-		["KeepKey", "https://www.keepkey.com/", false, false, false, true],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+		common.exodus,
+		common.jaxx,
+		common.keepkey,
+		common.ledger,
 		["Litecoin Core", "https://litecoin.org/", false, true, false, false],
 		["LiteVault", "https://www.litevault.net/", true, false, false, false],
-		["Trezor", "https://trezor.io/", false, false, false, true]
+		common.trezor
 	],
 	LUN: erc,
 	MAID: [
-		["OmniWallet", "https://www.omniwallet.org/", true, false, false, false],
-		["OmniCore", "http://www.omnilayer.org/download.html", false, true, false, false]
+		common.omnicore,
+		common.omniwallet
 	],
 	MCAP: erc,
 	MCO: erc,
@@ -215,11 +231,11 @@ var wallets = {
 		["NoLimitCoin Wallet", "https://www.nolimitcoin.org/", true, true, false, false]
 	],
 	NLG: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Gulden Wallet", "https://gulden.com/download", false, true, true, false]
 	],
 	NMC: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Namecoin Core Wallet", "https://namecoin.org/download/", false, true, false, false]
 	],
 	NMR: erc,
@@ -237,13 +253,13 @@ var wallets = {
 	],
 	PAY: erc,
 	PIVX: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["PIVX Mobile Wallet", "https://play.google.com/store/apps/details?id=pivx.tech.furszy", false, false, true, false],
 		["PIVX Wallet", "https://pivx.org/get-pivx/wallet/", false, true, false, false]
 	],
 	PLR: erc,
 	PPC: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Peercoin Wallet", "https://peercoin.net/wallet", false, true, true, false]
 	],
 	PPT: erc,
@@ -252,7 +268,7 @@ var wallets = {
 	],
 	QTUM: null,
 	RDD: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["ReddCoin Core", "https://www.reddcoin.com/", false, true, false, false]
 	],
 	REP: erc,
@@ -277,7 +293,7 @@ var wallets = {
 	],
 	STX: erc,
 	SYS: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Syscoin Wallet", "https://github.com/syscoin/syscoin/releases", false, true, false, false]
 	],
 	TAAS: erc,
@@ -286,8 +302,8 @@ var wallets = {
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
 	USDT: [
-		["OmniWallet", "https://www.omniwallet.org/", true, false, false, false],
-		["OmniCore", "http://www.omnilayer.org/download.html", false, true, false, false]
+		common.omnicore,
+		common.omniwallet
 	],
 	VERI: erc,
 	VSL: erc,
@@ -331,25 +347,26 @@ var wallets = {
 	],
 	XRL: erc,
 	XRP: [
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+		common.ledger,
 		["Rippex", "https://rippex.net/carteira-ripple.php", false, true, false, false]
 	],
 	XVG: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Verge Electrum Wallet", "http://vergecurrency.com/#wallets", false, true, false, false],
 		["Verge Wallet", "http://vergecurrency.com/#wallets", true, true, true, false]
 	],
 	XZC: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
+		common.coinomi,
 		["Zcoin Wallet", "https://zcoin.io/get-zcoin/", false, true, false, false]
 	],
 	ZEC: [
-		["Coinomi", "https://coinomi.com/", false, false, true, false],
-		["Jaxx", "https://jaxx.io/", false, true, true, false],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
-		["Trezor", "https://trezor.io/", false, false, false, true],
+		common.coinomi,
+		common.jaxx,
+		common.ledger,
+		common.trezor,
 		["Zcash Wallet", "https://github.com/vaklinov/zcash-swing-wallet-ui", false, true, false, false]
-	]
+	],
+	ZRX: erc
 }
 
 wallets["1ST"] = erc;
