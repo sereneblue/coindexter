@@ -247,6 +247,7 @@ var wallets = {
 		["MyNXT", "https://wallet.mynxt.info/", true, false, false, false],
 		["NXT Wallet", "https://nxt.org/download/", false, true, false, false]
 	],
+	OAX: erc,
 	OMG: erc,
 	PART: [
 		["Particl Core", "https://github.com/particl/particl-core/releases/", false, true, false, false]
@@ -266,6 +267,7 @@ var wallets = {
 	PPY: [
 		["Peerplay Core", "https://github.com/PBSA/peerplays-core-gui/releases", false, true, false, false]
 	],
+	QRL: erc,
 	QTUM: null,
 	RDD: [
 		common.coinomi,
