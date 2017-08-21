@@ -14,7 +14,7 @@ var common = {
 }
 
 var erc = [
-	common.ledger
+	common.ledger,
 	["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 	["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
 	common.trezor
