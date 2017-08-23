@@ -42,7 +42,9 @@ var mineable = {
 	ETC: "s",    // same as Ethereum
 	ETH: "s",    // the genesis block contained 60.2m eth going to crowdsale participants + 11.9m split between early contributors and foundation,
 	ETP: "p",    // ICO
+	FAIR: "n",   // Switched from PoW to PoS
 	FCT: "n",
+	FRST: "s",   // 109.9m/110m premined? Looks like a scammy coin
 	FUN: "n",
 	GAME: "m",
 	GAS: "n",

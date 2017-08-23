@@ -149,8 +149,14 @@ var wallets = {
 	ETP: [
 		["Metaverse ETP Wallet", "https://mvs.org/#download", false, true, false, false]
 	],
+	FAIR: [
+		["FairCoin Wallet", "https://download.faircoin.world/", false, true, true, false]
+	],
 	FCT: [
 		["Factom Wallet", "https://docs.factom.com/", false, true, false, false]
+	],
+	FRST: [
+		["Firstcoin Wallet", "http://firstcoinproject.com/", false, true, true, false]
 	],
 	FUN: erc,
 	GAME: [
