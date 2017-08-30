@@ -25,6 +25,7 @@ var mineable = {
 	BTCD: "p",   // 1.5% premined for bounties
 	BTM: "n",
 	BTS: "n",
+	CDT: "n",
 	CFI: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
@@ -52,6 +53,7 @@ var mineable = {
 	GNO: "n",
 	GNT: "n",
 	HMQ: "n",
+	HSR: "n",
 	ICN: "n",
 	ICO: "n",
 	IOC: "n",
@@ -104,6 +106,7 @@ var mineable = {
 	SYS: "p",     // 18% premined
 	TAAS: "n",
 	TKN: "n",
+	TNT: "n",
 	UBQ: "m",
 	USDT: "n",
 	VERI: "n",

@@ -83,6 +83,7 @@ var wallets = {
 		["OpenLedger", "https://bitshares.openledger.info/", true, false, false, false],
 		["SmartWallet", "https://play.google.com/store/apps/details?id=de.bitsharesmunich.smartcoinswallet", false, false, true, false]
 	],
+	CDT: erc,
 	CFI: erc,
 	CVC: erc,
 	DASH: [
@@ -172,6 +173,9 @@ var wallets = {
 	GNO: erc,
 	GNT: erc,
 	HMQ: erc,
+	HSR: [
+		["Hcash Wallet", "https://h.cash/", false, true, false, false]
+	],
 	ICN: erc,
 	ICO: erc,
 	IOC: [
@@ -306,6 +310,7 @@ var wallets = {
 	],
 	TAAS: erc,
 	TKN: erc,
+	TNT: erc,
 	UBQ: [
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
