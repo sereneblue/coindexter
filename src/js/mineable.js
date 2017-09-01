@@ -6,6 +6,7 @@
 // s - significantly premined
 
 var mineable = {
+	ADK: "n",
 	ADT: "n",
 	ADX: "n",
 	AMP: "n",
@@ -52,6 +53,7 @@ var mineable = {
 	GBYTE: "n",
 	GNO: "n",
 	GNT: "n",
+	GXS: "n",
 	HMQ: "n",
 	HSR: "n",
 	ICN: "n",
@@ -73,6 +75,7 @@ var mineable = {
 	MLN: "n",
 	MTL: "n",
 	MYST: "n",
+	NAV: "n",
 	NEO: "n",
 	NLC2: "n",
 	NLG: "p",     // 170m premined
@@ -93,6 +96,7 @@ var mineable = {
 	QTUM: "n",
 	RDD: "n",
 	REP: "n",
+	RISE: "n",
 	RLC: "n",
 	ROUND: "n",
 	SAFEX: "n",

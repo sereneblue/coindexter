@@ -21,6 +21,9 @@ var erc = [
 ]
 
 var wallets = {
+	ADK: [
+		["Aidos Wallet", "https://github.com/AidosKuneen/aidos-wallet/releases", false, true, false, false]
+	],
 	ADT: erc,
 	ADX: erc,
 	ANT: erc,
@@ -172,6 +175,9 @@ var wallets = {
 	],
 	GNO: erc,
 	GNT: erc,
+	GXS: [
+		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
+	],
 	HMQ: erc,
 	HSR: [
 		["Hcash Wallet", "https://h.cash/", false, true, false, false]
@@ -212,6 +218,7 @@ var wallets = {
 		common.ledger,
 		["Litecoin Core", "https://litecoin.org/", false, true, false, false],
 		["LiteVault", "https://www.litevault.net/", true, false, false, false],
+		["LoafWallet", "https://loafwallet.org/", false, false, true, false],
 		common.trezor
 	],
 	LUN: erc,
@@ -231,6 +238,9 @@ var wallets = {
 	MLN: erc,
 	MTL: erc,
 	MYST: erc,
+	NAV: [
+		["NAV Wallet", "https://navcoin.org/downloads/", false, true, true, false]
+	],
 	NEO: [
 		["CoZ Neon Wallet", "https://github.com/CityOfZion/neon-wallet/releases", false, true, false, false],
 		["NEO Desktop Client", "https://github.com/neo-project/neo-gui/releases/", false, true, false, false],
@@ -284,6 +294,9 @@ var wallets = {
 		["ReddCoin Core", "https://www.reddcoin.com/", false, true, false, false]
 	],
 	REP: erc,
+	RISE: [
+		["RISE Wallet", "https://rise.vision/", true, true, false, false]
+	],
 	RLC: erc,
 	ROUND: erc,
 	SAFEX: [
