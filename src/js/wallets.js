@@ -204,6 +204,7 @@ var wallets = {
 	LKK: [
 		["Lykke Wallet", "https://www.lykke.com/", false, false, true, false]
 	],
+	LRC: erc,
 	LSK: [
 		["Lisk Nano", "https://lisk.io/download", false, true, false, false],
 		["Lisk Web Wallets", "https://lisktools.io/pNodes.php", true, false, false, false]
@@ -331,6 +332,9 @@ var wallets = {
 		common.omnicore,
 		common.omniwallet
 	],
+	VIA: [
+		["Viacoin Wallet", "https://viacoin.org/#download", false, true, false, false]
+	],
 	VERI: erc,
 	VSL: erc,
 	WAVES: [
@@ -340,6 +344,7 @@ var wallets = {
 		["Waves Wallet (iOS)", "https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8", false, false, true, false]
 	],
 	WINGS: erc,
+	WTC: erc,
 	XAS: [
 		["Asch Lite Client", "https://www.asch.so/", false, true, false, false]
 	],

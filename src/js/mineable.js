@@ -64,6 +64,7 @@ var mineable = {
 	LBC: "p",
 	LEO: "p",    // 50m premined
 	LKK: "n",
+	LRC: "n",
 	LSK: "n",
 	LTC: "m",
 	LUN: "n",
@@ -118,6 +119,7 @@ var mineable = {
 	VSL: "n",
 	WAVES: "n",
 	WINGS: "n",
+	WTC: "n",
 	XAS: "p",     // ICO
 	XCP: "n",
 	XEL: "n",
