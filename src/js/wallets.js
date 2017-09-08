@@ -20,6 +20,12 @@ var erc = [
 	common.trezor
 ]
 
+var xcp = [
+	["Counterwallet", "https://wallet.counterwallet.io/", true, false, false, false],
+	["FreeWallet", "https://freewallet.io/", false, false, true, false],
+	["IndieSquare", "https://wallet.indiesquare.me/", false, false, true, false],
+]
+
 var wallets = {
 	ADK: [
 		["Aidos Wallet", "https://github.com/AidosKuneen/aidos-wallet/releases", false, true, false, false]
@@ -71,7 +77,7 @@ var wallets = {
 		["Copay", "https://copay.io/", true, true, true, false],
 		["Electrum", "https://electrum.org", false, true, false, false],
 		common.exodus,
-		["Freewallet", "https://freewallet.io/updates/", false, false, true, false],
+		["FreeWallet", "https://freewallet.io/", false, false, true, false],
 		["Green Address", "https://greenaddress.it/en/", true, true, true, false],
 		common.jaxx,
 		common.keepkey,
@@ -237,6 +243,7 @@ var wallets = {
 		["IOTAmobile", "https://iota.tools/wallet", false, false, true, false]
 	],
 	MLN: erc,
+	MTH: erc,
 	MTL: erc,
 	MYST: erc,
 	NAV: [
@@ -325,6 +332,7 @@ var wallets = {
 	TAAS: erc,
 	TKN: erc,
 	TNT: erc,
+	TRIG: xcp,
 	UBQ: [
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
@@ -348,11 +356,7 @@ var wallets = {
 	XAS: [
 		["Asch Lite Client", "https://www.asch.so/", false, true, false, false]
 	],
-	XCP: [
-		["Counterwallet", "https://counterwallet.io/", true, false, false, false],
-		["Freewallet", "https://freewallet.io/updates/", false, false, true, false],
-		["Indiesquare", "https://wallet.indiesquare.me/", false, false, true, false]
-	],
+	XCP: xcp,
 	XEM: [
 		["Nano Wallet", "https://www.nem.io/install.html", false, true, false, false],
 		["NEM Wallet", "https://www.nem.io/install.html", false, false, true, false]
