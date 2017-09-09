@@ -28,6 +28,7 @@ var mineable = {
 	BTS: "n",
 	CDT: "n",
 	CFI: "n",
+	CLOAK: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
 	DCR: "p",    // 8% premined
@@ -119,6 +120,7 @@ var mineable = {
 	VERI: "n",
 	VIA: "p",     // ICO
 	VSL: "n",
+	VTC: "m",
 	WAVES: "n",
 	WINGS: "n",
 	WTC: "n",

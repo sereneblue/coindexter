@@ -94,6 +94,10 @@ var wallets = {
 	],
 	CDT: erc,
 	CFI: erc,
+	CLOAK: [
+		["Cloak Wallet", "https://play.google.com/store/apps/details?id=com.cloakcoin.wallet&hl=en", true, false, false, false]
+		["CloakCoin Wallet", "https://www.cloakcoin.com/en/downloads.html", false, true, false, false],
+	],
 	CVC: erc,
 	DASH: [
 		common.coinbase,
@@ -345,6 +349,11 @@ var wallets = {
 	],
 	VERI: erc,
 	VSL: erc,
+	VTC: [
+		common.coinomi,
+		["Electrum-VTC", "https://github.com/vertcoin/electrum-vtc/releases/", false, true, false, false],
+		["Vertcoin Wallet", "https://vertcoin.org/", true, true, false, false]
+	],
 	WAVES: [
 		["WavesLiteApp", "https://chrome.google.com/webstore/detail/wavesliteapp/kfmcaklajknfekomaflnhkjjkcjabogm", false, true, false, false],
 		["Waves Lite Client", "https://github.com/wavesplatform/WavesGUI/releases", false, true, false, false],

@@ -106,14 +106,14 @@
 				Please bookmark your custom URL.
 				<br/>
 				<br/>
-				<h5 class="ui inverted header">Base Currency</h5>
+				<h5 class="ui inverted header">Base currency</h5>
 				<select class="ui fluid dropdown" id="base-currency">
-				  <option value="">Base Currency</option>
+				  <option value="">Base currency</option>
 				  <option value="BTC">BTC</option>
 				  <option :value="currency" v-for="currency in Object.keys(fiat)">{{ currency }}</option>
 				</select>
 				<br/>
-				<h5 class="ui inverted header">Number of Currencies to Display</h5>
+				<h5 class="ui inverted header">Max num of currencies to display</h5>
 				<div class="ui input">
 				  <input type="number" min="100" id="num-display" placeholder="Num. of currencies" value="100">
 				</div>
@@ -121,7 +121,7 @@
 				<br/>
 				<div class="ui checkbox">
 				  <input type="checkbox" id="unmineable">
-				  <label>Remove Unmineable</label>
+				  <label>Remove unmineable</label>
 				</div>
 				<br/>
 				<button class="ui teal fluid button" onclick="generateURL();">

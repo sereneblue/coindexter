@@ -173,14 +173,14 @@ var app = new Vue({
 })
 
 $(document).ready(function() {
-	if (window.location.hash.match(/[A-Z]{3}-\d{3,4}-[tf]/)) {
+	if (window.location.hash.match(/[A-Z]{3}-\d{2,4}-[tf]/)) {
 		var bits = window.location.hash.split('-');
 		var arr = Object.keys(app.fiat);
 		bits[0] = bits[0].substring(1,);
 		if (arr.indexOf(bits[0]) || bits[0] == "BTC") {
 			app.settings.currency = bits[0];
 		}
-		if (Number(bits[1]) >= 100) {
+		if (Number(bits[1]) >= 10) {
 			app.settings.num_display = bits[1];
 		}
 		app.settings.removeUnmineable = (bits[2] == "t" ? true : false);
