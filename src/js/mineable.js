@@ -89,7 +89,7 @@ var mineable = {
 	NXS: "m",
 	NXT: "n",
 	OAX: "n",
-	OK: "",
+	OK: "n",
 	OMG: "n",
 	PART: "n",
 	PAY: "n",
