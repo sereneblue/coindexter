@@ -36,7 +36,7 @@ var mineable = {
 	DCT: "n",
 	DGB: "p",    // 100m premined
 	DGD: "n",
-	DICE: "n"
+	DICE: "n",
 	DLT: "n",
 	DNT: "n",
 	DOGE: "m",
