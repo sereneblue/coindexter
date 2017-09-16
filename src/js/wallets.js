@@ -20,6 +20,11 @@ var erc = [
 	common.trezor
 ]
 
+var omni = [
+	common.omnicore,
+	common.omniwallet
+]
+
 var xcp = [
 	["Counterwallet", "https://wallet.counterwallet.io/", true, false, false, false],
 	["FreeWallet", "https://freewallet.io/", false, false, true, false],
@@ -32,6 +37,8 @@ var wallets = {
 	],
 	ADT: erc,
 	ADX: erc,
+	AE: erc,
+	AMP: omni,
 	ANT: erc,
 	ARDR: [
 		["MyNXT", "https://wallet.mynxt.info/", true, false, false, false],
@@ -109,7 +116,6 @@ var wallets = {
 		common.ledger,
 		common.trezor
 	],
-	DICE: erc,
 	DCR: [
 		["dcrwallet", "https://github.com/decred/dcrwallet", false, true, false, false],
 		["Decred Web Wallet", "https://wallet.decred.org/", true, false, false, false]
@@ -121,6 +127,8 @@ var wallets = {
 		["DigiByte Wallet", "https://digibyte.co/digibyte-wallets", false, true, true, false]
 	],
 	DGD: erc,
+	DICE: erc,
+	DLT: erc,
 	DNT: erc,
 	DOGE: [
 		common.coinomi,
@@ -233,10 +241,7 @@ var wallets = {
 		common.trezor
 	],
 	LUN: erc,
-	MAID: [
-		common.omnicore,
-		common.omniwallet
-	],
+	MAID: omni,
 	MCAP: erc,
 	MCO: erc,
 	MGO: erc,
@@ -280,6 +285,9 @@ var wallets = {
 		["NXT Wallet", "https://nxt.org/download/", false, true, false, false]
 	],
 	OAX: erc,
+	OK: [
+		["OKCash Wallet", "http://okcash.co/#download", false, true, false, false]
+	],
 	OMG: erc,
 	PART: [
 		["Particl Core", "https://github.com/particl/particl-core/releases/", false, true, false, false]
@@ -299,8 +307,11 @@ var wallets = {
 	PPY: [
 		["Peerplay Core", "https://github.com/PBSA/peerplays-core-gui/releases", false, true, false, false]
 	],
+	PTOY: erc,
 	QRL: erc,
-	QTUM: null,
+	QTUM: [
+		["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
+	],
 	RDD: [
 		common.coinomi,
 		["ReddCoin Core", "https://www.reddcoin.com/", false, true, false, false]
@@ -340,10 +351,7 @@ var wallets = {
 	UBQ: [
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
-	USDT: [
-		common.omnicore,
-		common.omniwallet
-	],
+	USDT: omni,
 	VIA: [
 		["Viacoin Wallet", "https://viacoin.org/#download", false, true, false, false]
 	],

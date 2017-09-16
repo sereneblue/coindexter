@@ -9,6 +9,7 @@ var mineable = {
 	ADK: "n",
 	ADT: "n",
 	ADX: "n",
+	AE: "n",
 	AMP: "n",
 	ANT: "n",
 	ARDR: "n",
@@ -35,7 +36,8 @@ var mineable = {
 	DCT: "n",
 	DGB: "p",    // 100m premined
 	DGD: "n",
-	DICE: "n",
+	DICE: "n"
+	DLT: "n",
 	DNT: "n",
 	DOGE: "m",
 	EB3: "s",    // Looks like a scam http://archive.is/7rjAz
@@ -87,6 +89,7 @@ var mineable = {
 	NXS: "m",
 	NXT: "n",
 	OAX: "n",
+	OK: "",
 	OMG: "n",
 	PART: "n",
 	PAY: "n",
@@ -95,6 +98,7 @@ var mineable = {
 	PPC: "m",
 	PPT: "n",
 	PPY: "n",
+	PTOY: "n",
 	QRL: "n",
 	QTUM: "n",
 	RDD: "n",
