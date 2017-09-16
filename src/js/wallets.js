@@ -28,7 +28,7 @@ var omni = [
 var xcp = [
 	["Counterwallet", "https://wallet.counterwallet.io/", true, false, false, false],
 	["FreeWallet", "https://freewallet.io/", false, false, true, false],
-	["IndieSquare", "https://wallet.indiesquare.me/", false, false, true, false],
+	["IndieSquare", "https://wallet.indiesquare.me/", false, false, true, false]
 ]
 
 var wallets = {
