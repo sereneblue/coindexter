@@ -105,6 +105,7 @@ var wallets = {
 		["Cloak Wallet", "https://play.google.com/store/apps/details?id=com.cloakcoin.wallet&hl=en", true, false, false, false]
 		["CloakCoin Wallet", "https://www.cloakcoin.com/en/downloads.html", false, true, false, false],
 	],
+	CTR: erc,
 	CVC: erc,
 	DASH: [
 		common.coinbase,
@@ -116,6 +117,7 @@ var wallets = {
 		common.ledger,
 		common.trezor
 	],
+	DCN: erc,
 	DCR: [
 		["dcrwallet", "https://github.com/decred/dcrwallet", false, true, false, false],
 		["Decred Web Wallet", "https://wallet.decred.org/", true, false, false, false]
@@ -208,10 +210,12 @@ var wallets = {
 	ION: [
 		["ION Wallet", "https://ionomy.com/download", false, true, false, false]
 	],
+	KIN: erc,
 	KMD: [
 		["Komodo Wallet", "https://github.com/ca333/komodoGUI/releases", false, true, false, false],
 		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true]
 	],
+	KNC: erc,
 	LBC: [
 		common.coinomi,
 		["lbrycrd", "https://github.com/lbryio/lbrycrd/releases", false, true, false, false]
@@ -219,6 +223,7 @@ var wallets = {
 	LEO: [
 		["LEOCoin Wallet", "http://www.leocoin.org/", false, true, false, false]
 	],
+	LINK: erc,
 	LKK: [
 		["Lykke Wallet", "https://www.lykke.com/", false, false, true, false]
 	],

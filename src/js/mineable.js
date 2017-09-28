@@ -30,8 +30,10 @@ var mineable = {
 	CDT: "n",
 	CFI: "n",
 	CLOAK: "n",
+	CTR: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
+	DCN: "n",
 	DCR: "p",    // 8% premined
 	DCT: "n",
 	DGB: "p",    // 100m premined
@@ -63,8 +65,11 @@ var mineable = {
 	ICO: "n",
 	IOC: "n",
 	ION: "n",
+	KIN: "n",
 	KMD: "s",    // Initial supply of 100m for ICO and devs
+	KNC: "n",
 	LBC: "p",
+	LINK: "n",
 	LEO: "p",    // 50m premined
 	LKK: "n",
 	LRC: "n",
