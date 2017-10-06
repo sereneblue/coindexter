@@ -22,7 +22,7 @@
 				<div><i class="ui tiny empty circular inverted green icon"></i>Fair launch/mineable</div>
 			    <div><i class="ui tiny empty circular inverted olive icon"></i>Premined</div>
 			    <div><i class="ui tiny empty circular inverted yellow icon"></i>Instamine</div>
-			    <div><i class="ui tiny empty circular inverted orange icon"></i>Significantly Premined</div>
+			    <div><i class="ui tiny empty circular inverted blue icon"></i>Significantly Premined</div>
 			    <div><i class="ui tiny empty circular inverted red icon"></i>Not mineable</div>
 			    <div><i class="ui tiny empty circular inverted grey icon"></i>Unknown</div>
 			</div>
@@ -199,7 +199,7 @@
 							<div class="ui empty tiny green horizontal circular label" v-if="mineable(currency.symbol) == 'm'"></div>
 							<div class="ui empty tiny olive horizontal circular label" v-else-if="mineable(currency.symbol) == 'p'"></div>
 							<div class="ui empty tiny yellow horizontal circular label" v-else-if="mineable(currency.symbol) == 'i'"></div>
-							<div class="ui empty tiny orange horizontal circular label" v-else-if="mineable(currency.symbol) == 's'"></div>
+							<div class="ui empty tiny blue horizontal circular label" v-else-if="mineable(currency.symbol) == 's'"></div>
 							<div class="ui empty tiny red horizontal circular label" v-else-if="mineable(currency.symbol) == 'n'"></div>
 							<div class="ui empty tiny grey horizontal circular label" v-else></div>
 							{{ currency.name }}
