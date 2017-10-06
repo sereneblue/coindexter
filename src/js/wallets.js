@@ -32,6 +32,9 @@ var xcp = [
 ]
 
 var wallets = {
+	ADA: [
+		["Daedalus Wallet", "https://daedaluswallet.io/", false, true, false, false]
+	],
 	ADK: [
 		["Aidos Wallet", "https://github.com/AidosKuneen/aidos-wallet/releases", false, true, false, false]
 	],
@@ -210,6 +213,7 @@ var wallets = {
 	ION: [
 		["ION Wallet", "https://ionomy.com/download", false, true, false, false]
 	],
+	KICK: erc,
 	KIN: erc,
 	KMD: [
 		["Komodo Wallet", "https://github.com/ca333/komodoGUI/releases", false, true, false, false],
@@ -249,6 +253,7 @@ var wallets = {
 	MAID: omni,
 	MCAP: erc,
 	MCO: erc,
+	MDA: erc,
 	MGO: erc,
 	MIOTA: [
 		["IOTA GUI Wallet", "https://github.com/iotaledger/wallet/releases", false, true, false, false],
@@ -330,10 +335,12 @@ var wallets = {
 	SAFEX: [
 		["Safe Exchange Wallet", "https://safex.io/", false, true, false, false],
 	],
+	SALT: erc,
 	SC: [
 		["Siacoin Wallet", "http://sia.tech/apps/", false, true, false, false],
 	],
 	SNGLS: erc,
+	SNM: erc,
 	SNT: erc,
 	STEEM: [
 		["Steemit wallet", "https://steemit.com", true, false, false, false]
@@ -345,6 +352,7 @@ var wallets = {
 		["stratisX", "https://github.com/stratisproject/stratisX/releases/", false, true, false, false]
 	],
 	STX: erc,
+	SUB: erc,
 	SYS: [
 		common.coinomi,
 		["Syscoin Wallet", "https://github.com/syscoin/syscoin/releases", false, true, false, false]
@@ -353,14 +361,16 @@ var wallets = {
 	TKN: erc,
 	TNT: erc,
 	TRIG: xcp,
+	TRX: erc,
 	UBQ: [
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
 	USDT: omni,
+	VEN: erc,
+	VERI: erc,
 	VIA: [
 		["Viacoin Wallet", "https://viacoin.org/#download", false, true, false, false]
 	],
-	VERI: erc,
 	VSL: erc,
 	VTC: [
 		common.coinomi,

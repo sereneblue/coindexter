@@ -6,6 +6,7 @@
 // s - significantly premined
 
 var mineable = {
+	ADA: "n",
 	ADK: "n",
 	ADT: "n",
 	ADX: "n",
@@ -65,6 +66,7 @@ var mineable = {
 	ICO: "n",
 	IOC: "n",
 	ION: "n",
+	KICK: "n",
 	KIN: "n",
 	KMD: "s",    // Initial supply of 100m for ICO and devs
 	KNC: "n",
@@ -79,6 +81,7 @@ var mineable = {
 	MAID: "n",
 	MCAP: "n",
 	MCO: "n",
+	MDA: "n",
 	MGO: "n",
 	MIOTA: "n",
 	MLN: "n",
@@ -112,20 +115,25 @@ var mineable = {
 	RLC: "n",
 	ROUND: "n",
 	SAFEX: "n",
+	SALT: "n",
 	SC: "m",
 	SNGLS: "n",
+	SNM: "n",
 	SNT: "n",
 	STEEM: "m",
 	STORJ: "n",
 	STRAT: "n",
 	STX: "n",
+	SUB: "n",
 	SYS: "p",     // 18% premined
 	TAAS: "n",
 	TKN: "n",
 	TNT: "n",
 	TRIG: "n",
+	TRX: "n",
 	UBQ: "m",
 	USDT: "n",
+	VEN: "n",
 	VERI: "n",
 	VIA: "p",     // ICO
 	VSL: "n",
