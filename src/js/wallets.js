@@ -50,6 +50,9 @@ var wallets = {
 	ARK: [
 		["Ark Wallet", "https://github.com/ArkEcosystem/ark-desktop/releases", false, true, false, false]
 	],
+	ATM: [
+		erc
+	],
 	BAT: erc,
 	BCC: [
 		["Bitconnect Wallet", "https://bitconnectcoin.co/download", false, true, false, false],
@@ -93,6 +96,7 @@ var wallets = {
 		common.keepkey,
 		common.ledger,
 		["MyCelium", "https://wallet.mycelium.com/", false, false, true, false],
+		["Samourai Wallet", "https://samouraiwallet.com/", false, false, true, false],
 		common.trezor,
 		["Xapo", "https://www.xapo.com/", true, false, false, false]
 	],
@@ -123,7 +127,8 @@ var wallets = {
 	DCN: erc,
 	DCR: [
 		["dcrwallet", "https://github.com/decred/dcrwallet", false, true, false, false],
-		["Decred Web Wallet", "https://wallet.decred.org/", true, false, false, false]
+		["Decred Web Wallet", "https://wallet.decred.org/", true, false, false, false],
+		["Decrediton", "https://github.com/decred/decrediton/releases", false, true, false, false]
 	],
 	DCT: [
 		["Decent", "https://decent.ch/en/download/", false, true, false, false]
@@ -262,6 +267,9 @@ var wallets = {
 		["IOTAmobile", "https://iota.tools/wallet", false, false, true, false]
 	],
 	MLN: erc,
+	MONA: [
+		["Monacoin Wallet", "https://monacoin.org/#download", false, true, false, false]
+	],
 	MTH: erc,
 	MTL: erc,
 	MYST: erc,
@@ -318,6 +326,9 @@ var wallets = {
 		["Peerplay Core", "https://github.com/PBSA/peerplays-core-gui/releases", false, true, false, false]
 	],
 	PTOY: erc,
+	PURA: [
+		["Pura Core", "https://github.com/PURAcore/PURA/releases", false, true, false, false]
+	],
 	QRL: erc,
 	QTUM: [
 		["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
@@ -325,6 +336,9 @@ var wallets = {
 	RDD: [
 		common.coinomi,
 		["ReddCoin Core", "https://www.reddcoin.com/", false, true, false, false]
+	],
+	REC: [
+		["Regalcoin", "https://wallet.regalcoin.info/", false, true, false, false]
 	],
 	REP: erc,
 	RISE: [
@@ -409,6 +423,7 @@ var wallets = {
 		["Stellar Portal", "https://portal.willet.io/", true, false, false, false]
 	],
 	XMR: [
+		["Monerujo", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
 		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false]
 	],
