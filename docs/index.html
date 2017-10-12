@@ -45,7 +45,7 @@
 			<div class="item" v-show="state == 'calculator'">
 				<h5 class="ui inverted centered header">Price Calculator</h5>
 				<div class="ui right labeled fluid input">
-				  <input type="number" min="0" id="crypto-amount" v-model=crypto_amount oninput="app.calculate('fiat');">
+				  <input id="crypto-amount" v-model=crypto_amount oninput="app.calculate('fiat');">
 				  <div class="ui dropdown label" id="crypto-dropdown">
 				    <div class="text">BTC</div>
 				    <i class="dropdown icon"></i>
