@@ -173,9 +173,31 @@ var app = new Vue({
 	},
 	currencyList: function () {
 		var list = [];
-		for(var currency of this.currencies){
-		   list.push(currency.symbol);
+		var _iteratorNormalCompletion = true;
+		var _didIteratorError = false;
+		var _iteratorError = undefined;
+
+		try {
+				for (var _iterator = this.currencies[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+						var currency = _step.value;
+
+						list.push(currency.symbol);
+				}
+		} catch (err) {
+				_didIteratorError = true;
+				_iteratorError = err;
+		} finally {
+				try {
+						if (!_iteratorNormalCompletion && _iterator.return) {
+								_iterator.return();
+						}
+				} finally {
+						if (_didIteratorError) {
+								throw _iteratorError;
+						}
+				}
 		}
+
 		return list.sort();
 	},
 	profit: function () {
