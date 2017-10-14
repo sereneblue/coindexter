@@ -85,38 +85,55 @@ var app = new Vue({
 		return mineable[symbol];
 	},
 	updateData: function () {
+		var _this = this;
+
 		url = 'https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.num_display;
 		if (app.settings.currency != "BTC" && app.settings.currency != "USD") {
-			url += ("&convert=" + app.settings.currency);
+			url += "&convert=" + app.settings.currency;
 		};
 
-		this.$http.get(url).then(response => {
-			this.currencies = response.body;
-			let coins = this.currencies.slice();
-			coins.sort(function(a, b){
+		this.$http.get(url).then(function (response) {
+			_this.currencies = response.body;
+			var coins = _this.currencies.slice();
+			coins.sort(function (a, b) {
 				return Number(a.percent_change_24h) - Number(b.percent_change_24h);
 			});
-			this.topLosses = [
-				jQuery.extend({}, coins[0]),
-				jQuery.extend({}, coins[1]),
-				jQuery.extend({}, coins[2])
-			]
-			coins.sort(function(a, b){
+			_this.topLosses = [jQuery.extend({}, coins[0]), jQuery.extend({}, coins[1]), jQuery.extend({}, coins[2])];
+			coins.sort(function (a, b) {
 				return Number(b.percent_change_24h) - Number(a.percent_change_24h);
 			});
-			this.topGains = [
-				jQuery.extend({}, coins[0]),
-				jQuery.extend({}, coins[1]),
-				jQuery.extend({}, coins[2])
-			];
+			_this.topGains = [jQuery.extend({}, coins[0]), jQuery.extend({}, coins[1]), jQuery.extend({}, coins[2])];
 
-			for(var currency of this.currencies){
-			   this.cryptoPrices[currency.symbol] = Number(currency.price_usd);
-			};
+			var _iteratorNormalCompletion = true;
+			var _didIteratorError = false;
+			var _iteratorError = undefined;
 
-			this.$http.get('https://shapeshift.io/getcoins').then(res => {
+			try {
+				for (var _iterator = _this.currencies[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+					var currency = _step.value;
+
+					_this.cryptoPrices[currency.symbol] = Number(currency.price_usd);
+				}
+			} catch (err) {
+				_didIteratorError = true;
+				_iteratorError = err;
+			} finally {
+				try {
+					if (!_iteratorNormalCompletion && _iterator.return) {
+						_iterator.return();
+					}
+				} finally {
+					if (_didIteratorError) {
+						throw _iteratorError;
+					}
+				}
+			}
+
+			;
+
+			_this.$http.get('https://shapeshift.io/getcoins').then(function (res) {
 				app.shifts = res.body;
-				this.currencies.forEach(function(currency, idx) {
+				_this.currencies.forEach(function (currency, idx) {
 					if (app.shifts[currency.symbol] && app.shifts[currency.symbol].status == "available") {
 						// using the 'last_updated' property for canShift
 						// something about reactivity, so I'll just use a small hack :)
@@ -126,24 +143,24 @@ var app = new Vue({
 					}
 				});
 			});
-			this.$http.get('https://api.fixer.io/latest?base=USD').then(response => {
-				this.exchangeRates = response.body;
-				$('#crypto-dropdown').dropdown('setting', 'onChange', function(){
+			_this.$http.get('https://api.fixer.io/latest?base=USD').then(function (response) {
+				_this.exchangeRates = response.body;
+				$('#crypto-dropdown').dropdown('setting', 'onChange', function () {
 					app.calculate('fiat');
 				});
-				$('#fiat-dropdown').dropdown('setting', 'onChange', function(){
+				$('#fiat-dropdown').dropdown('setting', 'onChange', function () {
 					app.calculate('crypto');
 				});
-				$('#investment-crypto').dropdown('setting', 'onChange', function(val){
+				$('#investment-crypto').dropdown('setting', 'onChange', function (val) {
 					app.current_investment_price();
 				});
-				$('#target-fiat').dropdown('setting', 'onChange', function(){
+				$('#target-fiat').dropdown('setting', 'onChange', function () {
 					app.current_investment_price();
 				});
 			});
 		});
-		this.$http.get('https://api.coinmarketcap.com/v1/global/').then(response => {
-			this.stats = response.body;
+		this.$http.get('https://api.coinmarketcap.com/v1/global/').then(function (response) {
+			_this.stats = response.body;
 		});
 	},
 	wallet: function (symbol) {
