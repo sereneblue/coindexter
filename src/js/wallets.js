@@ -2,12 +2,16 @@
 // name, site, is_online, is_desktop, is_mobile, is_hardware
 
 var common = {
+	bitcoin: ["Bitcoin.com Wallet", "https://www.bitcoin.com/choose-your-wallet/bitcoin-com-wallet", true, true, true, false],
+	blockchain: ["Blockchain.info Wallet", "https://blockchain.info/wallet/#/", true, false, false, false],
+	breadwallet: ["breadwallet", "https://breadwallet.com/", false, false, true, false],
 	coinbase: ["Coinbase", "https://coinbase.com", true, false, false, false],
 	coinomi: ["Coinomi", "https://coinomi.com/", false, false, true, false],
 	exodus: ["Exodus", "https://www.exodus.io/", false, true, false, false],
 	jaxx: ["Jaxx", "https://jaxx.io/", false, true, true, false],
 	keepkey: ["KeepKey", "https://www.keepkey.com/", false, false, false, true],
 	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+	mobi: ["Mobi", "https://www.mobi.me/", true, false, true, false],
 	omnicore: ["OmniCore", "http://www.omnilayer.org/download.html", false, true, false, false],
 	omniwallet: ["OmniWallet", "https://www.omniwallet.org/", true, false, false, false],
 	trezor: ["Trezor", "https://trezor.io/", false, false, false, true]
@@ -59,9 +63,14 @@ var wallets = {
 		["Bitconnect Web Wallet", "http://www.bitconnect.co/", true, false, false, false]
 	],
 	BCH: [
+		common.bitcoin,
+		common.blockchain,
+		common.breadwallet,
 		common.coinomi,
 		["Electron Cash", "http://www.electroncash.org/", false, true, false, false],
+		common.exodus,
 		common.ledger,
+		common.mobi,
 		common.trezor
 	],
 	BCN: [
@@ -81,10 +90,11 @@ var wallets = {
 	BQX: erc,
 	BTC: [
 		["Armory", "https://www.bitcoinarmory.com/", false, true, false, false],
+		common.bitcoin,
 		["BitcoinCore", "https://bitcoin.org/en/download", false, true, false, false],
 		["BitGo", "https://www.bitgo.com/", true, false, false, false],
-		["Blockchain.info", "https://blockchain.info", true, false, false, false],
-		["breadwallet", "https://breadwallet.com/", false, false, true, false],
+		common.blockchain,
+		common.breadwallet,
 		common.coinbase,
 		common.coinomi,
 		["Copay", "https://copay.io/", true, true, true, false],
@@ -95,6 +105,7 @@ var wallets = {
 		common.jaxx,
 		common.keepkey,
 		common.ledger,
+		common.mobi,
 		["MyCelium", "https://wallet.mycelium.com/", false, false, true, false],
 		["Samourai Wallet", "https://samouraiwallet.com/", false, false, true, false],
 		common.trezor,
@@ -128,7 +139,8 @@ var wallets = {
 	DCR: [
 		["dcrwallet", "https://github.com/decred/dcrwallet", false, true, false, false],
 		["Decred Web Wallet", "https://wallet.decred.org/", true, false, false, false],
-		["Decrediton", "https://github.com/decred/decrediton/releases", false, true, false, false]
+		["Decrediton", "https://github.com/decred/decrediton/releases", false, true, false, false],
+		common.exodus
 	],
 	DCT: [
 		["Decent", "https://decent.ch/en/download/", false, true, false, false]
@@ -165,6 +177,7 @@ var wallets = {
 		common.ledger,
 		["MetaMask", "https://metamask.io/", false, true, false, false],
 		["Mist", "https://github.com/ethereum/mist/releases", false, true, false, false],
+		common.mobi,
 		["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 		["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
 		common.trezor,
@@ -252,6 +265,7 @@ var wallets = {
 		["Litecoin Core", "https://litecoin.org/", false, true, false, false],
 		["LiteVault", "https://www.litevault.net/", true, false, false, false],
 		["LoafWallet", "https://loafwallet.org/", false, false, true, false],
+		common.mobi,
 		common.trezor
 	],
 	LUN: erc,
