@@ -215,7 +215,7 @@ $(document).ready(function() {
 	if (window.location.hash.match(/[A-Z]{3}-\d{2,4}-[tf]/)) {
 		var bits = window.location.hash.split('-');
 		var arr = Object.keys(app.fiat);
-		bits[0] = bits[0].substring(1,);
+		bits[0] = bits[0].substring(1);
 		if (arr.indexOf(bits[0]) || bits[0] == "BTC") {
 			app.settings.currency = bits[0];
 		}
