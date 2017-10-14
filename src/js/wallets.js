@@ -256,6 +256,7 @@ var wallets = {
 	],
 	LUN: erc,
 	MAID: omni,
+	MANA: erc,
 	MCAP: erc,
 	MCO: erc,
 	MDA: erc,
@@ -332,6 +333,10 @@ var wallets = {
 	QRL: erc,
 	QTUM: [
 		["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
+	],
+	RBY: [
+		common.coinomi,
+		["Rubycoin Wallet", "https://www.rubycoin.org/download", false, true, false, false]
 	],
 	RDD: [
 		common.coinomi,
