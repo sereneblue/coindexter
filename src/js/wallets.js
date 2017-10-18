@@ -31,7 +31,6 @@ var omni = [
 
 var xcp = [
 	["Counterwallet", "https://wallet.counterwallet.io/", true, false, false, false],
-	["FreeWallet", "https://freewallet.io/", false, false, true, false],
 	["IndieSquare", "https://wallet.indiesquare.me/", false, false, true, false]
 ]
 
@@ -100,7 +99,6 @@ var wallets = {
 		["Copay", "https://copay.io/", true, true, true, false],
 		["Electrum", "https://electrum.org", false, true, false, false],
 		common.exodus,
-		["FreeWallet", "https://freewallet.io/", false, false, true, false],
 		["Green Address", "https://greenaddress.it/en/", true, true, true, false],
 		common.jaxx,
 		common.keepkey,
