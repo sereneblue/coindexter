@@ -36,3 +36,8 @@ h5 {
 .ui.three.column > .column {
 	padding-left: 0;
 }
+
+.warn-msg {
+	padding-top: 1em;
+	color: red;
+}
