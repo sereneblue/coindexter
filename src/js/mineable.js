@@ -15,6 +15,8 @@ var mineable = {
 	ANT: "n",
 	ARDR: "n",
 	ARK: "n",
+	AST: "n",
+	ATB: "p",	 // ICO, mining will be available. Also uses PoS?? Looks like a hybrid?
 	ATM: "n",
 	BAT: "n",
 	BCC: "p",    // >1m BCC sold in ICO
@@ -92,6 +94,7 @@ var mineable = {
 	MTL: "n",
 	MYST: "n",
 	NAV: "n",
+	NEBL: "n",
 	NEO: "n",
 	NLC2: "n",
 	NLG: "p",     // 170m premined
@@ -123,9 +126,11 @@ var mineable = {
 	SAFEX: "n",
 	SALT: "n",
 	SC: "m",
+	SMART: "m",    // this is ridiculous: https://explorer.smartcash.cc/richlist
 	SNGLS: "n",
 	SNM: "n",
 	SNT: "n",
+	SPRTS: "p",    // mixed pow/pos
 	STEEM: "m",
 	STORJ: "n",
 	STRAT: "n",

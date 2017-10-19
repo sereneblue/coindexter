@@ -53,6 +53,10 @@ var wallets = {
 	ARK: [
 		["Ark Wallet", "https://github.com/ArkEcosystem/ark-desktop/releases", false, true, false, false]
 	],
+	AST: erc,
+	ATB: [
+		["ATBCoin Wallet", "https://atbcoin.com/download-en/", false, true, false, false]
+	],
 	ATM: [
 		erc
 	],
@@ -233,7 +237,7 @@ var wallets = {
 	KIN: erc,
 	KMD: [
 		["Komodo Wallet", "https://github.com/ca333/komodoGUI/releases", false, true, false, false],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true]
+		common.ledger
 	],
 	KNC: erc,
 	LBC: [
@@ -289,6 +293,9 @@ var wallets = {
 	NAV: [
 		["NAV Wallet", "https://navcoin.org/downloads/", false, true, true, false]
 	],
+	NEBL: [
+		["Neblio Wallet", "https://nebl.io/wallets/", false, true, true, false]
+	],
 	NEO: [
 		["CoZ Neon Wallet", "https://github.com/CityOfZion/neon-wallet/releases", false, true, false, false],
 		["NEO Desktop Client", "https://github.com/neo-project/neo-gui/releases/", false, true, false, false],
@@ -326,6 +333,7 @@ var wallets = {
 	PAY: erc,
 	PIVX: [
 		common.coinomi,
+		common.ledger,
 		["PIVX Mobile Wallet", "https://play.google.com/store/apps/details?id=pivx.tech.furszy", false, false, true, false],
 		["PIVX Wallet", "https://pivx.org/get-pivx/wallet/", false, true, false, false]
 	],
@@ -370,16 +378,23 @@ var wallets = {
 	SC: [
 		["Siacoin Wallet", "http://sia.tech/apps/", false, true, false, false],
 	],
+	SMART: [
+		["SmartCash Qt", "https://smartcash.cc/", false, true, false, false],
+		["SmartCash Web Wallet", "https://wallet.smartcash.cc", true, false, false, false]
+	],
 	SNGLS: erc,
 	SNM: erc,
 	SNT: erc,
+	SPRTS: [
+		["Sprouts Wallet", "https://sproutscommunity.wordpress.com/", false, true, false, false]
+	],
 	STEEM: [
 		["Steemit wallet", "https://steemit.com", true, false, false, false]
 	],
 	STORJ: erc,
 	STRAT: [
 		["Electrum-Stratis", "https://github.com/stratisproject/electrum-stratis/releases/", false, true, false, false],
-		["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+		common.ledger,
 		["stratisX", "https://github.com/stratisproject/stratisX/releases/", false, true, false, false]
 	],
 	STX: erc,
@@ -394,18 +409,21 @@ var wallets = {
 	TRIG: xcp,
 	TRX: erc,
 	UBQ: [
+		common.ledger,
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
 	USDT: omni,
 	VEN: erc,
 	VERI: erc,
 	VIA: [
+		common.ledger,
 		["Viacoin Wallet", "https://viacoin.org/#download", false, true, false, false]
 	],
 	VSL: erc,
 	VTC: [
 		common.coinomi,
 		["Electrum-VTC", "https://github.com/vertcoin/electrum-vtc/releases/", false, true, false, false],
+		common.ledger,
 		["Vertcoin Wallet", "https://vertcoin.org/", true, true, false, false]
 	],
 	WAVES: [
