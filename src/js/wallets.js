@@ -483,6 +483,9 @@ var wallets = {
 		common.trezor,
 		["Zcash Wallet", "https://github.com/vaklinov/zcash-swing-wallet-ui", false, true, false, false]
 	],
+	ZEN: [
+		["ZenCash Swing Wallet", "https://github.com/ZencashOfficial/zencash-swing-wallet-ui/releases", false, true, false, false]
+	],
 	ZRX: erc
 }
 

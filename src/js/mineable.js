@@ -163,6 +163,7 @@ var mineable = {
 	XVG: "m",
 	XZC: "m",
 	ZEC: "m",
+	ZEN: "m",
 	ZRX: "n"
 }
 
