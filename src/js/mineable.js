@@ -26,6 +26,7 @@ var mineable = {
 	BLOCK: "n",
 	BNB: "n",
 	BNT: "n",
+	BQ: "n",
 	BQX: "n",
 	BTC: "m",
 	BTCD: "p",   // 1.5% premined for bounties
@@ -62,6 +63,7 @@ var mineable = {
 	GBYTE: "n",
 	GNO: "n",
 	GNT: "n",
+	GRS: "p",    // 0.22918095% premined
 	GXS: "n",
 	HMQ: "n",
 	HSR: "n",
@@ -69,6 +71,7 @@ var mineable = {
 	ICO: "n",
 	IOC: "n",
 	ION: "n",
+	KCS: "n",
 	KICK: "n",
 	KIN: "n",
 	KMD: "s",    // Initial supply of 100m for ICO and devs
@@ -164,7 +167,8 @@ var mineable = {
 	XZC: "m",
 	ZEC: "m",
 	ZEN: "m",
-	ZRX: "n"
+	ZRX: "n",
+	ZSC: "n"
 }
 
 mineable["1ST"] = "n";

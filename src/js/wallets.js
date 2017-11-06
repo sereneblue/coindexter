@@ -90,6 +90,7 @@ var wallets = {
 	],
 	BNB: erc,
 	BNT: erc,
+	BQ: erc,
 	BQX: erc,
 	BTC: [
 		["Armory", "https://www.bitcoinarmory.com/", false, true, false, false],
@@ -218,6 +219,11 @@ var wallets = {
 	],
 	GNO: erc,
 	GNT: erc,
+	GRS: [
+		["Groestlcoin Core", "https://www.groestlcoin.org/downloads/", false, true, false, false],
+		["Groestlpay", "https://groestlpay.groestlcoin.org/", true, false, false, false],
+		["Groestlcoin Wallet", "https://www.groestlcoin.org/downloads/", false, false, true, false]
+	],
 	GXS: [
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
 	],
@@ -233,6 +239,7 @@ var wallets = {
 	ION: [
 		["ION Wallet", "https://ionomy.com/download", false, true, false, false]
 	],
+	KCS: erc,
 	KICK: erc,
 	KIN: erc,
 	KMD: [
@@ -486,7 +493,8 @@ var wallets = {
 	ZEN: [
 		["ZenCash Swing Wallet", "https://github.com/ZencashOfficial/zencash-swing-wallet-ui/releases", false, true, false, false]
 	],
-	ZRX: erc
+	ZRX: erc,
+	ZSC: erc
 }
 
 wallets["1ST"] = erc;
