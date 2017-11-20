@@ -18,7 +18,9 @@ var mineable = {
 	AST: "n",
 	ATB: "p",	 // ICO, mining will be available. Also uses PoS?? Looks like a hybrid?
 	ATM: "n",
+	B3: "n",     // Proof of stake
 	BAT: "n",
+	BAY: "n",    // Proof of stake
 	BCC: "p",    // >1m BCC sold in ICO
 	BCH: "m",
 	BCN: "s",    // 82% premined
@@ -35,9 +37,11 @@ var mineable = {
 	CDT: "n",
 	CFI: "n",
 	CLOAK: "n",
+	CNX: "n",    // Proof-of-stake
 	CTR: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
+	DATA: "n",
 	DCN: "n",
 	DCR: "p",    // 8% premined
 	DCT: "n",
@@ -53,6 +57,7 @@ var mineable = {
 	EOS: "n",
 	ETC: "s",    // same as Ethereum
 	ETH: "s",    // the genesis block contained 60.2m eth going to crowdsale participants + 11.9m split between early contributors and foundation,
+	ETN: "p",    // ICO
 	ETP: "p",    // ICO
 	FAIR: "n",   // Switched from PoW to PoS
 	FCT: "n",
@@ -108,10 +113,12 @@ var mineable = {
 	OAX: "n",
 	OK: "n",
 	OMG: "n",
+	OTN: "n",
 	PART: "n",
 	PAY: "n",
 	PIVX: "n",
 	PLR: "n",
+	POWR: "n",
 	PPC: "m",
 	PPT: "n",
 	PPY: "n",
@@ -120,7 +127,9 @@ var mineable = {
 	QRL: "n",
 	QTUM: "n",
 	RBY: "n",
+	RCN: "n",
 	RDD: "n",
+	RDN: "n",
 	REC: "n",
 	REP: "n",
 	RISE: "n",

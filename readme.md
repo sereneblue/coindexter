@@ -14,28 +14,28 @@ This only looks at the currencies that are loaded from the api request, not quit
 
 #### Color coded markers
 
-Color coded markers to help determine if a coin is not mineable, premined, significantly premined, instamined, or mineable (fair launch).
+Color coded markers indicate if a coin is not mineable, premined, significantly premined, instamined, or mineable (fair launch).
 
-Green - Fair launch, mineable
-Olive - Premined
-Yellow - Instamined
-Orange - Significantly Premined
-Red - Not mineable
-Gray - Unknown
+	Green - Fair launch, mineable
+	Olive - Premined
+	Yellow - Instamined
+	Orange - Significantly Premined
+	Red - Not mineable
+	Gray - Unknown
 
 If you disagree with the color of a coin, please check the file [here](https://raw.githubusercontent.com/sereneblue/coindexter/master/src/js/mineable.js) with the justification first.
 
 #### Cryptocurrency Wallets
 
-Get direct links to wallets for your favorite currency. The data is stored in wallet.js. Please contribute and help maintain this! It's a very tedious process.
+Get direct links to wallets for your favorite currency! The data is stored in wallet.js. Please contribute and help maintain this; it's a very tedious process.
 
 #### Custom settings
 
-Can change default currency to display, number of coins to display (min 100), and filter coins that can not be mined.
+Change default currency to display, number of coins to display (min 100), and filter coins that can not be mined.
 
 #### Fresh data
 
-coindexter automatically refreshes data from coinmarketcap every 5 minutes (how often cmc caches data).
+coindexter automatically refreshes data from coinmarketcap every 5 minutes (how often coinmarketcap caches data).
 
 #### Investment Calculator
 

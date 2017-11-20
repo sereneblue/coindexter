@@ -1,6 +1,13 @@
 // wallet format
 // name, site, is_online, is_desktop, is_mobile, is_hardware
 
+
+// b3
+// electroneum
+// Cryptonex
+// Streamr DATAcoin
+// Target coin
+
 var common = {
 	bitcoin: ["Bitcoin.com Wallet", "https://www.bitcoin.com/choose-your-wallet/bitcoin-com-wallet", true, true, true, false],
 	blockchain: ["Blockchain.info Wallet", "https://blockchain.info/wallet/#/", true, false, false, false],
@@ -60,7 +67,14 @@ var wallets = {
 	ATM: [
 		erc
 	],
+	B3: [
+		["B3 Wallet", "http://b3coin.net/#features", false, true, false, false]
+	],
 	BAT: erc,
+	BAY: [
+		["BitBay Client", "http://bitbay.market/getstarted/", false, true, false, false],
+		["BitBay Lite Wallet", "http://bitbay.market/getstarted/", false, true, false, false]
+	].
 	BCC: [
 		["Bitconnect Wallet", "https://bitconnectcoin.co/download", false, true, false, false],
 		["Bitconnect Web Wallet", "http://www.bitconnect.co/", true, false, false, false]
@@ -126,6 +140,9 @@ var wallets = {
 		["Cloak Wallet", "https://play.google.com/store/apps/details?id=com.cloakcoin.wallet&hl=en", true, false, false, false]
 		["CloakCoin Wallet", "https://www.cloakcoin.com/en/downloads.html", false, true, false, false],
 	],
+	CNX: [
+		["Cryptonex Wallet", "https://cryptonex.org/#5", false, true, false, false]
+	],
 	CTR: erc,
 	CVC: erc,
 	DASH: [
@@ -138,6 +155,7 @@ var wallets = {
 		common.ledger,
 		common.trezor
 	],
+	DATA: erc,
 	DCN: erc,
 	DCR: [
 		["dcrwallet", "https://github.com/decred/dcrwallet", false, true, false, false],
@@ -193,6 +211,9 @@ var wallets = {
 		common.jaxx,
 		common.ledger,
 		common.trezor
+	],
+	ETN: [
+		["Electroneum Wallet", "https://downloads.electroneum.com/", true, false, false, false]
 	],
 	ETP: [
 		["Metaverse ETP Wallet", "https://mvs.org/#download", false, true, false, false]
@@ -334,6 +355,7 @@ var wallets = {
 		["OKCash Wallet", "http://okcash.co/#download", false, true, false, false]
 	],
 	OMG: erc,
+	OTN: erc,
 	PART: [
 		["Particl Core", "https://github.com/particl/particl-core/releases/", false, true, false, false]
 	],
@@ -345,6 +367,7 @@ var wallets = {
 		["PIVX Wallet", "https://pivx.org/get-pivx/wallet/", false, true, false, false]
 	],
 	PLR: erc,
+	POWR: erc,
 	PPC: [
 		common.coinomi,
 		["Peercoin Wallet", "https://peercoin.net/wallet", false, true, true, false]
@@ -365,10 +388,12 @@ var wallets = {
 		common.coinomi,
 		["Rubycoin Wallet", "https://www.rubycoin.org/download", false, true, false, false]
 	],
+	RCN: erc,
 	RDD: [
 		common.coinomi,
 		["ReddCoin Core", "https://www.reddcoin.com/", false, true, false, false]
 	],
+	RDN: erc,
 	REC: [
 		["Regalcoin", "https://wallet.regalcoin.info/", false, true, false, false]
 	],
