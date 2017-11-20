@@ -74,7 +74,7 @@ var wallets = {
 	BAY: [
 		["BitBay Client", "http://bitbay.market/getstarted/", false, true, false, false],
 		["BitBay Lite Wallet", "http://bitbay.market/getstarted/", false, true, false, false]
-	].
+	],
 	BCC: [
 		["Bitconnect Wallet", "https://bitconnectcoin.co/download", false, true, false, false],
 		["Bitconnect Web Wallet", "http://www.bitconnect.co/", true, false, false, false]
