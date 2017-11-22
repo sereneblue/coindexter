@@ -1,13 +1,6 @@
 // wallet format
 // name, site, is_online, is_desktop, is_mobile, is_hardware
 
-
-// b3
-// electroneum
-// Cryptonex
-// Streamr DATAcoin
-// Target coin
-
 var common = {
 	bitcoin: ["Bitcoin.com Wallet", "https://www.bitcoin.com/choose-your-wallet/bitcoin-com-wallet", true, true, true, false],
 	blockchain: ["Blockchain.info Wallet", "https://blockchain.info/wallet/#/", true, false, false, false],
@@ -43,6 +36,10 @@ var xcp = [
 ]
 
 var wallets = {
+	ACT: [
+		["Achain Wallet", "https://www.achain.com/", false, true, false, false],
+		["Kcash", "https://kcash.com/", false, false, true, false]
+	],
 	ADA: [
 		["Daedalus Wallet", "https://daedaluswallet.io/", false, true, false, false]
 	],

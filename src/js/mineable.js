@@ -6,6 +6,7 @@
 // s - significantly premined
 
 var mineable = {
+	ACT: "n",     // RDPOS?
 	ADA: "n",
 	ADK: "n",
 	ADT: "n",
@@ -21,7 +22,7 @@ var mineable = {
 	B3: "n",     // Proof of stake
 	BAT: "n",
 	BAY: "n",    // Proof of stake
-	BCC: "p",    // >1m BCC sold in ICO
+	BCC: "p",    // >1m BCC sold in ICO, Ponzi?
 	BCH: "m",
 	BCN: "s",    // 82% premined
 	BDL: "p",    // ICO, looks like a scam. http://archive.is/Cv46i
