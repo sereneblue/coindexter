@@ -28,13 +28,13 @@
 			</div>
 			<div class="item">
 				<div class="four ui buttons" >
-	  				<button class="ui basic small teal icon button" data-tooltip="Price Calculator" data-position="top left" @click="app.changeState('calculator')">
+	  				<button class="ui basic small teal icon button" data-tooltip="Price Calculator" data-position="top left" onclick="app.changeState('calculator')">
 					  <i class="calculator icon"></i>
 					</button>
-					<button class="ui basic small teal icon button" data-tooltip="Investment Calculator" @click="app.changeState('investment')">
+					<button class="ui basic small teal icon button" data-tooltip="Investment Calculator" onclick="app.changeState('investment')">
 					  <i class="line chart icon"></i>
 					</button>
-					<button class="ui basic small teal icon button" data-tooltip="Settings" @click="app.changeState('settings')">
+					<button class="ui basic small teal icon button" data-tooltip="Settings" onclick="app.changeState('settings')">
 					  <i class="setting icon"></i>
 					</button>
 					<a href="https://github.com/sereneblue/coindexter" class="ui basic small teal icon button" data-tooltip="View Source" data-position="top right">
@@ -123,7 +123,7 @@
 				  <label>Remove unmineable</label>
 				</div>
 				<br/>
-				<button class="ui teal fluid button" @click="generateURL();">
+				<button class="ui teal fluid button" onclick="generateURL();">
 				  Generate URL
 				</button>
 			</div>
@@ -142,7 +142,7 @@
 		  						<div class="ui items">
 					  				<div class="item">
 									    <div class="ui middle aligned micro image">
-									      <img :src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
 									    </div>
 									    <div class="content">
 									      <div class="header">{{ coin.symbol }}</div>
@@ -166,7 +166,7 @@
 		  						<div class="ui items">
 					  				<div class="item">
 									    <div class="ui middle aligned micro image">
-									      <img :src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
 									    </div>
 									    <div class="content">
 									      <div class="header">{{ coin.symbol }}</div>
@@ -203,7 +203,7 @@
 							<div class="ui empty tiny red horizontal circular label" v-else-if="mineable(currency.symbol) == 'n'"></div>
 							<div class="ui empty tiny grey horizontal circular label" v-else></div>
 							{{ currency.name }}
-							<a class="ui label" v-if="wallet(currency.symbol)" @click="'showModal(\'' + currency.symbol + '\');'">
+							<a class="ui label" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
 							  <i class="lock icon"></i> {{ wallet(currency.symbol).length }}
 							</a>
 							<a class="ui blue horizontal label" href="https://shapeshift.io" target="_blank" v-if="currency.last_updated">Shift</a>
@@ -229,7 +229,6 @@
 			  <i class="close icon"></i>
 			  <div class="header">
 			    {{ currentCrypto }} Wallets
-			    <h5 class="warn-msg">Be very careful installing wallets. Some may contain malware to steal coins from other wallets!</h5>
 			  </div>
 			  <div class="content">
 				<table class="ui very basic table">
