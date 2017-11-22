@@ -192,6 +192,14 @@ var wallets = {
 		["Emercoin Wallet", "https://emercoin.com/#download", false, true, false, false]
 	],
 	EOS: erc,
+	ETC: [
+		["ClassicEtherWallet CX", "https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf", false, true, false, false],
+		common.coinomi,
+		["Ethereum Classic Wallet", "https://github.com/ethereumproject/mist/releases", false, true, false, false],
+		common.jaxx,
+		common.ledger,
+		common.trezor
+	],
 	ETH: [
 		common.coinbase,
 		common.coinomi,
@@ -208,14 +216,7 @@ var wallets = {
 		common.trezor,
 		["XETH", "http://www.xeth.org/", false, true, false, false]
 	],
-	ETC: [
-		["ClassicEtherWallet CX", "https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf", false, true, false, false],
-		common.coinomi,
-		["Ethereum Classic Wallet", "https://github.com/ethereumproject/mist/releases", false, true, false, false],
-		common.jaxx,
-		common.ledger,
-		common.trezor
-	],
+	ETHOS: erc,
 	ETN: [
 		["Electroneum Wallet", "https://downloads.electroneum.com/", true, false, false, false]
 	],
@@ -230,6 +231,9 @@ var wallets = {
 	],
 	FRST: [
 		["Firstcoin Wallet", "http://firstcoinproject.com/", false, true, true, false]
+	],
+	FTC: [
+		["Feathercoin Wallet", "https://www.feathercoin.com/", false, true, true, false]
 	],
 	FUN: erc,
 	GAME: [
@@ -377,6 +381,7 @@ var wallets = {
 		common.coinomi,
 		["Peercoin Wallet", "https://peercoin.net/wallet", false, true, true, false]
 	],
+	PPP: erc,
 	PPT: erc,
 	PPY: [
 		["Peerplay Core", "https://github.com/PBSA/peerplays-core-gui/releases", false, true, false, false]
