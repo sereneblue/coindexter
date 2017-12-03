@@ -33,6 +33,7 @@ var mineable = {
 	BQX: "n",
 	BTC: "m",
 	BTCD: "p",   // 1.5% premined for bounties
+	BTG: "p",    // 100,000 BTG postmined https://archive.fo/xGa14
 	BTM: "n",
 	BTS: "n",
 	CDT: "n",
@@ -55,6 +56,7 @@ var mineable = {
 	EB3: "s",    // Looks like a scam http://archive.is/7rjAz
 	EDG: "n",
 	EMC: "m",
+	EMC2: "m",
 	EOS: "n",
 	ETC: "s",    // same as Ethereum
 	ETH: "s",    // the genesis block contained 60.2m eth going to crowdsale participants + 11.9m split between early contributors and foundation,
@@ -100,6 +102,7 @@ var mineable = {
 	MGO: "n",
 	MIOTA: "n",
 	MLN: "n",
+	MNX: "p",     // ICO 5.5m premined
 	MONA: "m",
 	MTH: "n",
 	MTL: "n",
@@ -121,6 +124,7 @@ var mineable = {
 	PAY: "n",
 	PIVX: "n",
 	PLR: "n",
+	POT: "n",     // Proof of stake now, originally started as PoW with Scrypt
 	POWR: "n",
 	PPC: "m",
 	PPP: "n",
@@ -129,6 +133,7 @@ var mineable = {
 	PTOY: "n",
 	PURA: "p",
 	QRL: "n",
+	QSP: "n",
 	QTUM: "n",
 	RBY: "n",
 	RCN: "n",
@@ -141,6 +146,7 @@ var mineable = {
 	ROUND: "n",
 	SAFEX: "n",
 	SALT: "n",
+	SAN: "n",
 	SC: "m",
 	SMART: "m",    // this is ridiculous: https://explorer.smartcash.cc/richlist
 	SNGLS: "n",
@@ -176,6 +182,7 @@ var mineable = {
 	XMR: "m",
 	XRL: "n",
 	XRP: "n",
+	XUC: "n",
 	XVG: "m",
 	XZC: "m",
 	ZEC: "m",

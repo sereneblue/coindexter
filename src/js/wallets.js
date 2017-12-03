@@ -128,6 +128,12 @@ var wallets = {
 		common.trezor,
 		["Xapo", "https://www.xapo.com/", true, false, false, false]
 	],
+	BTG: [
+		["BTGWallet", "https://btgwallet.online/", true, false, false, false],
+		common.coinomi,
+		common.ledger,
+		common.trezor,
+	],
 	BTM: erc,
 	BTS: [
 		["BitShares Wallet", "https://bitshares.org/wallet/", true, false, false, false],
@@ -187,6 +193,10 @@ var wallets = {
 	EDG: erc,
 	EMC: [
 		["Emercoin Wallet", "https://emercoin.com/#download", false, true, false, false]
+	],
+	EMC2: [
+		common.coinomi,
+		["Einsteinium Wallet", "https://www.emc2.foundation/wallets", false, true, false, false]
 	],
 	EOS: erc,
 	ETC: [
@@ -318,6 +328,9 @@ var wallets = {
 		["IOTAmobile", "https://iota.tools/wallet", false, false, true, false]
 	],
 	MLN: erc,
+	MNX: [
+		["MinexWallet", "https://minexcoin.com/", false, true, false, false],
+	],
 	MONA: [
 		["Monacoin Wallet", "https://monacoin.org/#download", false, true, false, false]
 	],
@@ -373,6 +386,10 @@ var wallets = {
 		["PIVX Wallet", "https://pivx.org/get-pivx/wallet/", false, true, false, false]
 	],
 	PLR: erc,
+	POT: [
+		["PotCoin Wallet", "http://www.potcoin.com/wallets", false, true, false, false],
+		["PotWallet", "https://potwallet.com/", true, false, false, false]
+	],
 	POWR: erc,
 	PPC: [
 		common.coinomi,
@@ -388,6 +405,7 @@ var wallets = {
 		["Pura Core", "https://github.com/PURAcore/PURA/releases", false, true, false, false]
 	],
 	QRL: erc,
+	QSP: erc,
 	QTUM: [
 		["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
 	],
@@ -414,6 +432,7 @@ var wallets = {
 		["Safe Exchange Wallet", "https://safex.io/", false, true, false, false],
 	],
 	SALT: erc,
+	SAN: erc,
 	SC: [
 		["Siacoin Wallet", "http://sia.tech/apps/", false, true, false, false],
 	],
@@ -506,6 +525,7 @@ var wallets = {
 		common.ledger,
 		["Rippex", "https://rippex.net/carteira-ripple.php", false, true, false, false]
 	],
+	XUC: erc,
 	XVG: [
 		common.coinomi,
 		["Verge Electrum Wallet", "http://vergecurrency.com/#wallets", false, true, false, false],
