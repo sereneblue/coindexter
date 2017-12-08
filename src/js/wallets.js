@@ -25,6 +25,11 @@ var erc = [
 	common.trezor
 ]
 
+var nxt = [
+	["MyNXT", "https://wallet.mynxt.info/", true, false, false, false],
+	["NXT Wallet", "https://nxt.org/download/", false, true, false, false]
+]
+
 var omni = [
 	common.omnicore,
 	common.omniwallet
@@ -49,12 +54,10 @@ var wallets = {
 	ADT: erc,
 	ADX: erc,
 	AE: erc,
+	AION: erc,
 	AMP: omni,
 	ANT: erc,
-	ARDR: [
-		["MyNXT", "https://wallet.mynxt.info/", true, false, false, false],
-		["NXT Wallet", "https://nxt.org/download/", false, true, false, false]
-	],
+	ARDR: nxt,
 	ARK: [
 		["Ark Wallet", "https://github.com/ArkEcosystem/ark-desktop/releases", false, true, false, false]
 	],
@@ -187,6 +190,7 @@ var wallets = {
 		["MultiDoge", "http://multidoge.org/", false, true, false, false],
 		common.ledger
 	],
+	DRGN: erc,
 	EB3: [
 		["EB3 Wallet", "http://www.eb3coin.com/", false, false, true, false]
 	],
@@ -275,6 +279,7 @@ var wallets = {
 	ION: [
 		["ION Wallet", "https://ionomy.com/download", false, true, false, false]
 	],
+	JINN: nxt,
 	KCS: erc,
 	KICK: erc,
 	KIN: erc,
@@ -365,10 +370,7 @@ var wallets = {
 		["LLD Wallet", "http://www.nexusearth.com/#", false, true, false, false],
 		["Oracle Wallet", "http://www.nexusearth.com/#", false, true, false, false]
 	],
-	NXT: [
-		["MyNXT", "https://wallet.mynxt.info/", true, false, false, false],
-		["NXT Wallet", "https://nxt.org/download/", false, true, false, false]
-	],
+	NXT: nxt,
 	OAX: erc,
 	OK: [
 		["OKCash Wallet", "http://okcash.co/#download", false, true, false, false]
@@ -404,11 +406,13 @@ var wallets = {
 	PURA: [
 		["Pura Core", "https://github.com/PURAcore/PURA/releases", false, true, false, false]
 	],
+	QASH: erc,
 	QRL: erc,
 	QSP: erc,
 	QTUM: [
 		["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
 	],
+	R: erc,
 	RBY: [
 		common.coinomi,
 		["Rubycoin Wallet", "https://www.rubycoin.org/download", false, true, false, false]
@@ -423,6 +427,8 @@ var wallets = {
 		["Regalcoin", "https://wallet.regalcoin.info/", false, true, false, false]
 	],
 	REP: erc,
+	REQ: erc,
+	RHOC: erc,
 	RISE: [
 		["RISE Wallet", "https://rise.vision/", true, true, false, false]
 	],
@@ -435,6 +441,9 @@ var wallets = {
 	SAN: erc,
 	SC: [
 		["Siacoin Wallet", "http://sia.tech/apps/", false, true, false, false],
+	],
+	SKY: [
+		["Skycoin Wallet", "https://www.skycoin.net/downloads/", false, true, false, false]
 	],
 	SMART: [
 		["SmartCash Qt", "https://smartcash.cc/", false, true, false, false],
@@ -519,6 +528,9 @@ var wallets = {
 		["Monerujo", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
 		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false]
+	],
+	XRB: [
+		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
 	],
 	XRL: erc,
 	XRP: [
