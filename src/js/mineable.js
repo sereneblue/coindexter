@@ -12,6 +12,7 @@ var mineable = {
 	ADT: "n",
 	ADX: "n",
 	AE: "n",
+	AGRS: "n",
 	AION: "n",
 	AMP: "n",
 	ANT: "n",
@@ -37,6 +38,7 @@ var mineable = {
 	BTG: "p",    // 100,000 BTG postmined https://archive.fo/xGa14
 	BTM: "n",
 	BTS: "n",
+	BURST: "m",
 	CDT: "n",
 	CFI: "n",
 	CLOAK: "n",
@@ -169,6 +171,7 @@ var mineable = {
 	SYS: "p",     // 18% premined
 	TAAS: "n",
 	TKN: "n",
+	TNB: "n",
 	TNT: "n",
 	TRIG: "n",
 	TRX: "n",
@@ -176,6 +179,7 @@ var mineable = {
 	USDT: "n",
 	VEN: "n",
 	VERI: "n",
+	VET: "n",
 	VIA: "p",     // ICO
 	VSL: "n",
 	VTC: "m",

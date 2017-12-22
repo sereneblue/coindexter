@@ -54,6 +54,7 @@ var wallets = {
 	ADT: erc,
 	ADX: erc,
 	AE: erc,
+	AGRS: omni,
 	AION: erc,
 	AMP: omni,
 	ANT: erc,
@@ -142,6 +143,14 @@ var wallets = {
 		["BitShares Wallet", "https://bitshares.org/wallet/", true, false, false, false],
 		["OpenLedger", "https://bitshares.openledger.info/", true, false, false, false],
 		["SmartWallet", "https://play.google.com/store/apps/details?id=de.bitsharesmunich.smartcoinswallet", false, false, true, false]
+	],
+	BURST: [
+		["BURST Wallet", "https://wallet1.burstnation.com:8125/index.html", true, false, false, false],
+		["Burst-Team Wallet", "https://wallet1.burst-team.us:2083/index.html", true, false, false, false],
+		["Consortium Online Wallet", "https://wallet.burst.cryptoguru.org:8125/index.html", true, false, false, false],
+		["BURST Core Wallet", "https://github.com/PoC-Consortium/burstcoin/releases", false, true, false, false],
+		["Consortium Android Wallet", "https://play.google.com/store/apps/details?id=org.icewave.burstcoinwallet", false, false, true, false],
+		["BurstNation Android Wallet", "https://play.google.com/store/apps/details?id=com.official.bnwallet", false, false, true, false]
 	],
 	CDT: erc,
 	CFI: erc,
@@ -472,6 +481,7 @@ var wallets = {
 	],
 	TAAS: erc,
 	TKN: erc,
+	TNB: erc,
 	TNT: erc,
 	TRIG: xcp,
 	TRX: erc,
@@ -482,6 +492,7 @@ var wallets = {
 	USDT: omni,
 	VEN: erc,
 	VERI: erc,
+	VET: erc,      // was an ERC20 Token, migrating to their own blockchain?
 	VIA: [
 		common.ledger,
 		["Viacoin Wallet", "https://viacoin.org/#download", false, true, false, false]
