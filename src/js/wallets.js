@@ -184,6 +184,7 @@ var wallets = {
 	DCT: [
 		["Decent", "https://decent.ch/en/download/", false, true, false, false]
 	],
+	DENT: erc,
 	DGB: [
 		["DigiByte Wallet", "https://digibyte.co/digibyte-wallets", false, true, true, false]
 	],

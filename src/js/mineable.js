@@ -50,6 +50,7 @@ var mineable = {
 	DCN: "n",
 	DCR: "p",    // 8% premined
 	DCT: "n",
+	DENT: "n",
 	DGB: "p",    // 100m premined
 	DGD: "n",
 	DICE: "n",
