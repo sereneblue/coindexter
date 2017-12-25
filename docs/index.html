@@ -196,56 +196,6 @@
 				      <th>24h Change</th>
 				    </tr>
 				  </thead>
-				  <tbody>
-				    <tr v-for="currency in app.checkMineable()">
-						<td>{{ currency.rank }}</td>
-						<td>
-							<div class="ui empty tiny green horizontal circular label" v-if="mineable(currency.symbol) == 'm'"></div>
-							<div class="ui empty tiny olive horizontal circular label" v-else-if="mineable(currency.symbol) == 'p'"></div>
-							<div class="ui empty tiny yellow horizontal circular label" v-else-if="mineable(currency.symbol) == 'i'"></div>
-							<div class="ui empty tiny blue horizontal circular label" v-else-if="mineable(currency.symbol) == 's'"></div>
-							<div class="ui empty tiny red horizontal circular label" v-else-if="mineable(currency.symbol) == 'n'"></div>
-							<div class="ui empty tiny grey horizontal circular label" v-else></div>
-							{{ currency.name }}
-							<a class="ui label" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
-							  <i class="lock icon"></i> {{ wallet(currency.symbol).length }}
-							</a>
-							<a class="ui blue horizontal label" href="https://shapeshift.io" target="_blank" v-if="currency.last_updated">Shift</a>
-						</td>
-						<td v-if="app.settings.currency == 'BTC'">${{ app.format(currency.market_cap_usd) }}</td>
-						<td v-else>{{ current }}{{ app.getMarketcap(currency) }}</td>
-						<td v-if="app.settings.currency == 'BTC'">{{ currency.price_btc }} BTC</td>
-						<td v-else>{{ current }}{{ app.getPrice(currency) }}</td>
-						<td>{{ app.format(currency.available_supply) }} {{ currency.symbol }}</td>
-						<td v-if="currency.percent_change_24h > 0">
-							<i class="green caret up icon"></i>
-							<span class="positive">{{ currency.percent_change_24h }}%</span>
-						</td>
-						<td v-else="currency.percent_change_24h < 0">
-							<i class="red caret down icon"></i>
-							<span class="negative">{{ Math.abs(currency.percent_change_24h) }}%</span>
-						</td>
-				    </tr>
-				  </tbody>
-				</table>
-			</div>
-			<div class="ui modal">
-			  <i class="close icon"></i>
-			  <div class="header">
-			    {{ currentCrypto }} Wallets
-			  </div>
-			  <div class="content">
-				<table class="ui very basic table">
-				  <thead>
-				  	<tr>
-				  	<div>
-				    <i class="ui tiny empty circular inverted red icon"></i>Web Wallet
-				    <i class="ui tiny empty circular inverted green icon"></i>Desktop Wallet
-				    <i class="ui tiny empty circular inverted blue icon"></i>Mobile Wallet
-				    <i class="ui tiny empty circular inverted yellow icon"></i>Hardware Wallet
-				  </div>
-				  </tr>
-				  </thead>
 				  <tbody id="full-table">
 				    <tr v-for="currency in app.checkMineable()">
 						<td>{{ currency.rank }}</td>
@@ -314,6 +264,36 @@
 							</span>
 							{{ current }}{{ app.getPrice(currency) }}
 						</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<div class="ui modal">
+			  <i class="close icon"></i>
+			  <div class="header">
+			    {{ currentCrypto }} Wallets
+			  </div>
+			  <div class="content">
+				<table class="ui very basic table">
+				  <thead>
+				  	<tr>
+						<i class="ui tiny empty circular inverted red icon"></i>Web Wallet
+						<i class="ui tiny empty circular inverted green icon"></i>Desktop Wallet
+						<i class="ui tiny empty circular inverted blue icon"></i>Mobile Wallet
+						<i class="ui tiny empty circular inverted yellow icon"></i>Hardware Wallet
+					</tr>
+				  </thead>
+				  <tbody>
+				    <tr v-for="wallet in wallet(currentCrypto)">
+				      <td>
+				      	<a :href=wallet[1] target="_blank"> {{ wallet[0] }}</a>
+				      </td>
+				      <td>
+				      	  <i v-if="wallet[2]" class="ui tiny empty circular inverted red icon"></i>
+					      <i v-if="wallet[3]" class="ui tiny empty circular inverted green icon"></i>
+					      <i v-if="wallet[4]" class="ui tiny empty circular inverted blue icon"></i>
+					      <i v-if="wallet[5]" class="ui tiny empty circular inverted yellow icon"></i>
+				      </td>
 				    </tr>
 				  </tbody>
 				</table>
