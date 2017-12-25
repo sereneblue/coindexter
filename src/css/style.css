@@ -16,8 +16,10 @@ h5 {
 	margin-left: 19em;
 }
 
-.pusher > .ui.teal.inverted.segment {
+.pusher > .ui.inverted.segment {
 	border-radius: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .sidebar {
@@ -29,7 +31,7 @@ h5 {
 	padding-bottom: 1em;
 }
 
-.ui.teal.segment > h4 {
+.ui.segment > h4 {
 	text-align: center;
 }
 
@@ -40,4 +42,45 @@ h5 {
 .warn-msg {
 	padding-top: 1em;
 	color: red;
+}
+
+#mobile-table {
+	display: none !important;
+}
+
+.title-bar {
+	display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #sidebar {
+		display: none;
+    }
+
+    .pusher {
+		margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    table thead {
+    	display: none !important;
+    }
+
+	.title-bar {
+		display: block;
+	}
+
+    .stackable div.column {
+    	display: none !important;
+    }
+
+	#full-table {
+		display: none !important;
+	}
+
+	#mobile-table {
+		display: block !important;
+	}
 }

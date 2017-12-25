@@ -129,8 +129,11 @@
 			</div>
 		</div>
 		<div class="pusher">
+			<div class="ui black inverted segment title-bar">
+				<h4>coindexter</h4>
+			</div>
 			<div class="ui teal inverted segment">
-				<h4>{{ stats.active_currencies }} Currencies / {{ stats.active_assets }} Assets / MarketCap: {{ current }}{{ app.format(stats.total_market_cap_usd) }} / 24h Volume: {{ current }}{{ app.format(stats.total_24h_volume_usd) }}
+				<h4>{{ stats.active_currencies }} Currencies / {{ stats.active_assets }} Assets / Market Cap: {{ current }}{{ app.format(stats.total_market_cap_usd) }} / 24h Volume: {{ current }}{{ app.format(stats.total_24h_volume_usd) }}</h4>
 			</div>
 			<div class="ui two column stackable grid container">
 			  	<div class="column">
@@ -192,7 +195,7 @@
 				      <th>24h Change</th>
 				    </tr>
 				  </thead>
-				  <tbody>
+				  <tbody id="full-table">
 				    <tr v-for="currency in app.checkMineable()">
 						<td>{{ currency.rank }}</td>
 						<td>
@@ -220,6 +223,45 @@
 						<td v-else="currency.percent_change_24h < 0">
 							<i class="red caret down icon"></i>
 							<span class="negative">{{ Math.abs(currency.percent_change_24h) }}%</span>
+						</td>
+				    </tr>
+				  </tbody>
+				  <tbody id="mobile-table">
+				  	<tr v-for="currency in app.checkMineable()">
+						<td>
+							{{ currency.rank }}.
+							{{ currency.name }}
+							<a class="ui label" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
+							  <i class="lock icon"></i> {{ wallet(currency.symbol).length }}
+							</a>
+							<div class="ui tiny green horizontal label" v-if="mineable(currency.symbol) == 'm'">mineable</div>
+							<div class="ui tiny olive horizontal label" v-else-if="mineable(currency.symbol) == 'p'">premined</div>
+							<div class="ui tiny yellow horizontal label" v-else-if="mineable(currency.symbol) == 'i'">instamine</div>
+							<div class="ui tiny blue horizontal label" v-else-if="mineable(currency.symbol) == 's'">sig. prmined</div>
+							<div class="ui tiny red horizontal label" v-else-if="mineable(currency.symbol) == 'n'">not mineable</div>
+							<div class="ui tiny grey horizontal label" v-else>unknown</div>
+							<a class="ui blue horizontal label" href="https://shapeshift.io" target="_blank" v-if="currency.last_updated">Shift</a>
+						</td>
+						<td v-if="app.settings.currency == 'BTC'">
+							<span v-if="currency.percent_change_24h > 0">
+								<i class="green caret up icon"></i>
+								<span class="positive">{{ currency.percent_change_24h }}%</span>
+							</span>
+							<span v-else="currency.percent_change_24h < 0">
+								<i class="red caret down icon"></i>
+								<span class="negative">{{ Math.abs(currency.percent_change_24h) }}%</span>
+							</span>
+							{{ currency.price_btc }} BTC</td>
+						<td v-else>
+							<span v-if="currency.percent_change_24h > 0">
+								<i class="green caret up icon"></i>
+								<span class="positive">{{ currency.percent_change_24h }}%</span>
+							</span>
+							<span v-else="currency.percent_change_24h < 0">
+								<i class="red caret down icon"></i>
+								<span class="negative">{{ Math.abs(currency.percent_change_24h) }}%</span>
+							</span>
+							{{ current }}{{ app.getPrice(currency) }}
 						</td>
 				    </tr>
 				  </tbody>
