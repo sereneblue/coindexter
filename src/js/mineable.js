@@ -62,6 +62,7 @@ var mineable = {
 	EDG: "n",
 	EMC: "m",
 	EMC2: "m",
+	ENG: "n",
 	EOS: "n",
 	ETC: "s",    // same as Ethereum
 	ETH: "s",    // the genesis block contained 60.2m eth going to crowdsale participants + 11.9m split between early contributors and foundation,
@@ -189,6 +190,7 @@ var mineable = {
 	WTC: "n",
 	XAS: "p",     // ICO
 	XCP: "n",
+	XDN: "m",
 	XEL: "n",
 	XEM: "n",
 	XLM: "n",

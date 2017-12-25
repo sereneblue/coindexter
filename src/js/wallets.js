@@ -212,6 +212,7 @@ var wallets = {
 		common.coinomi,
 		["Einsteinium Wallet", "https://www.emc2.foundation/wallets", false, true, false, false]
 	],
+	ENG: erc,
 	EOS: erc,
 	ETC: [
 		["ClassicEtherWallet CX", "https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf", false, true, false, false],
@@ -517,6 +518,9 @@ var wallets = {
 		["Asch Lite Client", "https://www.asch.so/", false, true, false, false]
 	],
 	XCP: xcp,
+	XDN: [
+		["DigitalNote Wallet", "http://digitalnote.org/#download", false, true, false, false]
+	],
 	XEM: [
 		["Nano Wallet", "https://www.nem.io/install.html", false, true, false, false],
 		["NEM Wallet", "https://www.nem.io/install.html", false, false, true, false]
