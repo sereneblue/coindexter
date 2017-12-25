@@ -19,7 +19,6 @@ h5 {
 .pusher > .ui.inverted.segment {
 	border-radius: 0;
 	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .sidebar {
@@ -73,6 +72,7 @@ h5 {
     
 	.title-bar {
 		display: block;
+		margin-bottom: 0 !important;
 	}
 
 	#full-table {
