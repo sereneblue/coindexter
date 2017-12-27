@@ -283,6 +283,7 @@ var wallets = {
 		["Hcash Wallet", "https://h.cash/", false, true, false, false]
 	],
 	ICN: erc,
+	ICX: erc,
 	ICO: erc,
 	IOC: [
 		["I/O Coin Wallet", "https://www.iocoin.io/", false, true, false, false]

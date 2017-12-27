@@ -84,6 +84,7 @@ var mineable = {
 	HMQ: "n",
 	HSR: "n",
 	ICN: "n",
+	ICX: "n",
 	ICO: "n",
 	IOC: "n",
 	ION: "n",
