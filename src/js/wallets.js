@@ -205,6 +205,7 @@ var wallets = {
 		["EB3 Wallet", "http://www.eb3coin.com/", false, false, true, false]
 	],
 	EDG: erc,
+	ELF: erc,
 	EMC: [
 		["Emercoin Wallet", "https://emercoin.com/#download", false, true, false, false]
 	],

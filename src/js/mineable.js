@@ -60,6 +60,7 @@ var mineable = {
 	DRGN: "n",
 	EB3: "s",    // Looks like a scam http://archive.is/7rjAz
 	EDG: "n",
+	ELF: "n",
 	EMC: "m",
 	EMC2: "m",
 	ENG: "n",
