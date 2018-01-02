@@ -133,6 +133,7 @@ var mineable = {
 	PAY: "n",
 	PIVX: "n",
 	PLR: "n",
+	POE: "n",
 	POT: "n",     // Proof of stake now, originally started as PoW with Scrypt
 	POWR: "n",
 	PPC: "m",
@@ -188,15 +189,18 @@ var mineable = {
 	VSL: "n",
 	VTC: "m",
 	WAVES: "n",
+	WAX: "n",
 	WINGS: "n",
 	WTC: "n",
 	XAS: "p",     // ICO
+	XBY: "n",	  // ICO
 	XCP: "n",
 	XDN: "m",
 	XEL: "n",
 	XEM: "n",
 	XLM: "n",
 	XMR: "m",
+	XP: "m",      // Proof of Stake
 	XRB: "n",
 	XRL: "n",
 	XRP: "n",

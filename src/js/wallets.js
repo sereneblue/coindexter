@@ -401,6 +401,7 @@ var wallets = {
 		["PIVX Wallet", "https://pivx.org/get-pivx/wallet/", false, true, false, false]
 	],
 	PLR: erc,
+	POE: erc,
 	POT: [
 		["PotCoin Wallet", "http://www.potcoin.com/wallets", false, true, false, false],
 		["PotWallet", "https://potwallet.com/", true, false, false, false]
@@ -514,10 +515,14 @@ var wallets = {
 		["Waves Wallet (Android)", "https://play.google.com/store/apps/details?id=com.wavesplatform.wallet", false, false, true, false],
 		["Waves Wallet (iOS)", "https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8", false, false, true, false]
 	],
+	WAX: erc,
 	WINGS: erc,
 	WTC: erc,
 	XAS: [
 		["Asch Lite Client", "https://www.asch.so/", false, true, false, false]
+	],
+	XBY: [
+		["XtraBYtes Wallet", "https://www.xtrabytes.global/#wallet", false, true, false, false]
 	],
 	XCP: xcp,
 	XDN: [
@@ -546,6 +551,10 @@ var wallets = {
 		["Monerujo", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
 		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false]
+	],
+	XP: [
+		["XP Web Wallet", "https://webwallet.xpcoin.io/", true, false, false, false],
+		["XP Wallet", "https://www.xpcoin.io/downloads/", false, true, true, false]
 	],
 	XRB: [
 		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
