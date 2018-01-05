@@ -129,6 +129,7 @@ var mineable = {
 	OK: "n",
 	OMG: "n",
 	OTN: "n",
+	PAC: "n",	  // Website is full of dead links
 	PART: "n",
 	PAY: "n",
 	PIVX: "n",
@@ -170,6 +171,7 @@ var mineable = {
 	SPRTS: "p",    // mixed pow/pos
 	STEEM: "m",
 	STORJ: "n",
+	STORM: "n",
 	STRAT: "n",
 	STX: "n",
 	SUB: "n",
@@ -200,7 +202,7 @@ var mineable = {
 	XEM: "n",
 	XLM: "n",
 	XMR: "m",
-	XP: "m",      // Proof of Stake
+	XP: "n",      // Proof of Stake
 	XRB: "n",
 	XRL: "n",
 	XRP: "n",

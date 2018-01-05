@@ -390,6 +390,9 @@ var wallets = {
 	],
 	OMG: erc,
 	OTN: erc,
+	PAC: [
+		["Paccoin", "https://github.com/PaccoinCommunity/Paccoin/releases", false, true, false, false]
+	],
 	PART: [
 		["Particl Core", "https://github.com/particl/particl-core/releases/", false, true, false, false]
 	],
@@ -473,6 +476,7 @@ var wallets = {
 		["Steemit wallet", "https://steemit.com", true, false, false, false]
 	],
 	STORJ: erc,
+	STORM: erc,
 	STRAT: [
 		["Electrum-Stratis", "https://github.com/stratisproject/electrum-stratis/releases/", false, true, false, false],
 		common.ledger,
