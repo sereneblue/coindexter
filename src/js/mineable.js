@@ -43,6 +43,7 @@ var mineable = {
 	CFI: "n",
 	CLOAK: "n",
 	CNX: "n",    // Proof-of-stake
+	COB: "n",
 	CTR: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
@@ -108,6 +109,7 @@ var mineable = {
 	MCAP: "n",
 	MCO: "n",
 	MDA: "n",
+	MED: "n",
 	MGO: "n",
 	MIOTA: "n",
 	MLN: "n",
@@ -184,6 +186,7 @@ var mineable = {
 	TRX: "n",
 	UBQ: "m",
 	USDT: "n",
+	VEE: "n",
 	VEN: "n",
 	VERI: "n",
 	VET: "n",
@@ -209,6 +212,7 @@ var mineable = {
 	XUC: "n",
 	XVG: "m",
 	XZC: "m",
+	ZCL: "m",
 	ZEC: "m",
 	ZEN: "m",
 	ZRX: "n",

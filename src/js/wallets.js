@@ -13,8 +13,6 @@ var common = {
 	keepkey: ["KeepKey", "https://www.keepkey.com/", false, false, false, true],
 	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
 	mobi: ["Mobi", "https://www.mobi.me/", true, false, true, false],
-	omnicore: ["OmniCore", "http://www.omnilayer.org/download.html", false, true, false, false],
-	omniwallet: ["OmniWallet", "https://www.omniwallet.org/", true, false, false, false],
 	trezor: ["Trezor", "https://trezor.io/", false, false, false, true]
 }
 
@@ -31,8 +29,12 @@ var nxt = [
 ]
 
 var omni = [
-	common.omnicore,
-	common.omniwallet
+	["OmniCore", "http://www.omnilayer.org/download.html", false, true, false, false],
+	["OmniWallet", "https://www.omniwallet.org/", true, false, false, false]
+]
+
+var qtum = [
+	["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
 ]
 
 var xcp = [
@@ -161,6 +163,7 @@ var wallets = {
 	CNX: [
 		["Cryptonex Wallet", "https://cryptonex.org/#5", false, true, false, false]
 	],
+	COB: erc,
 	CTR: erc,
 	CVC: erc,
 	DASH: [
@@ -338,6 +341,7 @@ var wallets = {
 	MCAP: erc,
 	MCO: erc,
 	MDA: erc,
+	MED: qtum,
 	MGO: erc,
 	MIOTA: [
 		["IOTA GUI Wallet", "https://github.com/iotaledger/wallet/releases", false, true, false, false],
@@ -426,9 +430,7 @@ var wallets = {
 	QASH: erc,
 	QRL: erc,
 	QSP: erc,
-	QTUM: [
-		["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
-	],
+	QTUM: qtum,
 	R: erc,
 	RBY: [
 		common.coinomi,
@@ -499,6 +501,7 @@ var wallets = {
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
 	USDT: omni,
+	VEE: erc,
 	VEN: erc,
 	VERI: erc,
 	VET: erc,      // was an ERC20 Token, migrating to their own blockchain?
@@ -577,6 +580,9 @@ var wallets = {
 	XZC: [
 		common.coinomi,
 		["Zcoin Wallet", "https://zcoin.io/get-zcoin/", false, true, false, false]
+	],
+	ZCL: [
+		"ZClassic Wallet", "http://zclassic.org/#getstarted", false, true, false, false]
 	],
 	ZEC: [
 		common.coinomi,
