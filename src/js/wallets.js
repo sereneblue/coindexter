@@ -582,7 +582,7 @@ var wallets = {
 		["Zcoin Wallet", "https://zcoin.io/get-zcoin/", false, true, false, false]
 	],
 	ZCL: [
-		"ZClassic Wallet", "http://zclassic.org/#getstarted", false, true, false, false]
+		["ZClassic Wallet", "http://zclassic.org/#getstarted", false, true, false, false]
 	],
 	ZEC: [
 		common.coinomi,
