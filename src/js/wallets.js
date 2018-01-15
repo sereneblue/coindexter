@@ -18,6 +18,7 @@ var common = {
 
 var erc = [
 	common.ledger,
+	["MetaMask", "https://metamask.io/", false, true, false, false],
 	["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 	["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
 	common.trezor
@@ -234,7 +235,6 @@ var wallets = {
 		common.jaxx,
 		common.keepkey,
 		common.ledger,
-		["MetaMask", "https://metamask.io/", false, true, false, false],
 		["Mist", "https://github.com/ethereum/mist/releases", false, true, false, false],
 		common.mobi,
 		["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
@@ -359,6 +359,7 @@ var wallets = {
 	MTH: erc,
 	MTL: erc,
 	MYST: erc,
+	NAS: erc,
 	NAV: [
 		["NAV Wallet", "https://navcoin.org/downloads/", false, true, true, false]
 	],

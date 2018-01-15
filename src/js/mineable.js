@@ -118,6 +118,7 @@ var mineable = {
 	MTH: "n",
 	MTL: "n",
 	MYST: "n",
+	NAS: "n",
 	NAV: "n",
 	NEBL: "n",
 	NEO: "n",
