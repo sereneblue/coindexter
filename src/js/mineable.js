@@ -38,10 +38,12 @@ var mineable = {
 	BTG: "p",    // 100,000 BTG postmined https://archive.fo/xGa14
 	BTM: "n",
 	BTS: "n",
+	BTX: "p",
 	BURST: "m",
 	CDT: "n",
 	CFI: "n",
 	CLOAK: "n",
+	CND: "n",
 	CNX: "n",    // Proof-of-stake
 	COB: "n",
 	CTR: "n",
@@ -112,6 +114,7 @@ var mineable = {
 	MED: "n",
 	MGO: "n",
 	MIOTA: "n",
+	MKR: "n",
 	MLN: "n",
 	MNX: "p",     // ICO 5.5m premined
 	MONA: "m",

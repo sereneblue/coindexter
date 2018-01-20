@@ -147,6 +147,10 @@ var wallets = {
 		["OpenLedger", "https://bitshares.openledger.info/", true, false, false, false],
 		["SmartWallet", "https://play.google.com/store/apps/details?id=de.bitsharesmunich.smartcoinswallet", false, false, true, false]
 	],
+	BTX: [
+		["BitCore Wallet", "https://github.com/LIMXTEC/BitCore/releases", false, true, false, false],
+		common.coinomi
+	],
 	BURST: [
 		["BURST Wallet", "https://wallet1.burstnation.com:8125/index.html", true, false, false, false],
 		["Burst-Team Wallet", "https://wallet1.burst-team.us:2083/index.html", true, false, false, false],
@@ -161,6 +165,7 @@ var wallets = {
 		["Cloak Wallet", "https://play.google.com/store/apps/details?id=com.cloakcoin.wallet&hl=en", true, false, false, false]
 		["CloakCoin Wallet", "https://www.cloakcoin.com/en/downloads.html", false, true, false, false],
 	],
+	CND: erc,
 	CNX: [
 		["Cryptonex Wallet", "https://cryptonex.org/#5", false, true, false, false]
 	],
@@ -349,6 +354,7 @@ var wallets = {
 		["IOTA Wallet (BETA)", "https://play.google.com/store/apps/details?id=org.iota.wallet", false, false, true, false],
 		["IOTAmobile", "https://iota.tools/wallet", false, false, true, false]
 	],
+	MKR: erc,
 	MLN: erc,
 	MNX: [
 		["MinexWallet", "https://minexcoin.com/", false, true, false, false],
