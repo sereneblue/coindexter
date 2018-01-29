@@ -92,6 +92,7 @@ var mineable = {
 	ICO: "n",
 	IOC: "n",
 	ION: "n",
+	IOST: "n",
 	JINN: "n",
 	KCS: "n",
 	KICK: "n",

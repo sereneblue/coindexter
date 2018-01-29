@@ -300,6 +300,7 @@ var wallets = {
 	ION: [
 		["ION Wallet", "https://ionomy.com/download", false, true, false, false]
 	],
+	IOST: erc,
 	JINN: nxt,
 	KCS: erc,
 	KICK: erc,
