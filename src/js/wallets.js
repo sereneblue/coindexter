@@ -57,6 +57,7 @@ var wallets = {
 	ADT: erc,
 	ADX: erc,
 	AE: erc,
+	AGI: erc,
 	AGRS: omni,
 	AION: erc,
 	AMP: omni,
@@ -294,6 +295,7 @@ var wallets = {
 	ICN: erc,
 	ICX: erc,
 	ICO: erc,
+	IGNIS: nxt,
 	IOC: [
 		["I/O Coin Wallet", "https://www.iocoin.io/", false, true, false, false]
 	],
@@ -602,6 +604,7 @@ var wallets = {
 	ZEN: [
 		["ZenCash Swing Wallet", "https://github.com/ZencashOfficial/zencash-swing-wallet-ui/releases", false, true, false, false]
 	],
+	ZIL: erc,
 	ZRX: erc,
 	ZSC: erc
 }

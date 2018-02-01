@@ -12,6 +12,7 @@ var mineable = {
 	ADT: "n",
 	ADX: "n",
 	AE: "n",
+	AGI: "n",
 	AGRS: "n",
 	AION: "n",
 	AMP: "n",
@@ -90,6 +91,7 @@ var mineable = {
 	ICN: "n",
 	ICX: "n",
 	ICO: "n",
+	IGNIS: "n",
 	IOC: "n",
 	ION: "n",
 	IOST: "n",
@@ -220,6 +222,7 @@ var mineable = {
 	ZCL: "m",
 	ZEC: "m",
 	ZEN: "m",
+	ZIL: "n",
 	ZRX: "n",
 	ZSC: "n"
 }
