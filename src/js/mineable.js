@@ -213,6 +213,7 @@ var mineable = {
 	XLM: "n",
 	XMR: "m",
 	XP: "n",      // Proof of Stake
+	XPA: "n",
 	XRB: "n",
 	XRL: "n",
 	XRP: "n",

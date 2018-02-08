@@ -573,6 +573,7 @@ var wallets = {
 		["XP Web Wallet", "https://webwallet.xpcoin.io/", true, false, false, false],
 		["XP Wallet", "https://www.xpcoin.io/downloads/", false, true, true, false]
 	],
+	XPA: erc,
 	XRB: [
 		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
 	],
