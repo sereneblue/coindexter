@@ -419,6 +419,7 @@ var wallets = {
 	],
 	PLR: erc,
 	POE: erc,
+	POLY: erc,
 	POT: [
 		["PotCoin Wallet", "http://www.potcoin.com/wallets", false, true, false, false],
 		["PotWallet", "https://potwallet.com/", true, false, false, false]
@@ -510,6 +511,7 @@ var wallets = {
 		common.ledger,
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
+	UCASH: erc,
 	USDT: omni,
 	VEE: erc,
 	VEN: erc,

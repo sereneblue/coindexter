@@ -144,6 +144,7 @@ var mineable = {
 	PIVX: "n",
 	PLR: "n",
 	POE: "n",
+	POLY: "n",
 	POT: "n",     // Proof of stake now, originally started as PoW with Scrypt
 	POWR: "n",
 	PPC: "m",
@@ -192,6 +193,7 @@ var mineable = {
 	TRIG: "n",
 	TRX: "n",
 	UBQ: "m",
+	UCASH: "n",
 	USDT: "n",
 	VEE: "n",
 	VEN: "n",
