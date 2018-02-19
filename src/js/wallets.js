@@ -368,6 +368,9 @@ var wallets = {
 	MTH: erc,
 	MTL: erc,
 	MYST: erc,
+	NANO: [
+		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
+	],
 	NAS: erc,
 	NAV: [
 		["NAV Wallet", "https://navcoin.org/downloads/", false, true, true, false]
@@ -576,9 +579,6 @@ var wallets = {
 		["XP Wallet", "https://www.xpcoin.io/downloads/", false, true, true, false]
 	],
 	XPA: erc,
-	XRB: [
-		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
-	],
 	XRL: erc,
 	XRP: [
 		common.ledger,

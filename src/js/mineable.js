@@ -124,6 +124,7 @@ var mineable = {
 	MTH: "n",
 	MTL: "n",
 	MYST: "n",
+	NANO: "n",
 	NAS: "n",
 	NAV: "n",
 	NEBL: "n",
@@ -216,7 +217,6 @@ var mineable = {
 	XMR: "m",
 	XP: "n",      // Proof of Stake
 	XPA: "n",
-	XRB: "n",
 	XRL: "n",
 	XRP: "n",
 	XUC: "n",
