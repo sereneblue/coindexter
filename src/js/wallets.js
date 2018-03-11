@@ -488,6 +488,7 @@ var wallets = {
 	SPRTS: [
 		["Sprouts Wallet", "https://sproutscommunity.wordpress.com/", false, true, false, false]
 	],
+	SRN: erc,
 	STEEM: [
 		["Steemit wallet", "https://steemit.com", true, false, false, false]
 	],

@@ -180,6 +180,7 @@ var mineable = {
 	SNM: "n",
 	SNT: "n",
 	SPRTS: "p",    // mixed pow/pos
+	SRN: "n",
 	STEEM: "m",
 	STORJ: "n",
 	STORM: "n",
