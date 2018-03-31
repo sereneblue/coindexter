@@ -60,7 +60,7 @@ var app = new Vue({
 		this.state = state;
 	},
 	checkMineable: function () {
-		if (!app.settings.removeUnmineable) {return this.currencies};
+		if (!this.settings.removeUnmineable) {return this.currencies};
 		return this.currencies.filter(function(currency){
 		  return (mineable[currency.symbol] == "m" || mineable[currency.symbol] == "p" || mineable[currency.symbol] == "i" || mineable[currency.symbol] == "s");
 		});
@@ -92,8 +92,8 @@ var app = new Vue({
 		var _this = this;
 
 		url = 'https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.numDisplay;
-		if (app.settings.currency != "BTC" && app.settings.currency != "USD") {
-			url += "&convert=" + app.settings.currency;
+		if (this.settings.currency != "BTC" && this.settings.currency != "USD") {
+			url += "&convert=" + this.settings.currency;
 		};
 
 		this.$http.get(url).then(function (response) {
