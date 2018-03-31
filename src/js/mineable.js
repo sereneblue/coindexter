@@ -86,6 +86,7 @@ var mineable = {
 	GBYTE: "n",
 	GNO: "n",
 	GNT: "n",
+	GNX: "n",
 	GRS: "p",    // 0.22918095% premined
 	GXS: "n",
 	HMQ: "n",
@@ -119,6 +120,7 @@ var mineable = {
 	MED: "n",
 	MGO: "n",
 	MIOTA: "n",
+	MITH: "n",
 	MKR: "n",
 	MLN: "n",
 	MNX: "p",     // ICO 5.5m premined

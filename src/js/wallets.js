@@ -295,6 +295,7 @@ var wallets = {
 	],
 	GNO: erc,
 	GNT: erc,
+	GNX: erc,
 	GRS: [
 		["Groestlcoin Core", "https://www.groestlcoin.org/downloads/", false, true, false, false],
 		["Groestlpay", "https://groestlpay.groestlcoin.org/", true, false, false, false],
@@ -372,6 +373,7 @@ var wallets = {
 		["IOTA Wallet (BETA)", "https://play.google.com/store/apps/details?id=org.iota.wallet", false, false, true, false],
 		["IOTAmobile", "https://iota.tools/wallet", false, false, true, false]
 	],
+	MITH: erc,
 	MKR: erc,
 	MLN: erc,
 	MNX: [
