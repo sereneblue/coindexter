@@ -145,7 +145,7 @@
 		  						<div class="ui items">
 					  				<div class="item">
 									    <div class="ui middle aligned micro image">
-									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									      <img v-bind:src="'https://s2.coinmarketcap.com/static/img/coins/32x32/' + getImgID(coin.name) + '.png'">
 									    </div>
 									    <div class="content">
 									      <div class="header">{{ coin.symbol }}</div>
@@ -169,7 +169,7 @@
 		  						<div class="ui items">
 					  				<div class="item">
 									    <div class="ui middle aligned micro image">
-									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									      <img v-bind:src="'https://s2.coinmarketcap.com/static/img/coins/32x32/' + getImgID(coin.name) + '.png'">
 									    </div>
 									    <div class="content">
 									      <div class="header">{{ coin.symbol }}</div>
@@ -304,6 +304,7 @@
 	<script type="text/javascript" src="js/vue-resource.min.js"></script>
 	<script type="text/javascript" src="js/wallets.js"></script>
 	<script type="text/javascript" src="js/mineable.js"></script>
+	<script type="text/javascript" src="js/ids.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

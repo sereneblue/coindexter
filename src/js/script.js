@@ -75,6 +75,9 @@ var app = new Vue({
 	format: function (amount) {
 		return parseFloat(amount).toLocaleString();
 	},
+	getImgID: function (name) {
+		return cmcid[name];
+	},
 	getMarketcap: function (currency) {
 		return app.format(currency['market_cap_' + app.settings.currency.toLowerCase()]);
 	},

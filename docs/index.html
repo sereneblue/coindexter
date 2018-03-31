@@ -146,7 +146,7 @@
 		  						<div class="ui items">
 					  				<div class="item">
 									    <div class="ui middle aligned micro image">
-									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									      <img v-bind:src="'https://s2.coinmarketcap.com/static/img/coins/32x32/' + getImgID(coin.name) + '.png'">
 									    </div>
 									    <div class="content">
 									      <div class="header">{{ coin.symbol }}</div>
@@ -170,7 +170,7 @@
 		  						<div class="ui items">
 					  				<div class="item">
 									    <div class="ui middle aligned micro image">
-									      <img v-bind:src="'https://files.coinmarketcap.com/static/img/coins/32x32/' + coin.id + '.png'">
+									      <img v-bind:src="'https://s2.coinmarketcap.com/static/img/coins/32x32/' + getImgID(coin.name) + '.png'">
 									    </div>
 									    <div class="content">
 									      <div class="header">{{ coin.symbol }}</div>
@@ -305,6 +305,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/sereneblue/coindexter/master/src/js/wallets.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/sereneblue/coindexter/master/src/js/mineable.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/sereneblue/coindexter/master/src/js/ids.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/sereneblue/coindexter/master/src/js/script.js"></script>
 </body>
 </html>
