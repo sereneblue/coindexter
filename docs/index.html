@@ -82,7 +82,7 @@
 				</div>
 				<br/>
 				<h5 class="ui inverted header">Total: {{ currentInvestmentPrice() }}</h5>
-				<h5 class="ui inverted header">Current Price: {{ investment.current_price }}</h5>
+				<h5 class="ui inverted header">Current Price: {{ investment.currentPrice }}</h5>
 				<h5 class="ui inverted header" v-model=investment.target>Target Price: {{ investment.target }}</h5>
 				<div class="ui right labeled fluid input">
 				  <input type="text" id="fiat-amount"  v-model=investment.target>

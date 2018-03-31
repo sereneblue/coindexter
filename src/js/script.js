@@ -205,7 +205,7 @@ var app = new Vue({
 		return list.sort();
 	},
 	profit: function () {
-		return ((Number(app.investment.target) - Number(app.investment.currentPrice)) * app.investment.amount).toFixed(2).toLocaleString();
+		return ((Number(this.investment.target) - Number(this.investment.currentPrice)) * this.investment.amount).toFixed(2).toLocaleString();
 	},
 	rates: function () {
 		var c = Object.keys(this.exchangeRates.rates)
