@@ -80,7 +80,7 @@
 				  </div>
 				</div>
 				<br/>
-				<h5 class="ui inverted header">Total: {{ current_investment_price() }}</h5>
+				<h5 class="ui inverted header">Total: {{ currentInvestmentPrice() }}</h5>
 				<h5 class="ui inverted header">Current Price: {{ investment.current_price }}</h5>
 				<h5 class="ui inverted header" v-model=investment.target>Target Price: {{ investment.target }}</h5>
 				<div class="ui right labeled fluid input">
@@ -119,6 +119,11 @@
 				<br/>
 				<br/>
 				<div class="ui checkbox">
+				  <input type="checkbox" id="dark">
+				  <label>Enable Dark Mode</label>
+				</div>
+				<br/>
+				<div class="ui checkbox">
 				  <input type="checkbox" id="unmineable">
 				  <label>Remove unmineable</label>
 				</div>
@@ -128,7 +133,7 @@
 				</button>
 			</div>
 		</div>
-		<div class="pusher">
+		<div :class="{ pusher: true, inverted: settings.darkMode }">
 			<div class="ui black inverted segment title-bar">
 				<h4>coindexter</h4>
 			</div>
@@ -136,7 +141,7 @@
 				<h4>{{ stats.active_currencies }} Currencies / {{ stats.active_assets }} Assets / Market Cap: {{ current }}{{ app.format(stats.total_market_cap_usd) }} / 24h Volume: {{ current }}{{ app.format(stats.total_24h_volume_usd) }}</h4>
 			</div>
 			<div class="ui two column stackable grid container">
-			  	<div class="column">
+			  	<div :class="{ column: true, night: settings.darkMode }">
 			  		<h3>Biggest Gainers</h3>
 			  		<div class="column">
 	  				<div class="ui three column stackable grid container">
@@ -160,7 +165,7 @@
 		  			</div>
 			    </div>
 			  	</div>
-			  	<div class="column">
+			  	<div :class="{ column: true, night: settings.darkMode }">
 			  		<h3>Biggest Losers</h3>
 			  		<div class="column">
 	  				<div class="ui three column stackable grid container">
@@ -184,7 +189,7 @@
 		  			</div>
 			    </div>
 			  	</div>
-				<table class="ui basic table">
+				<table :class="{ ui: true, table: true, inverted: settings.darkMode }">
 				  <thead>
 				    <tr>
 				      <th>Rank</th>
@@ -267,7 +272,7 @@
 				  </tbody>
 				</table>
 			</div>
-			<div class="ui modal">
+			<div :class="{ ui: true, modal: true, basic: settings.darkMode }">
 			  <i class="close icon"></i>
 			  <div class="header">
 			    {{ currentCrypto }} Wallets

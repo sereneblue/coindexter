@@ -27,13 +27,14 @@ var app = new Vue({
 	},
 	fiat_amount: 0,
 	investment: {
-		current_price: 0,
+		currentPrice: 0,
 		target: 0,
 		amount: 0
 	},
 	settings: {
 		currency: "USD",
-		num_display: 100,
+		darkMode: false,
+		numDisplay: 100,
 		removeUnmineable: false
 	},
 	shifts: {},
@@ -64,13 +65,13 @@ var app = new Vue({
 		  return (mineable[currency.symbol] == "m" || mineable[currency.symbol] == "p" || mineable[currency.symbol] == "i" || mineable[currency.symbol] == "s");
 		});
 	},
-	current_investment_price: function () {
+	currentInvestmentPrice: function () {
 		var crypto = $('.ui.dropdown').dropdown('get value')[2] ? $('.ui.dropdown').dropdown('get value')[2].toUpperCase() : "BTC";
 		var fiat = $('.ui.dropdown').dropdown('get value')[3] ? $('.ui.dropdown').dropdown('get value')[3].toUpperCase() : "USD";
 		var rate = (fiat != "USD" ? this.exchangeRates.rates[fiat] : 1);
 
-		this.investment.current_price = this.cryptoPrices[crypto] * rate;
-		return (this.investment.current_price * this.investment.amount * rate).toLocaleString();
+		this.investment.currentPrice = this.cryptoPrices[crypto] * rate;
+		return (this.investment.currentPrice * this.investment.amount * rate).toLocaleString();
 	},
 	format: function (amount) {
 		return parseFloat(amount).toLocaleString();
@@ -90,7 +91,7 @@ var app = new Vue({
 	updateData: function () {
 		var _this = this;
 
-		url = 'https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.num_display;
+		url = 'https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.numDisplay;
 		if (app.settings.currency != "BTC" && app.settings.currency != "USD") {
 			url += "&convert=" + app.settings.currency;
 		};
@@ -155,10 +156,10 @@ var app = new Vue({
 					app.calculate('crypto');
 				});
 				$('#investment-crypto').dropdown('setting', 'onChange', function (val) {
-					app.current_investment_price();
+					app.currentInvestmentPrice();
 				});
 				$('#target-fiat').dropdown('setting', 'onChange', function () {
-					app.current_investment_price();
+					app.currentInvestmentPrice();
 				});
 			});
 		});
@@ -204,7 +205,7 @@ var app = new Vue({
 		return list.sort();
 	},
 	profit: function () {
-		return ((Number(app.investment.target) - Number(app.investment.current_price)) * app.investment.amount).toFixed(2).toLocaleString();
+		return ((Number(app.investment.target) - Number(app.investment.currentPrice)) * app.investment.amount).toFixed(2).toLocaleString();
 	},
 	rates: function () {
 		var c = Object.keys(this.exchangeRates.rates)
@@ -215,7 +216,7 @@ var app = new Vue({
 })
 
 $(document).ready(function() {
-	if (window.location.hash.match(/[A-Z]{3}-\d{2,4}-[tf]/)) {
+	if (window.location.hash.match(/[A-Z]{3}-\d{2,4}-[tf]-[tf]/)) {
 		var bits = window.location.hash.split('-');
 		var arr = Object.keys(app.fiat);
 		bits[0] = bits[0].substring(1);
@@ -223,9 +224,10 @@ $(document).ready(function() {
 			app.settings.currency = bits[0];
 		}
 		if (Number(bits[1]) >= 10) {
-			app.settings.num_display = bits[1];
+			app.settings.numDisplay = bits[1];
 		}
-		app.settings.removeUnmineable = (bits[2] == "t" ? true : false);
+		app.settings.darkMode = (bits[2] == "t" ? true : false);
+		app.settings.removeUnmineable = (bits[3] == "t" ? true : false);
 	}
 	app.updateData();
 	setInterval(app.updateData, 300 * 1000);
@@ -238,8 +240,10 @@ function showModal(symbol) {
 
 function generateURL() {
 	var base = $("#base-currency")[0].value ? $("#base-currency")[0].value : "USD";
-	var num_display = $("#num-display")[0].value;
+	var darkMode = $("#dark")[0].checked ? "t" : "f";
+	var numDisplay = $("#num-display")[0].value;
 	var unmineable = $("#unmineable")[0].checked ? "t" : "f";
-	window.location.hash = "#" + base + "-" + num_display + "-" + unmineable;
+	
+	window.location.hash = "#" + base + "-" + numDisplay + "-" + darkMode + "-" + unmineable;
 	window.location.reload();
 };
