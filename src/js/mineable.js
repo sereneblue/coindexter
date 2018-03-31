@@ -25,7 +25,8 @@ var mineable = {
 	B3: "n",     // Proof of stake
 	BAT: "n",
 	BAY: "n",    // Proof of stake
-	BCC: "p",    // >1m BCC sold in ICO, Ponzi?
+	BCC: "p",    // Ponzi Scam
+	BCD: "m",
 	BCH: "m",
 	BCN: "s",    // 82% premined
 	BDL: "p",    // ICO, looks like a scam. http://archive.is/Cv46i
@@ -62,6 +63,7 @@ var mineable = {
 	DNT: "n",
 	DOGE: "m",
 	DRGN: "n",
+	DROP: "n",
 	EB3: "s",    // Looks like a scam http://archive.is/7rjAz
 	EDG: "n",
 	ELF: "n",
@@ -76,7 +78,7 @@ var mineable = {
 	ETP: "p",    // ICO
 	FAIR: "n",   // Switched from PoW to PoS
 	FCT: "n",
-	FRST: "s",   // 109.9m/110m premined? Looks like a scammy coin
+	FRST: "s",   // 109.9m/110m premined? Looks like a scam
 	FTC: "i",    // instamined
 	FUN: "n",
 	GAME: "m",
@@ -127,6 +129,7 @@ var mineable = {
 	NANO: "n",
 	NAS: "n",
 	NAV: "n",
+	NCASH: "n",
 	NEBL: "n",
 	NEO: "n",
 	NLC2: "n",
@@ -138,6 +141,7 @@ var mineable = {
 	OAX: "n",
 	OK: "n",
 	OMG: "n",
+	ONT: "n",
 	OTN: "n",
 	PAC: "n",	  // Website is full of dead links
 	PART: "n",

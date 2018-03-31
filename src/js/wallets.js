@@ -3,6 +3,8 @@
 
 var common = {
 	bitcoin: ["Bitcoin.com Wallet", "https://www.bitcoin.com/choose-your-wallet/bitcoin-com-wallet", true, true, true, false],
+	bither: ["Bither Wallet", "https://bither.net", false, true, true, false],
+	bitpie: ["BitPie", "http://bitpie.com", false, false, true, false],
 	blockchain: ["Blockchain.info Wallet", "https://blockchain.info/wallet/#/", true, false, false, false],
 	breadwallet: ["breadwallet", "https://breadwallet.com/", false, false, true, false],
 	coinbase: ["Coinbase", "https://coinbase.com", true, false, false, false],
@@ -22,6 +24,12 @@ var erc = [
 	["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 	["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
 	common.trezor
+]
+
+var neo = [
+	["Neon Wallet", "https://github.com/CityOfZion/neon-wallet/releases", false, true, false, false],
+	["NEO Desktop Client", "https://github.com/neo-project/neo-gui/releases/", false, true, false, false],
+	["NEO Web Wallet", "https://neowallet.cn/", true, false, false, false]
 ]
 
 var nxt = [
@@ -85,6 +93,9 @@ var wallets = {
 		["Bitconnect Wallet", "https://bitconnectcoin.co/download", false, true, false, false],
 		["Bitconnect Web Wallet", "http://www.bitconnect.co/", true, false, false, false]
 	],
+	BCD: [
+		common.bitpie
+	],
 	BCH: [
 		common.bitcoin,
 		common.blockchain,
@@ -118,6 +129,8 @@ var wallets = {
 		common.bitcoin,
 		["BitcoinCore", "https://bitcoin.org/en/download", false, true, false, false],
 		["BitGo", "https://www.bitgo.com/", true, false, false, false],
+		common.bither,
+		common.bitpie,
 		common.blockchain,
 		common.breadwallet,
 		common.coinbase,
@@ -137,6 +150,7 @@ var wallets = {
 		["Xapo", "https://www.xapo.com/", true, false, false, false]
 	],
 	BTG: [
+		common.bitpie,
 		["BTGWallet", "https://btgwallet.online/", true, false, false, false],
 		common.coinomi,
 		common.ledger,
@@ -211,6 +225,7 @@ var wallets = {
 		common.ledger
 	],
 	DRGN: erc,
+	DROP: erc,
 	EB3: [
 		["EB3 Wallet", "http://www.eb3coin.com/", false, false, true, false]
 	],
@@ -375,15 +390,11 @@ var wallets = {
 	NAV: [
 		["NAV Wallet", "https://navcoin.org/downloads/", false, true, true, false]
 	],
+	NCASH: erc,
 	NEBL: [
 		["Neblio Wallet", "https://nebl.io/wallets/", false, true, true, false]
 	],
-	NEO: [
-		["CoZ Neon Wallet", "https://github.com/CityOfZion/neon-wallet/releases", false, true, false, false],
-		["NEO Desktop Client", "https://github.com/neo-project/neo-gui/releases/", false, true, false, false],
-		["NEO Web Wallet", "https://neowallet.cn/", true, false, false, false],
-		["NEO Web Wallet by OnChain dev", "http://neowallet.net/", true, false, false, false]
-	],
+	NEO: neo,
 	NLC2: [
 		["NoLimitCoin Wallet", "https://www.nolimitcoin.org/", true, true, false, false]
 	],
@@ -406,6 +417,7 @@ var wallets = {
 		["OKCash Wallet", "http://okcash.co/#download", false, true, false, false]
 	],
 	OMG: erc,
+	ONT: neo,
 	OTN: erc,
 	PAC: [
 		["Paccoin", "https://github.com/PaccoinCommunity/Paccoin/releases", false, true, false, false]
