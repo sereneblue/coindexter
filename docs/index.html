@@ -142,9 +142,9 @@
 				<h4>{{ stats.active_currencies }} Currencies / {{ stats.active_assets }} Assets / Market Cap: {{ current }}{{ app.format(stats.total_market_cap_usd) }} / 24h Volume: {{ current }}{{ app.format(stats.total_24h_volume_usd) }}</h4>
 			</div>
 			<div class="ui two column stackable grid container">
-			  	<div class="column">
+			  	<div :class="{ column: true, night: settings.darkMode }">
 			  		<h3>Biggest Gainers</h3>
-			  		<div :class="{ column: true, night: settings.darkMode }">
+			  		<div class="column">
 	  				<div class="ui three column stackable grid container">
 		  				<div class="column" v-for="coin in topGains">
 		  					<div class="ui green segment">
