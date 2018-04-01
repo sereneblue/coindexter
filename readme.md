@@ -33,6 +33,10 @@ Get direct links to wallets for your favorite currency! The data is stored in wa
 
 Change default currency to display, number of coins to display (min 100), and filter coins that can not be mined.
 
+#### Dark Mode
+
+coindexter has a dark mode for comfortable late night viewing.
+
 #### Fresh data
 
 coindexter automatically refreshes data from coinmarketcap every 5 minutes (how often coinmarketcap caches data).
