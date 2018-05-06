@@ -109,27 +109,27 @@
 				<select class="ui fluid dropdown" id="base-currency">
 				  <option value="">Base currency</option>
 				  <option value="BTC">BTC</option>
-				  <option :value="currency" v-for="currency in Object.keys(fiat)">{{ currency }}</option>
+				  <option :value="currency" v-for="currency in Object.keys(fiat)" :selected="app.settings.currency == currency">{{ currency }}</option>
 				</select>
 				<br/>
 				<h5 class="ui inverted header">Max num of currencies to display</h5>
 				<div class="ui input">
-				  <input type="number" min="100" id="num-display" placeholder="Num. of currencies" value="100">
+				  <input type="number" min="100" id="num-display" placeholder="Num. of currencies" :value="app.settings.numDisplay">
 				</div>
 				<br/>
 				<br/>
 				<div class="ui checkbox">
-				  <input type="checkbox" id="dark">
+				  <input type="checkbox" id="dark" :checked="app.settings.darkMode">
 				  <label>Enable Dark Mode</label>
 				</div>
 				<br/>
 				<div class="ui checkbox">
-				  <input type="checkbox" id="unmineable">
+				  <input type="checkbox" id="unmineable" :checked="app.settings.removeUnmineable">
 				  <label>Remove unmineable</label>
 				</div>
 				<br/>
-				<button class="ui teal fluid button" onclick="generateURL();">
-				  Generate URL
+				<button class="ui teal fluid button" onclick="saveSettings();">
+					Save Settings
 				</button>
 			</div>
 		</div>
@@ -211,7 +211,7 @@
 							<div class="ui empty tiny red horizontal circular label" v-else-if="mineable(currency.symbol) == 'n'"></div>
 							<div class="ui empty tiny grey horizontal circular label" v-else></div>
 							{{ currency.name }}
-							<a class="ui label" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
+							<a :class="{ ui: true, label: true, grey: settings.darkMode }" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
 							  <i class="lock icon"></i> {{ wallet(currency.symbol).length }}
 							</a>
 							<a class="ui blue horizontal label" href="https://shapeshift.io" target="_blank" v-if="currency.last_updated">Shift</a>
@@ -236,7 +236,7 @@
 						<td>
 							{{ currency.rank }}.
 							{{ currency.name }}
-							<a class="ui label" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
+							<a :class="{ ui: true, label: true, grey: settings.darkMode }" v-if="wallet(currency.symbol)" :onclick="'showModal(\'' + currency.symbol + '\');'">
 							  <i class="lock icon"></i> {{ wallet(currency.symbol).length }}
 							</a>
 							<div class="ui tiny green horizontal label" v-if="mineable(currency.symbol) == 'm'">mineable</div>

@@ -216,19 +216,12 @@ var app = new Vue({
 })
 
 $(document).ready(function() {
-	if (window.location.hash.match(/[A-Z]{3}-\d{2,4}-[tf]-[tf]/)) {
-		var bits = window.location.hash.split('-');
-		var arr = Object.keys(app.fiat);
-		bits[0] = bits[0].substring(1);
-		if (arr.indexOf(bits[0]) || bits[0] == "BTC") {
-			app.settings.currency = bits[0];
-		}
-		if (Number(bits[1]) >= 10) {
-			app.settings.numDisplay = bits[1];
-		}
-		app.settings.darkMode = (bits[2] == "t" ? true : false);
-		app.settings.removeUnmineable = (bits[3] == "t" ? true : false);
+	var settings = localStorage.getItem("settings");
+
+	if (settings) {
+		app.settings = JSON.parse(settings);
 	}
+
 	app.updateData();
 	setInterval(app.updateData, 300 * 1000);
 });
@@ -238,12 +231,12 @@ function showModal(symbol) {
 	$('.ui.modal').modal('show');
 };
 
-function generateURL() {
-	var base = $("#base-currency")[0].value ? $("#base-currency")[0].value : "USD";
-	var darkMode = $("#dark")[0].checked ? "t" : "f";
-	var numDisplay = $("#num-display")[0].value;
-	var unmineable = $("#unmineable")[0].checked ? "t" : "f";
+function saveSettings() {
+	app.settings.currency = $("#base-currency")[0].value ? $("#base-currency")[0].value : "USD";
+	app.settings.darkMode = $("#dark")[0].checked;
+	app.settings.numDisplay = $("#num-display")[0].value;
+	app.settings.removeUnmineable = $("#unmineable")[0].checked;
 	
-	window.location.hash = "#" + base + "-" + numDisplay + "-" + darkMode + "-" + unmineable;
+	localStorage.setItem("settings", JSON.stringify(app.settings));
 	window.location.reload();
 };
