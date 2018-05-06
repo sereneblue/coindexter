@@ -30,6 +30,7 @@ var mineable = {
 	BCH: "m",
 	BCN: "s",    // 82% premined
 	BDL: "p",    // ICO, looks like a scam. http://archive.is/Cv46i
+	BFT: "n",
 	BLOCK: "n",
 	BNB: "n",
 	BNT: "n",
@@ -37,18 +38,22 @@ var mineable = {
 	BQX: "n",
 	BTC: "m",
 	BTCD: "p",   // 1.5% premined for bounties
+	BTCP: "m", 
 	BTG: "p",    // 100,000 BTG postmined https://archive.fo/xGa14
 	BTM: "n",
 	BTS: "n",
 	BTX: "p",
 	BURST: "m",
 	CDT: "n",
+	CENNZ: "n",
 	CFI: "n",
 	CLOAK: "n",
+	CMT: "n",
 	CND: "n",
 	CNX: "n",    // Proof-of-stake
 	COB: "n",
 	CTR: "n",
+	CTXC: "n",
 	CVC: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
 	DATA: "n",
@@ -66,6 +71,7 @@ var mineable = {
 	DROP: "n",
 	EB3: "s",    // Looks like a scam http://archive.is/7rjAz
 	EDG: "n",
+	ELA: "s",    // 33m in the genesis block
 	ELF: "n",
 	EMC: "m",
 	EMC2: "m",
@@ -79,6 +85,7 @@ var mineable = {
 	FAIR: "n",   // Switched from PoW to PoS
 	FCT: "n",
 	FRST: "s",   // 109.9m/110m premined? Looks like a scam
+	FSN: "n",
 	FTC: "i",    // instamined
 	FUN: "n",
 	GAME: "m",
@@ -88,6 +95,7 @@ var mineable = {
 	GNT: "n",
 	GNX: "n",
 	GRS: "p",    // 0.22918095% premined
+	GTO: "n",
 	GXS: "n",
 	HMQ: "n",
 	HSR: "n",
@@ -108,6 +116,7 @@ var mineable = {
 	LINK: "n",
 	LEO: "p",    // 50m premined
 	LKK: "n",
+	LOOM: "n",
 	LRC: "n",
 	LSK: "n",
 	LTC: "m",
@@ -138,6 +147,7 @@ var mineable = {
 	NLG: "p",     // 170m premined
 	NMC: "m",
 	NMR: "n",
+	NPXS: "n",
 	NXS: "m",
 	NXT: "n",
 	OAX: "n",
@@ -185,6 +195,7 @@ var mineable = {
 	SNGLS: "n",
 	SNM: "n",
 	SNT: "n",
+	SOC: "n",
 	SPRTS: "p",    // mixed pow/pos
 	SRN: "n",
 	STEEM: "m",
@@ -210,8 +221,10 @@ var mineable = {
 	VIA: "p",     // ICO
 	VSL: "n",
 	VTC: "m",
+	WAN: "n",      // Only mineable by WAN team, transitioning to PoS.
 	WAVES: "n",
 	WAX: "n",
+	WICC: "n",
 	WINGS: "n",
 	WTC: "n",
 	XAS: "p",     // ICO
@@ -220,6 +233,7 @@ var mineable = {
 	XDN: "m",
 	XEL: "n",
 	XEM: "n",
+	XIN: "n",
 	XLM: "n",
 	XMR: "m",
 	XP: "n",      // Proof of Stake

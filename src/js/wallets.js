@@ -117,6 +117,7 @@ var wallets = {
 	BDL: [
 		["Bitdeal", "https://bitdeal.co.in/", false, true, true, false]
 	],
+	BFT: erc,
 	BLOCK: [
 		["Blocknet", "http://blocknet.co/#downloads", false, true, false, false]
 	],
@@ -149,6 +150,10 @@ var wallets = {
 		common.trezor,
 		["Xapo", "https://www.xapo.com/", true, false, false, false]
 	],
+	BTCD: [],  // https://archive.fo/FMv0K Project looks dead?
+	BTCP: [
+		common.coinomi
+	],
 	BTG: [
 		common.bitpie,
 		["BTGWallet", "https://btgwallet.online/", true, false, false, false],
@@ -175,17 +180,20 @@ var wallets = {
 		["BurstNation Android Wallet", "https://play.google.com/store/apps/details?id=com.official.bnwallet", false, false, true, false]
 	],
 	CDT: erc,
+	CENNZ: erc,
 	CFI: erc,
 	CLOAK: [
 		["Cloak Wallet", "https://play.google.com/store/apps/details?id=com.cloakcoin.wallet&hl=en", true, false, false, false]
 		["CloakCoin Wallet", "https://www.cloakcoin.com/en/downloads.html", false, true, false, false],
 	],
+	CMT: erc,
 	CND: erc,
 	CNX: [
 		["Cryptonex Wallet", "https://cryptonex.org/#5", false, true, false, false]
 	],
 	COB: erc,
 	CTR: erc,
+	CTXC: erc,
 	CVC: erc,
 	DASH: [
 		common.coinbase,
@@ -230,6 +238,9 @@ var wallets = {
 		["EB3 Wallet", "http://www.eb3coin.com/", false, false, true, false]
 	],
 	EDG: erc,
+	ELA: [
+		["Elastos Wallet", "https://wallet.elastos.org/", true, false, false, false]
+	],
 	ELF: erc,
 	EMC: [
 		["Emercoin Wallet", "https://emercoin.com/#download", false, true, false, false]
@@ -279,6 +290,7 @@ var wallets = {
 	FRST: [
 		["Firstcoin Wallet", "http://firstcoinproject.com/", false, true, true, false]
 	],
+	FSN: erc,
 	FTC: [
 		["Feathercoin Wallet", "https://www.feathercoin.com/", false, true, true, false]
 	],
@@ -301,6 +313,7 @@ var wallets = {
 		["Groestlpay", "https://groestlpay.groestlcoin.org/", true, false, false, false],
 		["Groestlcoin Wallet", "https://www.groestlcoin.org/downloads/", false, false, true, false]
 	],
+	GTO: erc,
 	GXS: [
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
 	],
@@ -339,6 +352,7 @@ var wallets = {
 	LKK: [
 		["Lykke Wallet", "https://www.lykke.com/", false, false, true, false]
 	],
+	LOOM: erc,
 	LRC: erc,
 	LSK: [
 		["Lisk Nano", "https://lisk.io/download", false, true, false, false],
@@ -409,6 +423,7 @@ var wallets = {
 		["Namecoin Core Wallet", "https://namecoin.org/download/", false, true, false, false]
 	],
 	NMR: erc,
+	NPXS: erc,
 	NXS: [
 		["LLD Wallet", "http://www.nexusearth.com/#", false, true, false, false],
 		["Oracle Wallet", "http://www.nexusearth.com/#", false, true, false, false]
@@ -499,6 +514,7 @@ var wallets = {
 	SNGLS: erc,
 	SNM: erc,
 	SNT: erc,
+	SOC: erc,
 	SPRTS: [
 		["Sprouts Wallet", "https://sproutscommunity.wordpress.com/", false, true, false, false]
 	],
@@ -546,6 +562,9 @@ var wallets = {
 		common.ledger,
 		["Vertcoin Wallet", "https://vertcoin.org/", true, true, false, false]
 	],
+	WAN: [
+		["Wan Wallet", "https://wanchain.org/product", false, true, false, false]
+	],
 	WAVES: [
 		["WavesLiteApp", "https://chrome.google.com/webstore/detail/wavesliteapp/kfmcaklajknfekomaflnhkjjkcjabogm", false, true, false, false],
 		["Waves Lite Client", "https://github.com/wavesplatform/WavesGUI/releases", false, true, false, false],
@@ -553,6 +572,7 @@ var wallets = {
 		["Waves Wallet (iOS)", "https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8", false, false, true, false]
 	],
 	WAX: erc,
+	WICC: erc,
 	WINGS: erc,
 	WTC: erc,
 	XAS: [
@@ -573,6 +593,7 @@ var wallets = {
 		["Elastic Explorer Wallet", "https://wallet.elasticexplorer.org/index.html", true, false, false,false],
 		["Elastic Wallet", "https://wallet.elastic.pw/index.html", true, false, false, false],
 	],
+	XIN: erc,
 	XLM: [
 		["Centaurus", "https://github.com/TbLtzk/Centaurus", false, false, true, false],
 		["Ecliptic", "https://www.ecliptic.co/", true, false, false, false],
