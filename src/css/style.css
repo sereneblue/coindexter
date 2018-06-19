@@ -1,5 +1,21 @@
+div.modal tr:hover {
+	background-color: rgba(60, 60, 60, 0.2);
+}
+
+div.modal.basic tr:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+div.modal tbody td:first-child {
+	padding-left: 10px !important;
+}
+
 h5 {
 	margin-top: 0 !important;
+}
+
+#mobile-table {
+	display: none !important;
 }
 
 .inverted.pusher {
@@ -65,10 +81,6 @@ h5 {
 .warn-msg {
 	padding-top: 1em;
 	color: red;
-}
-
-#mobile-table {
-	display: none !important;
 }
 
 @media screen and (max-width: 1024px) {
