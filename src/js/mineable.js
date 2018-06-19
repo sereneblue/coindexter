@@ -31,6 +31,7 @@ var mineable = {
 	BCN: "s",    // 82% premined
 	BDL: "p",    // ICO, looks like a scam. http://archive.is/Cv46i
 	BFT: "n",
+	BIX: "n",
 	BLOCK: "n",
 	BNB: "n",
 	BNT: "n",
@@ -60,6 +61,7 @@ var mineable = {
 	DCN: "n",
 	DCR: "p",    // 8% premined
 	DCT: "n",
+	DDD: "n",
 	DENT: "n",
 	DGB: "p",    // 100m premined
 	DGD: "n",
@@ -99,6 +101,7 @@ var mineable = {
 	GXS: "n",
 	HMQ: "n",
 	HSR: "n",
+	HT: "n",
 	ICN: "n",
 	ICX: "n",
 	ICO: "n",
@@ -133,6 +136,7 @@ var mineable = {
 	MKR: "n",
 	MLN: "n",
 	MNX: "p",     // ICO 5.5m premined
+	MOAC: "n",
 	MONA: "m",
 	MTH: "n",
 	MTL: "n",
@@ -148,6 +152,7 @@ var mineable = {
 	NMC: "m",
 	NMR: "n",
 	NPXS: "n",
+	NULS: "n", 
 	NXS: "m",
 	NXT: "n",
 	OAX: "n",

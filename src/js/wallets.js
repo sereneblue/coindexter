@@ -111,13 +111,11 @@ var wallets = {
 	BCN: [
 		["Bytecoin Wallet", "https://bytecoin.org/downloads/", false, true, false, false]
 	],
-	BTCD: [
-		["BitcoinDark", "http://bitcoindark.com/#slide-00", false, true, false, false]
-	],
 	BDL: [
 		["Bitdeal", "https://bitdeal.co.in/", false, true, true, false]
 	],
 	BFT: erc,
+	BIX: erc,
 	BLOCK: [
 		["Blocknet", "http://blocknet.co/#downloads", false, true, false, false]
 	],
@@ -216,6 +214,7 @@ var wallets = {
 	DCT: [
 		["Decent", "https://decent.ch/en/download/", false, true, false, false]
 	],
+	DDD: erc,
 	DENT: erc,
 	DGB: [
 		["DigiByte Wallet", "https://digibyte.co/digibyte-wallets", false, true, true, false]
@@ -321,6 +320,9 @@ var wallets = {
 	HSR: [
 		["Hcash Wallet", "https://h.cash/", false, true, false, false]
 	],
+	HT: [
+		["Huobi Pro", "https://www.huobi.pro/", true, false, false, false]
+	],
 	ICN: erc,
 	ICX: erc,
 	ICO: erc,
@@ -393,6 +395,9 @@ var wallets = {
 	MNX: [
 		["MinexWallet", "https://minexcoin.com/", false, true, false, false],
 	],
+	MOAC: [
+		["Pangu Mainnet Client", "https://github.com/MOACChain/moac-core/releases", false, true, false, false]
+	],
 	MONA: [
 		["Monacoin Wallet", "https://monacoin.org/#download", false, true, false, false]
 	],
@@ -424,6 +429,7 @@ var wallets = {
 	],
 	NMR: erc,
 	NPXS: erc,
+	NULS: erc,
 	NXS: [
 		["LLD Wallet", "http://www.nexusearth.com/#", false, true, false, false],
 		["Oracle Wallet", "http://www.nexusearth.com/#", false, true, false, false]
