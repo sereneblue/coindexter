@@ -401,6 +401,7 @@ var wallets = {
 	MONA: [
 		["Monacoin Wallet", "https://monacoin.org/#download", false, true, false, false]
 	],
+	MTC: erc,
 	MTH: erc,
 	MTL: erc,
 	MYST: erc,

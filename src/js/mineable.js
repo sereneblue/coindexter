@@ -138,6 +138,7 @@ var mineable = {
 	MNX: "p",     // ICO 5.5m premined
 	MOAC: "n",
 	MONA: "m",
+	MTC: "n",
 	MTH: "n",
 	MTL: "n",
 	MYST: "n",
