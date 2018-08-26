@@ -12,7 +12,6 @@ var common = {
 	edge: ["Edge", "https://edgesecure.co/", false, false, true, false],
 	exodus: ["Exodus", "https://www.exodus.io/", false, true, false, false],
 	jaxx: ["Jaxx", "https://jaxx.io/", false, true, true, false],
-	keepkey: ["KeepKey", "https://www.keepkey.com/", false, false, false, true],
 	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
 	mobi: ["Mobi", "https://www.mobi.me/", true, false, true, false],
 	trezor: ["Trezor", "https://trezor.io/", false, false, false, true]
@@ -135,12 +134,12 @@ var wallets = {
 		common.coinbase,
 		common.coinomi,
 		["Copay", "https://copay.io/", true, true, true, false],
+		["Eclair Wallet", "https://play.google.com/store/apps/details?id=fr.acinq.eclair.wallet.mainnet2", false, true, false, false],
 		common.edge,
 		["Electrum", "https://electrum.org", false, true, false, false],
 		common.exodus,
 		["Green Address", "https://greenaddress.it/en/", true, true, true, false],
 		common.jaxx,
-		common.keepkey,
 		common.ledger,
 		common.mobi,
 		["MyCelium", "https://wallet.mycelium.com/", false, false, true, false],
@@ -199,7 +198,6 @@ var wallets = {
 		["DASH Wallet", "https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet", false, false, true, false],
 		common.exodus,
 		common.jaxx,
-		common.keepkey,
 		common.ledger,
 		common.trezor
 	],
@@ -264,7 +262,6 @@ var wallets = {
 		common.edge,
 		common.exodus,
 		common.jaxx,
-		common.keepkey,
 		common.ledger,
 		["Mist", "https://github.com/ethereum/mist/releases", false, true, false, false],
 		common.mobi,
@@ -317,6 +314,7 @@ var wallets = {
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
 	],
 	HMQ: erc,
+	HOT: erc,
 	HSR: [
 		["Hcash Wallet", "https://h.cash/", false, true, false, false]
 	],
@@ -367,7 +365,6 @@ var wallets = {
 		["Electrum-LTC", "https://electrum-ltc.org/", false, true, false, false],
 		common.exodus,
 		common.jaxx,
-		common.keepkey,
 		common.ledger,
 		["Litecoin Core", "https://litecoin.org/", false, true, false, false],
 		["LiteVault", "https://www.litevault.net/", true, false, false, false],
@@ -543,11 +540,14 @@ var wallets = {
 		["Syscoin Wallet", "https://github.com/syscoin/syscoin/releases", false, true, false, false]
 	],
 	TAAS: erc,
+	THETA: erc,
 	TKN: erc,
 	TNB: erc,
 	TNT: erc,
 	TRIG: xcp,
 	TRX: erc,
+	TTU: erc,
+	TUSD: erc,
 	UBQ: [
 		common.ledger,
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
@@ -613,7 +613,8 @@ var wallets = {
 		["Stellar Portal", "https://portal.willet.io/", true, false, false, false]
 	],
 	XMR: [
-		["Monerujo", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
+		["Cake Wallet (iOS)", "https://cakewallet.io/", false, false, true, false],
+		["Monerujo (Android)", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
 		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false]
 	],
@@ -626,6 +627,10 @@ var wallets = {
 	XRP: [
 		common.ledger,
 		["Rippex", "https://rippex.net/carteira-ripple.php", false, true, false, false]
+	],
+	XTZ: [
+		["Galleon", "https://github.com/Cryptonomic/Deployments/wiki/Galleon:-Releases", false, true, false, false],
+		common.ledger
 	],
 	XUC: erc,
 	XVG: [
