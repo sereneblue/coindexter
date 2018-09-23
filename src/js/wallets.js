@@ -69,6 +69,7 @@ var wallets = {
 	AION: erc,
 	AMP: omni,
 	ANT: erc,
+	AOA: erc,
 	ARDR: nxt,
 	ARK: [
 		["Ark Wallet", "https://github.com/ArkEcosystem/ark-desktop/releases", false, true, false, false]
@@ -192,6 +193,7 @@ var wallets = {
 	CTR: erc,
 	CTXC: erc,
 	CVC: erc,
+	DAI: erc,
 	DASH: [
 		common.coinbase,
 		["DASH Core", "https://www.dash.org/wallets/", false, true, false, false],

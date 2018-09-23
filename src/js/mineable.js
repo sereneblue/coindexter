@@ -17,6 +17,7 @@ var mineable = {
 	AION: "n",
 	AMP: "n",
 	ANT: "n",
+	AOA: "n",
 	ARDR: "n",
 	ARK: "n",
 	AST: "n",
@@ -56,6 +57,7 @@ var mineable = {
 	CTR: "n",
 	CTXC: "n",
 	CVC: "n",
+	DAI: "n",
 	DASH: "i",   // 2m DASH was mined in 48h
 	DATA: "n",
 	DCN: "n",

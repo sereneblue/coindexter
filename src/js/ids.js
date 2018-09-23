@@ -94,6 +94,7 @@ var cmcid = {
 	"Auctus" : 2653,
 	"AudioCoin" : 948,
 	"Augur" : 1104,
+	"Aurora": 2874,
 	"Aurora DAO" : 2423,
 	"Auroracoin" : 148,
 	"AurumCoin" : 666,
