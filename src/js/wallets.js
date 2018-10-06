@@ -220,6 +220,7 @@ var wallets = {
 		["DigiByte Wallet", "https://digibyte.co/digibyte-wallets", false, true, true, false]
 	],
 	DGD: erc,
+	DGTX: erc,
 	DICE: erc,
 	DLT: erc,
 	DNT: erc,
@@ -314,6 +315,9 @@ var wallets = {
 	GTO: erc,
 	GXS: [
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
+	],
+	HC: [
+		["hcGUI", "https://github.com/HcashOrg/hcGUI/releases", false, true, false, false]
 	],
 	HMQ: erc,
 	HOT: erc,
@@ -416,6 +420,7 @@ var wallets = {
 		["Neblio Wallet", "https://nebl.io/wallets/", false, true, true, false]
 	],
 	NEO: neo,
+	NEXO: erc,
 	NLC2: [
 		["NoLimitCoin Wallet", "https://www.nolimitcoin.org/", true, true, false, false]
 	],
@@ -602,6 +607,7 @@ var wallets = {
 		["Elastic Explorer Wallet", "https://wallet.elasticexplorer.org/index.html", true, false, false,false],
 		["Elastic Wallet", "https://wallet.elastic.pw/index.html", true, false, false, false],
 	],
+	XET: erc,
 	XIN: erc,
 	XLM: [
 		["Centaurus", "https://github.com/TbLtzk/Centaurus", false, false, true, false],

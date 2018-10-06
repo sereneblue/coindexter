@@ -67,6 +67,7 @@ var mineable = {
 	DENT: "n",
 	DGB: "p",    // 100m premined
 	DGD: "n",
+	DGTX: "n",
 	DICE: "n",
 	DLT: "n",
 	DNT: "n",
@@ -101,6 +102,7 @@ var mineable = {
 	GRS: "p",    // 0.22918095% premined
 	GTO: "n",
 	GXS: "n",
+	HC: "s",
 	HMQ: "n",
 	HOT: "n",
 	HSR: "n",
@@ -151,6 +153,7 @@ var mineable = {
 	NCASH: "n",
 	NEBL: "n",
 	NEO: "n",
+	NEXO: "n",
 	NLC2: "n",
 	NLG: "p",     // 170m premined
 	NMC: "m",
@@ -245,6 +248,7 @@ var mineable = {
 	XDN: "m",
 	XEL: "n",
 	XEM: "n",
+	XET: "n",
 	XIN: "n",
 	XLM: "n",
 	XMR: "m",
