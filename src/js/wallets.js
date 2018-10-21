@@ -313,6 +313,7 @@ var wallets = {
 		["Groestlcoin Wallet", "https://www.groestlcoin.org/downloads/", false, false, true, false]
 	],
 	GTO: erc,
+	GVT: erc,
 	GXS: [
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
 	],
@@ -507,6 +508,9 @@ var wallets = {
 	],
 	RLC: erc,
 	ROUND: erc,
+	RVN: [
+		["Ravencoin Wallet", "https://ravencoin.org/developers-repository/", false, true, false, false]
+	],
 	SAFEX: [
 		["Safe Exchange Wallet", "https://safex.io/", false, true, false, false],
 	],

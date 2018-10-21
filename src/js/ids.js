@@ -966,7 +966,7 @@ var cmcid = {
 	"Moin" : 1141,
 	"MojoCoin" : 1212,
 	"Molecular Future" : 2441,
-	"Monaco" : 1776,
+	"Crypto.com" : 1776,
 	"MonaCoin" : 213,
 	"Monero" : 328,
 	"Monero Classic" : 2655,

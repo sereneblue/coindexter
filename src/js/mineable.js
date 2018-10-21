@@ -101,6 +101,7 @@ var mineable = {
 	GNX: "n",
 	GRS: "p",    // 0.22918095% premined
 	GTO: "n",
+	GVT: "n",
 	GXS: "n",
 	HC: "s",
 	HMQ: "n",
@@ -198,6 +199,7 @@ var mineable = {
 	RISE: "n",
 	RLC: "n",
 	ROUND: "n",
+	RVN: "m",
 	SAFEX: "n",
 	SALT: "n",
 	SAN: "n",
