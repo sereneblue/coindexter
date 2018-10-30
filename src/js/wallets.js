@@ -56,7 +56,8 @@ var wallets = {
 		["Kcash", "https://kcash.com/", false, false, true, false]
 	],
 	ADA: [
-		["Daedalus Wallet", "https://daedaluswallet.io/", false, true, false, false]
+		["Daedalus Wallet", "https://daedaluswallet.io/", false, true, false, false],
+		common.trezor
 	],
 	ADK: [
 		["Aidos Wallet", "https://github.com/AidosKuneen/aidos-wallet/releases", false, true, false, false]
@@ -209,7 +210,8 @@ var wallets = {
 		["dcrwallet", "https://github.com/decred/dcrwallet", false, true, false, false],
 		["Decred Web Wallet", "https://wallet.decred.org/", true, false, false, false],
 		["Decrediton", "https://github.com/decred/decrediton/releases", false, true, false, false],
-		common.exodus
+		common.exodus,
+		common.trezor
 	],
 	DCT: [
 		["Decent", "https://decent.ch/en/download/", false, true, false, false]
@@ -310,7 +312,8 @@ var wallets = {
 	GRS: [
 		["Groestlcoin Core", "https://www.groestlcoin.org/downloads/", false, true, false, false],
 		["Groestlpay", "https://groestlpay.groestlcoin.org/", true, false, false, false],
-		["Groestlcoin Wallet", "https://www.groestlcoin.org/downloads/", false, false, true, false]
+		["Groestlcoin Wallet", "https://www.groestlcoin.org/downloads/", false, false, true, false],
+		common.trezor
 	],
 	GTO: erc,
 	GVT: erc,
@@ -454,6 +457,7 @@ var wallets = {
 	PART: [
 		["Particl Core", "https://github.com/particl/particl-core/releases/", false, true, false, false]
 	],
+	PAX: erc,
 	PAY: erc,
 	PIVX: [
 		common.coinomi,
@@ -564,6 +568,7 @@ var wallets = {
 		["Pyrus", "https://pyrus.ubiqsmart.com/", true, false, false, false]
 	],
 	UCASH: erc,
+	USDC: erc,
 	USDT: omni,
 	VEE: erc,
 	VEN: erc,
@@ -622,13 +627,15 @@ var wallets = {
 		["Stargazer", "https://getstargazer.com/", false, true, true, false],
 		["Starwallet", "https://github.com/Proxiweb/starwallet", false, false, true, false],
 		["Stellar Desktop Client", "https://github.com/stellarchat/desktop-client/releases", false, true, false, false],
-		["Stellar Portal", "https://portal.willet.io/", true, false, false, false]
+		["Stellar Portal", "https://portal.willet.io/", true, false, false, false],
+		common.trezor
 	],
 	XMR: [
 		["Cake Wallet (iOS)", "https://cakewallet.io/", false, false, true, false],
 		["Monerujo (Android)", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
-		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false]
+		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false],
+		common.trezor
 	],
 	XP: [
 		["XP Web Wallet", "https://webwallet.xpcoin.io/", true, false, false, false],
@@ -638,11 +645,13 @@ var wallets = {
 	XRL: erc,
 	XRP: [
 		common.ledger,
-		["Rippex", "https://rippex.net/carteira-ripple.php", false, true, false, false]
+		["Rippex", "https://rippex.net/carteira-ripple.php", false, true, false, false],
+		common.trezor
 	],
 	XTZ: [
 		["Galleon", "https://github.com/Cryptonomic/Deployments/wiki/Galleon:-Releases", false, true, false, false],
-		common.ledger
+		common.ledger,
+		common.trezor
 	],
 	XUC: erc,
 	XVG: [
@@ -665,7 +674,8 @@ var wallets = {
 		["Zcash Wallet", "https://github.com/vaklinov/zcash-swing-wallet-ui", false, true, false, false]
 	],
 	ZEN: [
-		["ZenCash Swing Wallet", "https://github.com/ZencashOfficial/zencash-swing-wallet-ui/releases", false, true, false, false]
+		["ZenCash Swing Wallet", "https://github.com/ZencashOfficial/zencash-swing-wallet-ui/releases", false, true, false, false],
+		common.trezor
 	],
 	ZIL: erc,
 	ZRX: erc,
