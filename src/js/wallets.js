@@ -122,8 +122,15 @@ var wallets = {
 	],
 	BNB: erc,
 	BNT: erc,
+	BOS: [
+		["BOSCoin Wallet", "https://wallet.boscoin.io/", true, false, false, false],
+		["BOSCoin Tokennet Wallet", "https://play.google.com/store/apps/details?id=io.boscoin.toknenet.wallet", false, false, true, false]
+	],
 	BQ: erc,
 	BQX: erc,
+	BSV: [
+		["Bitcoin SV Wallet", "https://github.com/bitcoin-sv/bitcoin-sv/releases", false, true, false, false]
+	],
 	BTC: [
 		["Armory", "https://www.bitcoinarmory.com/", false, true, false, false],
 		common.bitcoin,
@@ -316,6 +323,7 @@ var wallets = {
 		common.trezor
 	],
 	GTO: erc,
+	GUSD: erc,
 	GVT: erc,
 	GXS: [
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
@@ -335,6 +343,7 @@ var wallets = {
 	ICX: erc,
 	ICO: erc,
 	IGNIS: nxt,
+	INB: erc,
 	IOC: [
 		["I/O Coin Wallet", "https://www.iocoin.io/", false, true, false, false]
 	],
@@ -362,6 +371,7 @@ var wallets = {
 	LKK: [
 		["Lykke Wallet", "https://www.lykke.com/", false, false, true, false]
 	],
+	LKY: erc,
 	LOOM: erc,
 	LRC: erc,
 	LSK: [
@@ -445,6 +455,7 @@ var wallets = {
 	],
 	NXT: nxt,
 	OAX: erc,
+	ODE: erc,
 	OK: [
 		["OKCash Wallet", "http://okcash.co/#download", false, true, false, false]
 	],
@@ -487,6 +498,7 @@ var wallets = {
 		["Pura Core", "https://github.com/PURAcore/PURA/releases", false, true, false, false]
 	],
 	QASH: erc,
+	QKC: erc,
 	QRL: erc,
 	QSP: erc,
 	QTUM: qtum,
