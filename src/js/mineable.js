@@ -67,6 +67,7 @@ var mineable = {
 	DCT: "n",
 	DDD: "n",
 	DENT: "n",
+	DEX: "n",
 	DGB: "p",    // 100m premined
 	DGD: "n",
 	DGTX: "n",
@@ -89,6 +90,7 @@ var mineable = {
 	ETHOS: "n",
 	ETN: "p",    // ICO
 	ETP: "p",    // ICO
+	EURS: "n",
 	FAIR: "n",   // Switched from PoW to PoS
 	FCT: "n",
 	FRST: "s",   // 109.9m/110m premined? Looks like a scam

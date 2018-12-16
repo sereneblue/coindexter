@@ -225,6 +225,7 @@ var wallets = {
 	],
 	DDD: erc,
 	DENT: erc,
+	DEX: erc,
 	DGB: [
 		["DigiByte Wallet", "https://digibyte.co/digibyte-wallets", false, true, true, false]
 	],
@@ -289,6 +290,7 @@ var wallets = {
 	ETP: [
 		["Metaverse ETP Wallet", "https://mvs.org/#download", false, true, false, false]
 	],
+	EURS: erc,
 	FAIR: [
 		["FairCoin Wallet", "https://download.faircoin.world/", false, true, true, false]
 	],
