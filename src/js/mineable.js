@@ -30,6 +30,7 @@ var mineable = {
 	BCD: "m",
 	BCH: "m",
 	BCN: "s",    // 82% premined
+	BCZERO: "n",
 	BDL: "p",    // ICO, looks like a scam. http://archive.is/Cv46i
 	BFT: "n",
 	BIX: "n",

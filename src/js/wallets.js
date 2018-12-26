@@ -112,6 +112,7 @@ var wallets = {
 	BCN: [
 		["Bytecoin Wallet", "https://bytecoin.org/downloads/", false, true, false, false]
 	],
+	BCZERO: erc,
 	BDL: [
 		["Bitdeal", "https://bitdeal.co.in/", false, true, true, false]
 	],
