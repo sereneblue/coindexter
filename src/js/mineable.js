@@ -155,6 +155,7 @@ var mineable = {
 	MTC: "n",
 	MTH: "n",
 	MTL: "n",
+	MXM: "n",
 	MYST: "n",
 	NANO: "n",
 	NAS: "n",

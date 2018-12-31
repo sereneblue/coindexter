@@ -424,6 +424,7 @@ var wallets = {
 	MTC: erc,
 	MTH: erc,
 	MTL: erc,
+	MXM: erc,
 	MYST: erc,
 	NANO: [
 		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
