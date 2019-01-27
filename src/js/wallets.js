@@ -469,6 +469,9 @@ var wallets = {
 	PAC: [
 		["Paccoin", "https://github.com/PaccoinCommunity/Paccoin/releases", false, true, false, false]
 	],
+	PAI: [
+		["paiup", "https://www.paiup.com/", false, false, true, false]
+	],
 	PART: [
 		["Particl Core", "https://github.com/particl/particl-core/releases/", false, true, false, false]
 	],
@@ -521,6 +524,9 @@ var wallets = {
 		["Regalcoin", "https://wallet.regalcoin.info/", false, true, false, false]
 	],
 	REP: erc,
+	REPO: [
+		["REPO Wallet", "https://www.repocoin.io/repowallettutorial/index", true, false, false, false]
+	],
 	REQ: erc,
 	RHOC: erc,
 	RISE: [

@@ -1808,7 +1808,7 @@ var cmcid = {
 	"THEKEY" : 2507,
 	"Themis" : 3127,
 	"Theresa May Coin" : 1693,
-	"Theta Token" : 2416,
+	"THETA" : 2416,
 	"Thingschain" : 3131,
 	"ThingsOperatingSystem" : 2987,
 	"Thore Cash" : 3056,

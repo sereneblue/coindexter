@@ -179,6 +179,7 @@ var mineable = {
 	ONT: "n",
 	OTN: "n",
 	PAC: "n",	  // Website is full of dead links
+	PAI: "s",
 	PART: "n",
 	PAX: "n",
 	PAY: "n",
@@ -206,6 +207,7 @@ var mineable = {
 	RDN: "n",
 	REC: "n",
 	REP: "n",
+	REPO: "n",
 	REQ: "n",
 	RHOC: "n",
 	RISE: "n",
