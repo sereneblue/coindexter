@@ -199,6 +199,7 @@ var wallets = {
 		["Cryptonex Wallet", "https://cryptonex.org/#5", false, true, false, false]
 	],
 	COB: erc,
+	CRO: erc,
 	CTR: erc,
 	CTXC: erc,
 	CVC: erc,
@@ -328,7 +329,7 @@ var wallets = {
 	GTO: erc,
 	GUSD: erc,
 	GVT: erc,
-	GXS: [
+	GXC: [
 		["GXB Wallet", "https://www.gxb.io/#downLoad", false, true, false, false]
 	],
 	HC: [
@@ -506,6 +507,7 @@ var wallets = {
 	],
 	QASH: erc,
 	QKC: erc,
+	QNT: erc,
 	QRL: erc,
 	QSP: erc,
 	QTUM: qtum,
@@ -537,6 +539,7 @@ var wallets = {
 	RVN: [
 		["Ravencoin Wallet", "https://ravencoin.org/developers-repository/", false, true, false, false]
 	],
+	S4F: erc,
 	SAFEX: [
 		["Safe Exchange Wallet", "https://safex.io/", false, true, false, false],
 	],
@@ -654,10 +657,14 @@ var wallets = {
 	],
 	XMR: [
 		["Cake Wallet (iOS)", "https://cakewallet.io/", false, false, true, false],
+		common.coinomi,
+		common.exodus,
 		["Monerujo (Android)", "https://github.com/m2049r/xmrwallet/releases", false, false, true, false],
 		["MyMonero", "https://mymonero.com/", true, false, false, false],
 		["Official Monero Wallet", "https://getmonero.org/downloads/", false, true, false, false],
-		common.trezor
+		common.trezor,
+		common.ledger,
+		["X Wallet", "https://itunes.apple.com/us/app/x-wallet-monero-wallet/id1335168711", false, false, true, false]
 	],
 	XP: [
 		["XP Web Wallet", "https://webwallet.xpcoin.io/", true, false, false, false],
