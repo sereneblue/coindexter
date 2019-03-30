@@ -45,6 +45,13 @@ var qtum = [
 	["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
 ]
 
+var trc = [
+	["TRX Wallet (iOS)", "https://github.com/NewHorizonLabs/TRX-Wallet", false, false, true, false],
+	["Tron Wallet (Android)", "https://play.google.com/store/apps/details?id=com.eletac.tronwallet", false, false, true, false],
+	["TronPay", "https://chrome.google.com/webstore/detail/tronpay/gjdneabihbmcpobmfhcnljaojmgoihfk", false, true, false, false],
+	["TronLink", "https://www.tronlink.org/#/", false, true, true, false]
+]
+
 var xcp = [
 	["Counterwallet", "https://wallet.counterwallet.io/", true, false, false, false],
 	["IndieSquare", "https://wallet.indiesquare.me/", false, false, true, false]
@@ -174,6 +181,7 @@ var wallets = {
 		["OpenLedger", "https://bitshares.openledger.info/", true, false, false, false],
 		["SmartWallet", "https://play.google.com/store/apps/details?id=de.bitsharesmunich.smartcoinswallet", false, false, true, false]
 	],
+	BTT: trc,
 	BTX: [
 		["BitCore Wallet", "https://github.com/LIMXTEC/BitCore/releases", false, true, false, false],
 		common.coinomi
@@ -262,6 +270,7 @@ var wallets = {
 		["Einsteinium Wallet", "https://www.emc2.foundation/wallets", false, true, false, false]
 	],
 	ENG: erc,
+	ENJ: erc,
 	EOS: erc,
 	ETC: [
 		["ClassicEtherWallet CX", "https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf", false, true, false, false],
@@ -506,6 +515,7 @@ var wallets = {
 		["Pura Core", "https://github.com/PURAcore/PURA/releases", false, true, false, false]
 	],
 	QASH: erc,
+	QBIT: erc,
 	QKC: erc,
 	QNT: erc,
 	QRL: erc,
@@ -581,11 +591,18 @@ var wallets = {
 	],
 	TAAS: erc,
 	THETA: erc,
+	THR: erc,
 	TKN: erc,
 	TNB: erc,
 	TNT: erc,
 	TRIG: xcp,
-	TRX: erc,
+	TRX: [
+		common.exodus,
+		common.ledger,
+		["TRX Wallet (iOS)", "https://github.com/NewHorizonLabs/TRX-Wallet", false, false, true, false],
+		["TronLink", "https://www.tronlink.org/#/", false, true, true, false],
+		["TronPay", "https://chrome.google.com/webstore/detail/tronpay/gjdneabihbmcpobmfhcnljaojmgoihfk", false, true, false, false]
+	],
 	TTU: erc,
 	TUSD: erc,
 	UBQ: [

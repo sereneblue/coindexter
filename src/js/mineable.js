@@ -47,6 +47,7 @@ var mineable = {
 	BTG: "p",    // 100,000 BTG postmined https://archive.fo/xGa14
 	BTM: "n",
 	BTS: "n",
+	BTT: "n",
 	BTX: "p",
 	BURST: "m",
 	CDT: "n",
@@ -86,6 +87,7 @@ var mineable = {
 	EMC: "m",
 	EMC2: "m",
 	ENG: "n",
+	ENJ: "n",
 	EOS: "n",
 	ETC: "s",    // same as Ethereum
 	ETH: "s",    // the genesis block contained 60.2m eth going to crowdsale participants + 11.9m split between early contributors and foundation,
@@ -197,6 +199,7 @@ var mineable = {
 	PTOY: "n",
 	PURA: "p",
 	QASH: "n",
+	QBIT: "n",
 	QKC: "n",
 	QNT: "n",
 	QRL: "n",
@@ -238,6 +241,7 @@ var mineable = {
 	SYS: "p",     // 18% premined
 	TAAS: "n",
 	THETA: "n",
+	THR: "n",
 	TKN: "n",
 	TNB: "n",
 	TNT: "n",

@@ -10,6 +10,7 @@ var cmcid = {
 	"808Coin" : 1322,
 	"8Bit" : 890,
 	"AB-Chain RTB" : 2967,
+	"ABBC Coin" : 3437,
 	"ABCC Token" : 3238,
 	"Absolute" : 3588,
 	"Abulaba" : 3287,
