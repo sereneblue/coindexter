@@ -58,6 +58,9 @@ var xcp = [
 ]
 
 var wallets = {
+	ABBC: [
+		["ABBC Multi-Crypto Wallet (Android)", "https://play.google.com/store/apps/details?id=jld.reactivespace.com.abbcmcwallet", false, false, true, false],
+	],
 	ACT: [
 		["Achain Wallet", "https://www.achain.com/", false, true, false, false],
 		["Kcash", "https://kcash.com/", false, false, true, false]
@@ -603,6 +606,7 @@ var wallets = {
 		["TronLink", "https://www.tronlink.org/#/", false, true, true, false],
 		["TronPay", "https://chrome.google.com/webstore/detail/tronpay/gjdneabihbmcpobmfhcnljaojmgoihfk", false, true, false, false]
 	],
+	TTC: erc,
 	TTU: erc,
 	TUSD: erc,
 	UBQ: [

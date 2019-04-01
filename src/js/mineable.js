@@ -6,6 +6,7 @@
 // s - significantly premined
 
 var mineable = {
+	ABBC: "s",    // PoW/PoS hybrid, 1/1.5 B premine
 	ACT: "n",     // RDPOS?
 	ADA: "n",
 	ADK: "n",
@@ -247,6 +248,7 @@ var mineable = {
 	TNT: "n",
 	TRIG: "n",
 	TRX: "n",
+	TTC: "n",
 	TTU: "n",
 	TUSD: "n",
 	UBQ: "m",
