@@ -457,6 +457,7 @@ var cmcid = {
 	"CORION" : 2049,
 	"Cortex" : 2638,
 	"Cosmo Coin" : 2955,
+	"Cosmos" : 3794,
 	"COSS" : 1989,
 	"CottonCoin" : 3212,
 	"Couchain" : 2858,

@@ -24,6 +24,7 @@ var mineable = {
 	AST: "n",
 	ATB: "p",	 // ICO, mining will be available. Also uses PoS?? Looks like a hybrid?
 	ATM: "n",
+	ATOM: "n",	 // ICO
 	B3: "n",     // Proof of stake
 	BAT: "n",
 	BAY: "n",    // Proof of stake
@@ -51,9 +52,11 @@ var mineable = {
 	BTT: "n",
 	BTX: "p",
 	BURST: "m",
+	CCCX: "n",
 	CDT: "n",
 	CENNZ: "n",
 	CFI: "n",
+	CLAM: "n",
 	CLOAK: "n",
 	CMT: "n",
 	CND: "n",
@@ -132,6 +135,7 @@ var mineable = {
 	KIN: "n",
 	KMD: "s",    // Initial supply of 100m for ICO and devs
 	KNC: "n",
+	LA: "n",
 	LBC: "p",
 	LINK: "n",
 	LEO: "p",    // 50m premined
@@ -247,6 +251,7 @@ var mineable = {
 	TNB: "n",
 	TNT: "n",
 	TRIG: "n",
+	TRUE: "n",
 	TRX: "n",
 	TTC: "n",
 	TTU: "n",
@@ -258,6 +263,7 @@ var mineable = {
 	VEE: "n",
 	VEN: "n",
 	VERI: "n",
+	VEST: "n",
 	VET: "n",
 	VIA: "p",     // ICO
 	VSL: "n",

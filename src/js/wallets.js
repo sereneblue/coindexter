@@ -14,7 +14,8 @@ var common = {
 	jaxx: ["Jaxx", "https://jaxx.io/", false, true, true, false],
 	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
 	mobi: ["Mobi", "https://www.mobi.me/", true, false, true, false],
-	trezor: ["Trezor", "https://trezor.io/", false, false, false, true]
+	trezor: ["Trezor", "https://trezor.io/", false, false, false, true],
+	wetez: ["Wetez", "http://www.wetez.io/", false, false, true, false]
 }
 
 var erc = [
@@ -91,6 +92,11 @@ var wallets = {
 	],
 	ATM: [
 		erc
+	],
+	ATOM: [
+		["Lunie", "https://lunie.io/", true, false, false, false],
+		common.wetez,
+		common.ledger
 	],
 	B3: [
 		["B3 Wallet", "http://b3coin.net/#features", false, true, false, false]
@@ -197,9 +203,13 @@ var wallets = {
 		["Consortium Android Wallet", "https://play.google.com/store/apps/details?id=org.icewave.burstcoinwallet", false, false, true, false],
 		["BurstNation Android Wallet", "https://play.google.com/store/apps/details?id=com.official.bnwallet", false, false, true, false]
 	],
+	CCCX: erc,
 	CDT: erc,
 	CENNZ: erc,
 	CFI: erc,
+	CLAM: [
+		common.coinomi
+	],
 	CLOAK: [
 		["Cloak Wallet", "https://play.google.com/store/apps/details?id=com.cloakcoin.wallet&hl=en", true, false, false, false]
 		["CloakCoin Wallet", "https://www.cloakcoin.com/en/downloads.html", false, true, false, false],
@@ -376,6 +386,7 @@ var wallets = {
 		common.ledger
 	],
 	KNC: erc,
+	LA: erc,
 	LBC: [
 		common.coinomi,
 		["lbrycrd", "https://github.com/lbryio/lbrycrd/releases", false, true, false, false]
@@ -599,6 +610,9 @@ var wallets = {
 	TNB: erc,
 	TNT: erc,
 	TRIG: xcp,
+	TRUE: [
+		["True Wallet", "https://dapp.truedapp.net/appdown/", false, false, true, false]
+	],
 	TRX: [
 		common.exodus,
 		common.ledger,
@@ -619,6 +633,7 @@ var wallets = {
 	VEE: erc,
 	VEN: erc,
 	VERI: erc,
+	VEST: erc,
 	VET: erc,      // was an ERC20 Token, migrating to their own blockchain?
 	VIA: [
 		common.ledger,
@@ -701,7 +716,8 @@ var wallets = {
 	XTZ: [
 		["Galleon", "https://github.com/Cryptonomic/Deployments/wiki/Galleon:-Releases", false, true, false, false],
 		common.ledger,
-		common.trezor
+		common.trezor,
+		common.wetez
 	],
 	XUC: erc,
 	XVG: [
