@@ -91,7 +91,7 @@ var app = new Vue({
 	updateData: function () {
 		var _this = this;
 
-		url = 'https://cors.io/?https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.numDisplay;
+		url = 'https://test.cors.workers.dev/?https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.numDisplay;
 		if (this.settings.currency != "BTC" && this.settings.currency != "USD") {
 			url += "&convert=" + this.settings.currency;
 		};
@@ -163,7 +163,7 @@ var app = new Vue({
 				});
 			});
 		});
-		this.$http.get('https://cors.io/?https://api.coinmarketcap.com/v1/global/').then(function (response) {
+		this.$http.get('https://test.cors.workers.dev/?https://api.coinmarketcap.com/v1/global/').then(function (response) {
 			_this.stats = response.body;
 		});
 	},
