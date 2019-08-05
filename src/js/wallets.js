@@ -13,6 +13,7 @@ var common = {
 	exodus: ["Exodus", "https://www.exodus.io/", false, true, false, false],
 	jaxx: ["Jaxx", "https://jaxx.io/", false, true, true, false],
 	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+	metamask: ["MetaMask", "https://metamask.io/", false, true, false, false],
 	mobi: ["Mobi", "https://www.mobi.me/", true, false, true, false],
 	trezor: ["Trezor", "https://trezor.io/", false, false, false, true],
 	wetez: ["Wetez", "http://www.wetez.io/", false, false, true, false]
@@ -20,7 +21,7 @@ var common = {
 
 var erc = [
 	common.ledger,
-	["MetaMask", "https://metamask.io/", false, true, false, false],
+	common.metamask,
 	["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 	["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
 	common.trezor
@@ -44,6 +45,13 @@ var omni = [
 
 var qtum = [
 	["Qtum-Qt", "https://github.com/qtumproject/qtum/releases/", false, true, false, false]
+]
+
+var rsk = [
+	common.jaxx,
+	common.metamask,
+	common.ledger,
+	common.trezor
 ]
 
 var trc = [
@@ -203,6 +211,7 @@ var wallets = {
 		["Consortium Android Wallet", "https://play.google.com/store/apps/details?id=org.icewave.burstcoinwallet", false, false, true, false],
 		["BurstNation Android Wallet", "https://play.google.com/store/apps/details?id=com.official.bnwallet", false, false, true, false]
 	],
+	BXK: erc,
 	CCCX: erc,
 	CDT: erc,
 	CENNZ: erc,
@@ -271,6 +280,8 @@ var wallets = {
 		["EB3 Wallet", "http://www.eb3coin.com/", false, false, true, false]
 	],
 	EDG: erc,
+	EGT: erc,
+	EKT: erc,
 	ELA: [
 		["Elastos Wallet", "https://wallet.elastos.org/", true, false, false, false]
 	],
@@ -329,6 +340,7 @@ var wallets = {
 		["Feathercoin Wallet", "https://www.feathercoin.com/", false, true, true, false]
 	],
 	FUN: erc,
+	FXC: erc,
 	GAME: [
 		["GameCredits Android Wallet", "https://play.google.com/store/apps/details?id=wallet.gamecredits", false, false, true, false],
 		["GameCredits Web Wallet", "https://wallet.gamecredits.com/", true, false, false, false]
@@ -357,6 +369,7 @@ var wallets = {
 	HC: [
 		["hcGUI", "https://github.com/HcashOrg/hcGUI/releases", false, true, false, false]
 	],
+	HEDG: erc,
 	HMQ: erc,
 	HOT: erc,
 	HSR: [
@@ -370,6 +383,7 @@ var wallets = {
 	ICO: erc,
 	IGNIS: nxt,
 	INB: erc,
+	INO: erc,
 	IOC: [
 		["I/O Coin Wallet", "https://www.iocoin.io/", false, true, false, false]
 	],
@@ -377,7 +391,9 @@ var wallets = {
 		["ION Wallet", "https://ionomy.com/download", false, true, false, false]
 	],
 	IOST: erc,
+	JCT: erc,
 	JINN: nxt,
+	KBC: erc,
 	KCS: erc,
 	KICK: erc,
 	KIN: erc,
@@ -387,6 +403,7 @@ var wallets = {
 	],
 	KNC: erc,
 	LA: erc,
+	LAMB: erc,
 	LBC: [
 		common.coinomi,
 		["lbrycrd", "https://github.com/lbryio/lbrycrd/releases", false, true, false, false]
@@ -462,6 +479,8 @@ var wallets = {
 		["Neblio Wallet", "https://nebl.io/wallets/", false, true, true, false]
 	],
 	NEO: neo,
+	NET: erc,
+	NEX: neo,
 	NEXO: erc,
 	NLC2: [
 		["NoLimitCoin Wallet", "https://www.nolimitcoin.org/", true, true, false, false]
@@ -476,6 +495,10 @@ var wallets = {
 	],
 	NMR: erc,
 	NPXS: erc,
+	NRG: [
+		common.coinomi,
+		["Energi Core Wallet", "https://www.energi.world/downloads/", false, true, false, false]
+	],
 	NULS: erc,
 	NXS: [
 		["LLD Wallet", "http://www.nexusearth.com/#", false, true, false, false],
@@ -506,6 +529,9 @@ var wallets = {
 		common.ledger,
 		["PIVX Mobile Wallet", "https://play.google.com/store/apps/details?id=pivx.tech.furszy", false, false, true, false],
 		["PIVX Wallet", "https://pivx.org/get-pivx/wallet/", false, true, false, false]
+	],
+	PLC: [
+		["PLC Wallet", "https://platincoin.com/en/#wallets", true, true, false, false]
 	],
 	PLR: erc,
 	POE: erc,
@@ -549,12 +575,14 @@ var wallets = {
 	REC: [
 		["Regalcoin", "https://wallet.regalcoin.info/", false, true, false, false]
 	],
+	REN: erc,
 	REP: erc,
 	REPO: [
 		["REPO Wallet", "https://www.repocoin.io/repowallettutorial/index", true, false, false, false]
 	],
 	REQ: erc,
 	RHOC: erc,
+	RIF: rsk,
 	RISE: [
 		["RISE Wallet", "https://rise.vision/", true, true, false, false]
 	],
@@ -575,6 +603,7 @@ var wallets = {
 	SKY: [
 		["Skycoin Wallet", "https://www.skycoin.net/downloads/", false, true, false, false]
 	],
+	SLV: erc,
 	SMART: [
 		["SmartCash Qt", "https://smartcash.cc/", false, true, false, false],
 		["SmartCash Web Wallet", "https://wallet.smartcash.cc", true, false, false, false]
@@ -630,6 +659,7 @@ var wallets = {
 	UCASH: erc,
 	USDC: erc,
 	USDT: omni,
+	UUU: erc,
 	VEE: erc,
 	VEN: erc,
 	VERI: erc,
@@ -640,6 +670,9 @@ var wallets = {
 		["Viacoin Wallet", "https://viacoin.org/#download", false, true, false, false]
 	],
 	VSL: erc,
+	VSYS: [
+		["V SYSTEMS Wallet", "https://www.v.systems/wallet", true, true, false, false]
+	],
 	VTC: [
 		common.coinomi,
 		["Electrum-VTC", "https://github.com/vertcoin/electrum-vtc/releases/", false, true, false, false],
@@ -702,6 +735,7 @@ var wallets = {
 		common.ledger,
 		["X Wallet", "https://itunes.apple.com/us/app/x-wallet-monero-wallet/id1335168711", false, false, true, false]
 	],
+	XMX: erc,
 	XP: [
 		["XP Web Wallet", "https://webwallet.xpcoin.io/", true, false, false, false],
 		["XP Wallet", "https://www.xpcoin.io/downloads/", false, true, true, false]
