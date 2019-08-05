@@ -91,13 +91,13 @@ var app = new Vue({
 	updateData: function () {
 		var _this = this;
 
-		url = 'https://test.cors.workers.dev/?https://api.coinmarketcap.com/v1/ticker/?limit=' + app.settings.numDisplay;
+		url = `https://api.allorigins.win/get?url=${encodeURIComponent('https://api.coinmarketcap.com/v1/ticker/?limit=')}` + app.settings.numDisplay;
 		if (this.settings.currency != "BTC" && this.settings.currency != "USD") {
 			url += "&convert=" + this.settings.currency;
 		};
 
 		this.$http.get(url).then(function (response) {
-			_this.currencies = response.body;
+			_this.currencies = JSON.parse(response.body.contents);
 			var coins = _this.currencies.slice();
 			coins.sort(function (a, b) {
 				return Number(a.percent_change_24h) - Number(b.percent_change_24h);
@@ -163,8 +163,8 @@ var app = new Vue({
 				});
 			});
 		});
-		this.$http.get('https://test.cors.workers.dev/?https://api.coinmarketcap.com/v1/global/').then(function (response) {
-			_this.stats = response.body;
+		this.$http.get(`https://api.allorigins.win/get?url=${encodeURIComponent('https://api.coinmarketcap.com/v1/global/')}`).then(function (response) {
+			_this.stats = JSON.parse(response.body.contents);
 		});
 	},
 	wallet: function (symbol) {
