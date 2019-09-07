@@ -13,6 +13,7 @@ var common = {
 	exodus: ["Exodus", "https://www.exodus.io/", false, true, false, false],
 	jaxx: ["Jaxx", "https://jaxx.io/", false, true, true, false],
 	ledger: ["Ledger", "https://www.ledgerwallet.com/products", false, false, false, true],
+	math: ["Math Wallet", "https://www.mathwallet.org/en/", true, true, true, false],
 	metamask: ["MetaMask", "https://metamask.io/", false, true, false, false],
 	mobi: ["Mobi", "https://www.mobi.me/", true, false, true, false],
 	trezor: ["Trezor", "https://trezor.io/", false, false, false, true],
@@ -21,6 +22,7 @@ var common = {
 
 var erc = [
 	common.ledger,
+	common.math,
 	common.metamask,
 	["MyEtherWallet", "https://www.myetherwallet.com/", true, false, false, false],
 	["Parity", "https://github.com/paritytech/parity/releases", false, true, false, false],
@@ -28,9 +30,17 @@ var erc = [
 ]
 
 var neo = [
+	common.math,
 	["Neon Wallet", "https://github.com/CityOfZion/neon-wallet/releases", false, true, false, false],
 	["NEO Desktop Client", "https://github.com/neo-project/neo-gui/releases/", false, true, false, false],
 	["NEO Web Wallet", "https://neowallet.cn/", true, false, false, false]
+]
+
+var nas = [
+	common.math,
+	["NasExtWallet", "https://chrome.google.com/webstore/detail/nasextwallet/gehjkhmhclgnkkhpfamakecfgakkfkco", false, false, false, true],
+	["NASnano", "https://nano.nebulas.io/index_en.html#firstPage", false, false, false, true],
+	["Nebulas Wallet", "https://chrome.google.com/webstore/detail/nebulas-wallet/magbanejlegnbcppjljfhnmfmghialkl", false, false, false, true]
 ]
 
 var nxt = [
@@ -87,6 +97,9 @@ var wallets = {
 	AGI: erc,
 	AGRS: omni,
 	AION: erc,
+	ALGO: [
+		["Algorand Wallet", "https://play.google.com/store/apps/details?id=com.algorand.android", false, false, true, false]
+	],
 	AMP: omni,
 	ANT: erc,
 	AOA: erc,
@@ -106,6 +119,7 @@ var wallets = {
 		common.wetez,
 		common.ledger
 	],
+	ATP: nas,
 	B3: [
 		["B3 Wallet", "http://b3coin.net/#features", false, true, false, false]
 	],
@@ -140,6 +154,9 @@ var wallets = {
 	BDL: [
 		["Bitdeal", "https://bitdeal.co.in/", false, true, true, false]
 	],
+	BDX: [
+		["Beldex Wallet", "https://play.google.com/store/apps/details?id=com.beldexwallet.app", false, false, true, false]
+	],
 	BFT: erc,
 	BIX: erc,
 	BLOCK: [
@@ -154,7 +171,8 @@ var wallets = {
 	BQ: erc,
 	BQX: erc,
 	BSV: [
-		["Bitcoin SV Wallet", "https://github.com/bitcoin-sv/bitcoin-sv/releases", false, true, false, false]
+		["Bitcoin SV Wallet", "https://github.com/bitcoin-sv/bitcoin-sv/releases", false, true, false, false],
+		common.exodus
 	],
 	BTC: [
 		["Armory", "https://www.bitcoinarmory.com/", false, true, false, false],
@@ -295,11 +313,17 @@ var wallets = {
 	],
 	ENG: erc,
 	ENJ: erc,
-	EOS: erc,
+	EOS: [
+		common.math,
+		common.exodus,
+		common.ledger,
+		common.trezor
+	],
 	ETC: [
 		["ClassicEtherWallet CX", "https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf", false, true, false, false],
 		common.coinomi,
 		["Ethereum Classic Wallet", "https://github.com/ethereumproject/mist/releases", false, true, false, false],
+		common.exodus,
 		common.jaxx,
 		common.ledger,
 		common.trezor
@@ -336,6 +360,7 @@ var wallets = {
 		["Firstcoin Wallet", "http://firstcoinproject.com/", false, true, true, false]
 	],
 	FSN: erc,
+	FST: erc,
 	FTC: [
 		["Feathercoin Wallet", "https://www.feathercoin.com/", false, true, true, false]
 	],
@@ -470,7 +495,7 @@ var wallets = {
 	NANO: [
 		["Rai Wallet", "https://github.com/clemahieu/raiblocks/releases", false, true, false, false]
 	],
-	NAS: erc,
+	NAS: nas,
 	NAV: [
 		["NAV Wallet", "https://navcoin.org/downloads/", false, true, true, false]
 	],
@@ -510,6 +535,7 @@ var wallets = {
 	OK: [
 		["OKCash Wallet", "http://okcash.co/#download", false, true, false, false]
 	],
+	OKB: erc,
 	OMG: erc,
 	ONT: neo,
 	OTN: erc,
@@ -559,6 +585,7 @@ var wallets = {
 	QKC: erc,
 	QNT: erc,
 	QRL: erc,
+	OSC: erc,
 	QSP: erc,
 	QTUM: qtum,
 	R: erc,
@@ -635,6 +662,7 @@ var wallets = {
 	TAAS: erc,
 	THETA: erc,
 	THR: erc,
+	THX: erc,
 	TKN: erc,
 	TNB: erc,
 	TNT: erc,
@@ -690,7 +718,9 @@ var wallets = {
 	],
 	WAX: erc,
 	WICC: erc,
+	WIN: trc,
 	WINGS: erc,
+	WIX: erc,
 	WTC: erc,
 	XAS: [
 		["Asch Lite Client", "https://www.asch.so/", false, true, false, false]
@@ -763,6 +793,7 @@ var wallets = {
 		common.coinomi,
 		["Zcoin Wallet", "https://zcoin.io/get-zcoin/", false, true, false, false]
 	],
+	ZB: erc,
 	ZCL: [
 		["ZClassic Wallet", "http://zclassic.org/#getstarted", false, true, false, false]
 	],

@@ -16,6 +16,7 @@ var mineable = {
 	AGI: "n",
 	AGRS: "n",
 	AION: "n",
+	ALGO: "n",
 	AMP: "n",
 	ANT: "n",
 	AOA: "n",
@@ -24,6 +25,7 @@ var mineable = {
 	AST: "n",
 	ATB: "p",	 // ICO, mining will be available. Also uses PoS?? Looks like a hybrid?
 	ATM: "n",
+	ATP: "n",
 	ATOM: "n",	 // ICO
 	B3: "n",     // Proof of stake
 	BAT: "n",
@@ -34,6 +36,7 @@ var mineable = {
 	BCN: "s",    // 82% premined
 	BCZERO: "n",
 	BDL: "p",    // ICO, looks like a scam. http://archive.is/Cv46i
+	BDX: "n",
 	BFT: "n",
 	BIX: "n",
 	BLOCK: "n",
@@ -106,6 +109,7 @@ var mineable = {
 	FCT: "n",
 	FRST: "s",   // 109.9m/110m premined? Looks like a scam
 	FSN: "n",
+	FST: "n",
 	FTC: "i",    // instamined
 	FUN: "n",
 	FXC: "n",
@@ -195,8 +199,10 @@ var mineable = {
 	OAX: "n",
 	ODE: "n",
 	OK: "n",
+	OKB: "n",
 	OMG: "n",
 	ONT: "n",
+	OSC: "n",
 	OTN: "n",
 	PAC: "n",	  // Website is full of dead links
 	PAI: "s",
@@ -263,6 +269,7 @@ var mineable = {
 	TAAS: "n",
 	THETA: "n",
 	THR: "n",
+	THX: "n",
 	TKN: "n",
 	TNB: "n",
 	TNT: "n",
@@ -290,7 +297,9 @@ var mineable = {
 	WAVES: "n",
 	WAX: "n",
 	WICC: "n",
+	WIN: "n",
 	WINGS: "n",
+	WIX: "n",
 	WTC: "n",
 	XAS: "p",     // ICO
 	XBY: "n",	  // ICO
@@ -311,6 +320,7 @@ var mineable = {
 	XUC: "n",
 	XVG: "m",
 	XZC: "m",
+	ZB: "n",
 	ZCL: "m",
 	ZEC: "m",
 	ZEN: "m",
